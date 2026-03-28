@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { categories } from '../data/mockDocuments';
-import { Home, Users, FileText, Activity, ClipboardList, Scale, Archive } from 'lucide-react';
+import { Home, Users, FileText, Activity, ClipboardList, Scale, Menu, X } from 'lucide-react';
 
 const iconMap = {
   'users': Users,
@@ -11,35 +11,87 @@ const iconMap = {
   'scale': Scale
 };
 
+const MOBILE_BREAKPOINT = 768;
+
 export default function Layout() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const onResize = () => {
+      if (window.innerWidth > MOBILE_BREAKPOINT) setMenuOpen(false);
+    };
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+
+  useEffect(() => {
+    const onPopState = () => setMenuOpen(false);
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKey = (e) => {
+      if (e.key === 'Escape') setMenuOpen(false);
+    };
+    document.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = '';
+    };
+  }, [menuOpen]);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <div className="app-container">
-      <aside className="sidebar">
+      {menuOpen && (
+        <button
+          type="button"
+          className="sidebar-backdrop"
+          aria-label="Close navigation menu"
+          onClick={closeMenu}
+        />
+      )}
+      <aside
+        id="app-sidebar"
+        className={`sidebar${menuOpen ? ' sidebar-open' : ''}`}
+      >
         <div className="sidebar-header">
           <div className="sidebar-brand">
-            <Archive className="nav-icon" style={{color: 'var(--accent-blue)'}} />
-            Barrington Archive
+            <Scale className="nav-icon sidebar-brand-icon" />
+            <span className="sidebar-brand-text">Legal Research</span>
           </div>
+          <button
+            type="button"
+            className="sidebar-close-btn"
+            aria-label="Close menu"
+            onClick={closeMenu}
+          >
+            <X className="nav-icon" aria-hidden />
+          </button>
         </div>
-        <nav className="sidebar-nav">
-          <NavLink 
-            to="/" 
-            className={({isActive}) => isActive ? "nav-item active" : "nav-item"}
+        <nav className="sidebar-nav" aria-label="Main navigation">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
             end
+            onClick={closeMenu}
           >
             <Home className="nav-icon" />
             Home
           </NavLink>
-          <div style={{ padding: '1.5rem 1.5rem 0.5rem', fontSize: '0.75rem', textTransform: 'uppercase', color: '#64748b', fontWeight: 600, letterSpacing: '0.05em' }}>
-            Categories
-          </div>
-          {categories.map(cat => {
+          <div className="sidebar-section-label">Categories</div>
+          {categories.map((cat) => {
             const IconComponent = iconMap[cat.iconType] || FileText;
             return (
-              <NavLink 
+              <NavLink
                 key={cat.id}
                 to={`/category/${cat.id}`}
-                className={({isActive}) => isActive ? "nav-item active" : "nav-item"}
+                className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+                onClick={closeMenu}
               >
                 <IconComponent className="nav-icon" />
                 {cat.title}
@@ -48,9 +100,24 @@ export default function Layout() {
           })}
         </nav>
       </aside>
-      <main className="main-content">
-        <Outlet />
-      </main>
+      <div className="main-column">
+        <header className="mobile-top-bar">
+          <button
+            type="button"
+            className="mobile-menu-btn"
+            aria-expanded={menuOpen}
+            aria-controls="app-sidebar"
+            aria-label="Open navigation menu"
+            onClick={() => setMenuOpen(true)}
+          >
+            <Menu className="nav-icon" aria-hidden />
+          </button>
+          <span className="mobile-top-bar-title">Legal Research</span>
+        </header>
+        <main className="main-content">
+          <Outlet />
+        </main>
+      </div>
     </div>
   );
 }
