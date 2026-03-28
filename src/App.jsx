@@ -6,7 +6,7 @@ import CategoryPage from './pages/CategoryPage';
 
 function App() {
   return (
-    <BrowserRouter basename="/legal-research-site">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
