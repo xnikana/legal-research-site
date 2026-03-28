@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { categories } from '../data/mockDocuments';
-import { Home, Users, FileText, Activity, ClipboardList, Scale, Menu, X } from 'lucide-react';
+import { Home, Users, FileText, Activity, ClipboardList, Scale, Menu, X, Info } from 'lucide-react';
 
 const iconMap = {
   'users': Users,
@@ -98,6 +98,15 @@ export default function Layout() {
               </NavLink>
             );
           })}
+          <div className="sidebar-section-label">About</div>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+            onClick={closeMenu}
+          >
+            <Info className="nav-icon" />
+            Capabilities
+          </NavLink>
         </nav>
       </aside>
       <div className="main-column">

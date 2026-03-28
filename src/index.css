@@ -792,3 +792,136 @@ button {
     border-left: 4px solid var(--accent-blue);
   }
 }
+
+/* About / CAPABILITIES.md */
+.capabilities-doc {
+  max-width: 52rem;
+}
+
+.capabilities-doc-body {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem 2.25rem;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  overflow-x: auto;
+}
+
+.capabilities-doc-body h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+
+.capabilities-doc-body h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.capabilities-doc-body h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.capabilities-doc-body h3 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.capabilities-doc-body p,
+.capabilities-doc-body li {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+.capabilities-doc-body p {
+  margin-bottom: 0.875rem;
+}
+
+.capabilities-doc-body ul,
+.capabilities-doc-body ol {
+  margin: 0.5rem 0 1rem 1.25rem;
+}
+
+.capabilities-doc-body li {
+  margin-bottom: 0.35rem;
+}
+
+.capabilities-doc-body li > p {
+  margin-bottom: 0.35rem;
+}
+
+.capabilities-doc-body hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 1.5rem 0;
+}
+
+.capabilities-doc-body strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.capabilities-doc-body a {
+  color: var(--accent-blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.capabilities-doc-body a:hover {
+  color: var(--accent-hover);
+}
+
+.capabilities-doc-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin: 1rem 0 1.25rem;
+  table-layout: auto;
+}
+
+.capabilities-doc-body th,
+.capabilities-doc-body td {
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border-color);
+  vertical-align: top;
+}
+
+.capabilities-doc-body th {
+  background: var(--card-hover);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.capabilities-doc-body code {
+  font-family: ui-monospace, 'Cascadia Code', 'Segoe UI Mono', monospace;
+  font-size: 0.84em;
+  background: var(--card-hover);
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .capabilities-doc-body {
+    padding: 1.25rem 1.125rem;
+  }
+
+  .capabilities-doc-body h1 {
+    font-size: 1.5rem;
+  }
+}
