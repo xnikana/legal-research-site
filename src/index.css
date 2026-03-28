@@ -20,12 +20,23 @@
   padding: 0;
 }
 
+html {
+  overflow-x: clip;
+}
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-primary);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+#root {
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 a {
@@ -44,6 +55,9 @@ button {
 .app-container {
   display: flex;
   min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 .main-column {
@@ -58,9 +72,22 @@ button {
   flex: 1;
   padding: 2rem 3rem;
   overflow-y: auto;
+  overflow-x: clip;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  min-width: 0;
+}
+
+.home-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  gap: 1.5rem;
+}
+
+.home-category-grid h3 {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 /* Hero Styles */
@@ -137,6 +164,7 @@ button {
 
 .doc-info {
   flex: 1;
+  min-width: 0;
 }
 
 .doc-title {
@@ -144,13 +172,15 @@ button {
   font-size: 1rem;
   color: var(--text-primary);
   margin-bottom: 0.25rem;
+  overflow-wrap: anywhere;
 }
 
 .doc-meta {
   font-size: 0.875rem;
   color: var(--text-secondary);
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
 }
 
 .doc-icon {
@@ -349,6 +379,41 @@ button {
 
   .main-content {
     padding: 1.25rem 1rem 2rem;
+  }
+
+  .hero-section {
+    padding: 1.5rem 1.125rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.375rem, 5vw + 0.5rem, 2.5rem);
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-header {
+    font-size: 1.25rem;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .category-page .document-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.875rem;
+  }
+
+  .category-page .document-item > .doc-icon {
+    align-self: flex-start;
+  }
+
+  .category-page .document-item button {
+    align-self: stretch;
+    justify-content: center;
   }
 
   .nav-item {

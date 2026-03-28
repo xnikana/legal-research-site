@@ -25,7 +25,7 @@ export default function Home() {
 
       <h2 className="section-header">Record Categories</h2>
       
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '1.5rem' }}>
+      <div className="home-category-grid">
         {categories.map(cat => {
           const IconComponent = iconMap[cat.iconType] || FileText;
           return (
