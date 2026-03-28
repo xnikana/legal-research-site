@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:data": "node scripts/build-archive-data.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },

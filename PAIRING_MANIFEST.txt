@@ -1,0 +1,668 @@
+Belton Court research — SharePoint PDF ↔ associated Markdown
+Project: /home/zachary/Cursor_Projects/BeltonCourt-research
+Paired PDFs: 44
+Unique files in archive: 87 (44 PDF, 43 MD)
+SharePoint PDFs with no associated .md found: 522
+
+=== Association rules ===
+1) Same folder: <stem>.md next to <stem>.pdf
+2) Bundle folder: <stem>/<stem>.md or nested .../<stem>.md under <stem>/
+3) Overrides: large OCR conversions stored under documentation/research/belton-court/
+
+=== Pairs (PDF -> MD) ===
+PDF: sources/Planner-Sharepoint/2026/02. February 3, 2026/01. Agenda 02-03-2026.pdf
+ MD: sources/Planner-Sharepoint/2026/02. February 3, 2026/01. Agenda 02-03-2026.md
+
+PDF: sources/Planner-Sharepoint/2026/02. February 3, 2026/03. PB 01-06-2026_Minutes_DRAFT.pdf
+ MD: sources/Planner-Sharepoint/2026/02. February 3, 2026/03. PB 01-06-2026_Minutes_DRAFT.md
+
+PDF: sources/Planner-Sharepoint/2026/02. February 3, 2026/04. Belton Court_Complete Prelim Plan_12-24-25.PDF
+ MD: documentation/research/belton-court/Belton Court_Complete Prelim Plan_121-24-2025.md
+
+PDF: sources/Planner-Sharepoint/2026/02. February 3, 2026/Comprehensive Permit Applications - FAQ.pdf
+ MD: sources/Planner-Sharepoint/2026/02. February 3, 2026/Comprehensive Permit Applications - FAQ.md
+
+PDF: sources/Planner-Sharepoint/2026/02. February 3, 2026/TRC Minutes 01-15-2026_Draft.pdf
+ MD: sources/Planner-Sharepoint/2026/02. February 3, 2026/TRC Minutes 01-15-2026_Draft.md
+
+PDF: sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Belton Court_Complete Prelim Plan_12-24-25.PDF
+ MD: documentation/research/belton-court/Belton Court_Complete Prelim Plan_121-24-2025.md
+
+PDF: sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Belton_02-03-26_staff recommendations-FussOneil-admin.pdf
+ MD: documentation/research/belton-court/FUSS_ONEILL_MEMO_OCR_PAGES33-42.md
+
+PDF: sources/Planner-Sharepoint/2026/03. March 31, 2026 Special Meeting/01. PB 03-31-2026 Agenda_Final.pdf
+ MD: sources/Planner-Sharepoint/2026/03. March 31, 2026 Special Meeting/01. PB 03-31-2026 Agenda_Final.md
+
+PDF: sources/Planner-Sharepoint/2026/03. March 31, 2026 Special Meeting/3.a.i. Barrington signage diagnostic-WF03-12-26-penultimate.pdf
+ MD: sources/Planner-Sharepoint/2026/03. March 31, 2026 Special Meeting/3.a.i. Barrington signage diagnostic-WF03-12-26-penultimate.md
+
+PDF: sources/Planner-Sharepoint/2026/03. March 31, 2026 Special Meeting/3.b.i. 9_land use.pdf
+ MD: sources/Planner-Sharepoint/2026/03. March 31, 2026 Special Meeting/3.b.i. 9_land use.md
+
+PDF: sources/Planner-Sharepoint/2026/03. March 31, 2026 Special Meeting/3.b.ii. KEY_FLUM 1-16-26.pdf
+ MD: sources/Planner-Sharepoint/2026/03. March 31, 2026 Special Meeting/3.b.ii. KEY_FLUM 1-16-26.md
+
+PDF: sources/Planner-Sharepoint/2026/03. March 31, 2026 Special Meeting/3.b.ii. LU-4 Future Land Use with parcels.pdf
+ MD: sources/Planner-Sharepoint/2026/03. March 31, 2026 Special Meeting/3.b.ii. LU-4 Future Land Use with parcels.md
+
+PDF: sources/Planner-Sharepoint/2026/03. March 31, 2026 Special Meeting/3.b.ii. LU-4 Future Land Use.pdf
+ MD: sources/Planner-Sharepoint/2026/03. March 31, 2026 Special Meeting/3.b.ii. LU-4 Future Land Use.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/01. Comp Permit Procedure_FAQ.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/01. Comp Permit Procedure_FAQ.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Formal Extension for Belton Court Comp Permit.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Formal Extension for Belton Court Comp Permit.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/AlexCaracuzzo_02-26-26.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/AlexCaracuzzo_02-26-26.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/AlexCaracuzzo_attachment 1.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/AlexCaracuzzo_attachment 1.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/AlexCaracuzzo_attachment 2.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/AlexCaracuzzo_attachment 2.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/AlexCaracuzzo_attachment 3.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/AlexCaracuzzo_attachment 3.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/BryanCooper_03-13-26.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/BryanCooper_03-13-26.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/LeslieGreene_03-11-26.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/LeslieGreene_03-11-26.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/LeslieGreene_03-12-26.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/LeslieGreene_03-12-26.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/MarciaDavis_02-26-26.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/MarciaDavis_02-26-26.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/MarciaDavis_03-02-26.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/MarciaDavis_03-02-26.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/MarciaWeeden_03-15-26_email.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/MarciaWeeden_03-15-26_email.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/MarciaWeeden_attachment 1.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/MarciaWeeden_attachment 1.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/MarciaWeeden_attachment 2.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/MarciaWeeden_attachment 2.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/NeileHartman_03-22-26_email.PDF
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/NeileHartman_03-22-26_email.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/NeileHartman_BRAD_03-22-26.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/NeileHartman_BRAD_03-22-26.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/PaigeBarbour_03-03-26_Feb.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/PaigeBarbour_03-03-26_Feb.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/PaigeBarbour_03-03-26_March.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/PaigeBarbour_03-03-26_March.md
+
+PDF: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/PaulZiino_3-13-26.pdf
+ MD: sources/Planner-Sharepoint/2026/04. April 07, 2026/04. Public Comment/PaulZiino_3-13-26.md
+
+PDF: sources/Planner-Sharepoint/Belton Court Application/1-34_Site Plans.pdf
+ MD: sources/Planner-Sharepoint/Belton Court Application/1-34_Site Plans/1-34_Site Plans.md
+
+PDF: sources/Planner-Sharepoint/Belton Court Application/226-432_Stormwater Management.pdf
+ MD: sources/Planner-Sharepoint/Belton Court Application/226-432_Stormwater Management/226-432_Stormwater Management.md
+
+PDF: sources/Planner-Sharepoint/Belton Court Application/35-81_MISC Application Forms.pdf
+ MD: sources/Planner-Sharepoint/Belton Court Application/35-81_MISC Application Forms/35-81_MISC Application Forms.md
+
+PDF: sources/Planner-Sharepoint/Belton Court Application/433-435_BCWA Letter.pdf
+ MD: sources/Planner-Sharepoint/Belton Court Application/433-435_BCWA Letter/433-435_BCWA Letter.md
+
+PDF: sources/Planner-Sharepoint/Belton Court Application/435-450_Attorney Document.pdf
+ MD: sources/Planner-Sharepoint/Belton Court Application/435-450_Attorney Document/435-450_Attorney Document.md
+
+PDF: sources/Planner-Sharepoint/Belton Court Application/451_Fee Waiver Request.pdf
+ MD: sources/Planner-Sharepoint/Belton Court Application/451_Fee Waiver Request/451_Fee Waiver Request.md
+
+PDF: sources/Planner-Sharepoint/Belton Court Application/452-543_DPZ CoDesign.pdf
+ MD: sources/Planner-Sharepoint/Belton Court Application/452-543_DPZ CoDesign/452-543_DPZ CoDesign.md
+
+PDF: sources/Planner-Sharepoint/Belton Court Application/544-563_Wetlands.pdf
+ MD: sources/Planner-Sharepoint/Belton Court Application/544-563_Wetlands/544-563_Wetlands/544-563_Wetlands.md
+
+PDF: sources/Planner-Sharepoint/Belton Court Application/564-590_Sewer Pare.pdf
+ MD: sources/Planner-Sharepoint/Belton Court Application/564-590_Sewer Pare/564-590_Sewer Pare/564-590_Sewer Pare.md
+
+PDF: sources/Planner-Sharepoint/Belton Court Application/591_Sewer Corvi.pdf
+ MD: sources/Planner-Sharepoint/Belton Court Application/591_Sewer Corvi/591_Sewer Corvi/591_Sewer Corvi.md
+
+PDF: sources/Planner-Sharepoint/Belton Court Application/592-623_Attorney Submittal.pdf
+ MD: sources/Planner-Sharepoint/Belton Court Application/592-623_Attorney Submittal/592-623_Attorney Submittal/592-623_Attorney Submittal.md
+
+PDF: sources/Planner-Sharepoint/Belton Court Application/82-225_Traffic Impact Study.pdf
+ MD: sources/Planner-Sharepoint/Belton Court Application/82-225_Traffic Impact Study/82-225_Traffic Impact Study/82-225_Traffic Impact Study.md
+
+=== PDFs without associated .md (not in zip) ===
+(Most meeting-packet PDFs have not been converted to markdown in this repo.)
+sources/Planner-Sharepoint/2023/03 March 7 Meeting/17 Lorraine/17 Lorraine Comprehensive Permit Application.pdf
+sources/Planner-Sharepoint/2023/03 March 7 Meeting/17 Lorraine/17Lorraine_Revised_03-02-23.pdf
+sources/Planner-Sharepoint/2023/03 March 7 Meeting/Chipotle/0. Application Form.pdf
+sources/Planner-Sharepoint/2023/03 March 7 Meeting/Chipotle/0. PB Cover Letter - 2023-02.pdf
+sources/Planner-Sharepoint/2023/03 March 7 Meeting/Chipotle/0. PB Cover Letter S1 - 2023-02.pdf
+sources/Planner-Sharepoint/2023/03 March 7 Meeting/Chipotle/0A. Abutters Map and List.pdf
+sources/Planner-Sharepoint/2023/03 March 7 Meeting/Chipotle/1. Traffic Impact Study.pdf
+sources/Planner-Sharepoint/2023/03 March 7 Meeting/Chipotle/2. Photos.pdf
+sources/Planner-Sharepoint/2023/03 March 7 Meeting/Chipotle/3. Signage Exhibits - Rev..pdf
+sources/Planner-Sharepoint/2023/03 March 7 Meeting/Chipotle/4. Stormwater Summary.pdf
+sources/Planner-Sharepoint/2023/03 March 7 Meeting/Chipotle/5. Chipotle Plans.pdf
+sources/Planner-Sharepoint/2023/03 March 7 Meeting/Chipotle/6. Photometric Plan.pdf
+sources/Planner-Sharepoint/2023/04 April 4 Meeting/B Kurtz Plan distrbuted at 04-04-2023 PB Meeting.pdf
+sources/Planner-Sharepoint/2023/04 April 4 Meeting/Final_memo_carmelite summary for PB 4-4-23.pdf
+sources/Planner-Sharepoint/2023/04 April 4 Meeting/Meeting Minutes/03-07-2023 PB Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2023/04 April 4 Meeting/Meeting Minutes/03-28-2023 PB Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2023/04 April 4 Meeting/Meeting Minutes/25Watson_AdHoc_MtgMinutes_2021-2022.pdf
+sources/Planner-Sharepoint/2023/04 April 4 Meeting/Meeting Minutes/Planning Board 04-04-2023 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2023/04 April 4 Meeting/Washington Trust - 236 County Road/.1_Washington Trust_Barrington_2-22-23_Permit Set.pdf
+sources/Planner-Sharepoint/2023/04 April 4 Meeting/Washington Trust - 236 County Road/TRC Minutes 3-9-23.pdf
+sources/Planner-Sharepoint/2023/04 April 4 Meeting/Washington Trust - 236 County Road/TRC app signed.pdf
+sources/Planner-Sharepoint/2023/05 May 2 Meeting/PB_Agenda_Packet_05-02-2023.pdf
+sources/Planner-Sharepoint/2023/06 June 6 Meeting/17 Lorraine Preliminary Plan Submission.pdf
+sources/Planner-Sharepoint/2023/06 June 6 Meeting/173RMaple_MPExtensionRequest_May2023.pdf
+sources/Planner-Sharepoint/2023/06 June 6 Meeting/17Lorraine_MasterPlanDecision_Bk1832Pg84.pdf
+sources/Planner-Sharepoint/2023/06 June 6 Meeting/2023 Submittal and Review Schedules _ South Kingstown, RI.pdf
+sources/Planner-Sharepoint/2023/06 June 6 Meeting/Agenda 06-06-2023 PB_tc.pdf
+sources/Planner-Sharepoint/2023/06 June 6 Meeting/Commercial_Sign_discussion_050123.pdf
+sources/Planner-Sharepoint/2023/06 June 6 Meeting/H7023.pdf
+sources/Planner-Sharepoint/2023/06 June 6 Meeting/Planning Board 05-02-2023 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2023/06 June 6 Meeting/Re_ Arborist Report at 17 Lorraine Street.pdf
+sources/Planner-Sharepoint/2023/06 June 6 Meeting/Signs.pdf
+sources/Planner-Sharepoint/2023/06 June 6 Meeting/TRC DRAFT Minutes 4-13-2023.pdf
+sources/Planner-Sharepoint/2023/06 June 6 Meeting/TRC Minutes 5-11-2023.pdf
+sources/Planner-Sharepoint/2023/07 July 11 2023 Meeting/2023 DSP Legislative Summary _FINAL.pdf
+sources/Planner-Sharepoint/2023/07 July 11 2023 Meeting/2023 Land Use Update - Legislation as Enacted.pdf
+sources/Planner-Sharepoint/2023/07 July 11 2023 Meeting/2023 Land Use Update for APA.pdf
+sources/Planner-Sharepoint/2023/08 August 01 2023 Meeting/Agenda 08-1-2023 PB.pdf
+sources/Planner-Sharepoint/2023/08 August 01 2023 Meeting/Planning Board 07-11-2023 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2023/08 August 01 2023 Meeting/Preliminary Plan Application - 173R Maple Avenue/173R Maple Avenue Plans.pdf
+sources/Planner-Sharepoint/2023/08 August 01 2023 Meeting/Preliminary Plan Application - 173R Maple Avenue/Affidavit of Notice Regarding 173R Maple Avenue 7.28.23.pdf
+sources/Planner-Sharepoint/2023/08 August 01 2023 Meeting/Preliminary Plan Application - 173R Maple Avenue/BT-PH Maple Grove Project 1x7.pdf
+sources/Planner-Sharepoint/2023/08 August 01 2023 Meeting/Preliminary Plan Application - 173R Maple Avenue/I2309 Barrington RI Dimensional Plan STAMPED REV1.7.27.23pdf.pdf
+sources/Planner-Sharepoint/2023/08 August 01 2023 Meeting/Preliminary Plan Application - 173R Maple Avenue/PBD 173R Maple Ave rec 06-03-2021.pdf
+sources/Planner-Sharepoint/2023/08 August 01 2023 Meeting/Preliminary Plan Application - 173R Maple Avenue/Permit Application 173R Maple Avenue Barrington RI.pdf
+sources/Planner-Sharepoint/2023/08 August 01 2023 Meeting/Preliminary Plan Application - 173R Maple Avenue/newspaper notice - 173R Maple Avenue - for Aug1st PB mtg.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/3.1 - Planning Board 08-01-2023 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/4.1 - 173R Maple Avenue/173R Maple Ave Elevations 08-18-2023.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/4.1 - 173R Maple Avenue/Materials from 08-01-2023/173R Maple Avenue Plans.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/4.1 - 173R Maple Avenue/Materials from 08-01-2023/173R Maple Preliminary Plan Application.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/4.1 - 173R Maple Avenue/Materials from 08-01-2023/Affidavit of Notice Regarding 173R Maple Avenue 7.28.23.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/4.1 - 173R Maple Avenue/Materials from 08-01-2023/BT-PH Maple Grove Project 1x7.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/4.1 - 173R Maple Avenue/Materials from 08-01-2023/I2309 Barrington RI Dimensional Plan STAMPED REV1.7.27.23pdf.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/4.1 - 173R Maple Avenue/Materials from 08-01-2023/PBD 173R Maple Ave rec 06-03-2021.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/4.1 - 173R Maple Avenue/Materials from 08-01-2023/Permit Application 173R Maple Avenue Barrington RI.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/4.1 - 173R Maple Avenue/Materials from 08-01-2023/newspaper notice - 173R Maple Avenue - for Aug1st PB mtg.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/4.1 - 173R Maple Avenue/Revised Affordable Housing Convenants 173R Maple Ave rec 09-01-2023.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/5.1 - 359 and 361-363 Maple Avenue/361 MAPLE AVE.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/5.1 - 359 and 361-363 Maple Avenue/Admin Subdivision App - 359 Maple Ave.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/5.2 - 3 College Lane/Correspondence re 3 College Ln.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/5.2 - 3 College Lane/Minor Subdivision App - 3 College Ln rec 08-21-2023.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/5.2 - 3 College Lane/SS2612 MINOR SUB AP 15 LOT 84 DRAFT 7_21_23.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/5.3 - 89 Maple Avenue Preapplication Meeting/DOC083023.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/5.4 - 33 Middle Highway (Former Zion Bible College) Preapplication Meeting/Belton Court - JDL Report on Estimate of  School Aged Children and Tax Revenue  - DRAFT - 8-25-2023.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/5.4 - 33 Middle Highway (Former Zion Bible College) Preapplication Meeting/Belton Court - Proposed Master Plan Summary Presentation - DRAFT - 9-05-2023.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/5.4 - 33 Middle Highway (Former Zion Bible College) Preapplication Meeting/DPZ_Board_2023Jan10.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/5.4 - 33 Middle Highway (Former Zion Bible College) Preapplication Meeting/Planning Board 09-05-2023 Minutes FINAL.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/5.4 - 33 Middle Highway (Former Zion Bible College) Preapplication Meeting/Zion Process Write Up FINAL.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/Agenda 09-05-2023 PB FINAL rev 08-30-2023.pdf
+sources/Planner-Sharepoint/2023/09 September 05 2023 Meeting/PB Memo 09-05-2023 rev 08-30-2023.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/3.1 - Consent Agenda/Planning Board 09-05-2023 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/4.1 - 173R Maple Avenue Comprehensive Permit Application (continued from Sept. 5)/08-01-2023 Materials/173R Maple Avenue Plans.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/4.1 - 173R Maple Avenue Comprehensive Permit Application (continued from Sept. 5)/08-01-2023 Materials/173R Maple Preliminary Plan Application.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/4.1 - 173R Maple Avenue Comprehensive Permit Application (continued from Sept. 5)/08-01-2023 Materials/8.31.23 Revised Electrical and Landscaping 173R Maple Ave.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/4.1 - 173R Maple Avenue Comprehensive Permit Application (continued from Sept. 5)/08-01-2023 Materials/Affidavit of Notice Regarding 173R Maple Avenue 7.28.23.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/4.1 - 173R Maple Avenue Comprehensive Permit Application (continued from Sept. 5)/08-01-2023 Materials/BT-PH Maple Grove Project 1x7.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/4.1 - 173R Maple Avenue Comprehensive Permit Application (continued from Sept. 5)/08-01-2023 Materials/I2309 Barrington RI Dimensional Plan STAMPED REV1.7.27.23pdf.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/4.1 - 173R Maple Avenue Comprehensive Permit Application (continued from Sept. 5)/08-01-2023 Materials/PBD 173R Maple Ave rec 06-03-2021.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/4.1 - 173R Maple Avenue Comprehensive Permit Application (continued from Sept. 5)/08-01-2023 Materials/Permit Application 173R Maple Avenue Barrington RI.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/4.1 - 173R Maple Avenue Comprehensive Permit Application (continued from Sept. 5)/08-01-2023 Materials/newspaper notice - 173R Maple Avenue - for Aug1st PB mtg.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/4.1 - 173R Maple Avenue Comprehensive Permit Application (continued from Sept. 5)/081723 Maple Ave Exteriors.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/4.1 - 173R Maple Avenue Comprehensive Permit Application (continued from Sept. 5)/173R Maple Ave Elevations 08-18-2023.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/4.1 - 173R Maple Avenue Comprehensive Permit Application (continued from Sept. 5)/8.31.23 Revised Electrical and Landscaping 173R Maple Ave.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/4.1 - 173R Maple Avenue Comprehensive Permit Application (continued from Sept. 5)/AO_checklist_092623.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/4.1 - 173R Maple Avenue Comprehensive Permit Application (continued from Sept. 5)/Affidavit of Notice 173R Maple for 9.5.23 Meeting.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/4.1 - 173R Maple Avenue Comprehensive Permit Application (continued from Sept. 5)/Revised Affordable Housing Convenants 173R Maple Ave rec 09-01-2023.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/5.1 - 2 Seabrook Court Administrative Subdivision/Admin Subdivision App for 2 Seabrook Court.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/5.1 - 2 Seabrook Court Administrative Subdivision/Checklist for 2 SeabrookCt Admin Subdivision.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/5.1 - 2 Seabrook Court Administrative Subdivision/Signed Cert of Completeness 09-11-2023.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/5.2 - 25 Watson Avenue (Town Council Referral)/01 WATSON A25 130.1.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/5.2 - 25 Watson Avenue (Town Council Referral)/23_0824-CMC-FinalSiteScheme.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/5.2 - 25 Watson Avenue (Town Council Referral)/23_0824-CMC-FinalSiteScheme_wLabels.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/5.2 - 25 Watson Avenue (Town Council Referral)/FAQ_230605_monastery.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/5.2 - 25 Watson Avenue (Town Council Referral)/TC 05-05-2023 Minutes Exerpt - Barrington RI - ClerkBase.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/5.2 - 25 Watson Avenue (Town Council Referral)/TM Memo 07-24-2023.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/5.2 - 25 Watson Avenue (Town Council Referral)/TM Memo 09-11-2023.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/6.1 - Use Table/Use Table Memo Draft 06-22-2023.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/6.1 - Use Table/Use Table with PBR and UTR edits.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/Agenda 10-03-2023 PB FINAL.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/Agenda 10-03-2023 PB REVISED_100223 d2_.pdf
+sources/Planner-Sharepoint/2023/10 October 03 2023 Meeting/PB Memo 10-03-2023.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/3.1 - Consent Agenda/173R_MapleAve_PrelimPlanApproval_CompPermit_110723_DRAFT.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/3.1 - Consent Agenda/Planning Board 10-03-2023 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/4.1 - Administrative Subdivision, 22 Briarfield Road/16-057_SURVEYBASE_001-ADMIN_B.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/4.1 - Administrative Subdivision, 22 Briarfield Road/Application and Checklist.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/4.1 - Administrative Subdivision, 22 Briarfield Road/Cert of Completeness 22 Briarfield rev 09-29-2023.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/4.1 - Administrative Subdivision, 22 Briarfield Road/Lubrano - Sale to Talbert.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/5.1 - A-Frames and Banners (Town Council Referral)/TRC DRAFT MINUTES 10-12-2023.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/5.1 - A-Frames and Banners (Town Council Referral)/TownCouncil_Excerpt_Minutes_091123.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/6.1 - Zoning Ordinance Updates/Ad for ZO Amendments - 2023 clean.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/6.1 - Zoning Ordinance Updates/Ordinance 2023-12 Cover Sheet FINAL 10-31-2023.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/6.1 - Zoning Ordinance Updates/TC Memo 10-31-2023 FINAL.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/6.2 - Land Development and Subdivision Regulations Updates/2023 Land Use Update - Legislation as Enacted.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/7.2 - Comprehensive Plan Chapter Assignments/Community Services & Facilities - Ch 4 of CompPlan 2015.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/7.2 - Comprehensive Plan Chapter Assignments/Land Use - Ch 9 of CompPlan 2015.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/7.3 - Process Discussion for 33 Middle Highway (NO APPLICATION)/Checklist Master-Plan for Major Land Developments and Subdivisions (PDF).pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/7.3 - Process Discussion for 33 Middle Highway (NO APPLICATION)/MTAP_Checklist_RI-Major-Application_Final_20230916.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/7.3 - Process Discussion for 33 Middle Highway (NO APPLICATION)/Public Comment submitted 10-03-2023/Email from MHanchar re Zion rec 10-03-2023.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/7.3 - Process Discussion for 33 Middle Highway (NO APPLICATION)/Zion Process Write Up FINAL rev 10-24-2023.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/9.1 - APA-RI Membership for Planning Board Members/Memo from APARI.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/Agenda 11-07-2023 PB FINAL.pdf
+sources/Planner-Sharepoint/2023/11 November 07 2023 Meeting/PB Memo 11-07-2023.pdf
+sources/Planner-Sharepoint/2023/11 November 27 2023 Special Meeting/3.1 - Consent Agenda/Planning Board 11-07-2023 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2023/11 November 27 2023 Special Meeting/4.1 - Zoning Ordinance Amendments/BA1328-185c Dimensional Regulations Table.pdf
+sources/Planner-Sharepoint/2023/11 November 27 2023 Special Meeting/4.1 - Zoning Ordinance Amendments/Bacher_Memo_101023_Zoning Ordinance Revisions - Special Use Conditions Draft.pdf
+sources/Planner-Sharepoint/2023/11 November 27 2023 Special Meeting/4.1 - Zoning Ordinance Amendments/Memorandums from Libra Planners/LIBRA_Barrington_DPR-LDP.pdf
+sources/Planner-Sharepoint/2023/11 November 27 2023 Special Meeting/4.1 - Zoning Ordinance Amendments/Memorandums from Libra Planners/LIBRA_Barrington_SSL.pdf
+sources/Planner-Sharepoint/2023/11 November 27 2023 Special Meeting/4.1 - Zoning Ordinance Amendments/Zoning Ordinance Amendment Drafts/CLEAN - COMPLETE CHAPTER TRACK CHANGES 11-20 - 185 Zoning UTR edits IG edits from PB 10-04 AGoins 10-30 (4).pdf
+sources/Planner-Sharepoint/2023/11 November 27 2023 Special Meeting/4.1 - Zoning Ordinance Amendments/Zoning Ordinance Amendment Drafts/SIMPLE MARKUP - COMPLETE CHAPTER TRACK CHANGES 11-20 - 185 Zoning UTR edits IG edits from PB 10-04 AGoins 10-30 (4).pdf
+sources/Planner-Sharepoint/2023/11 November 27 2023 Special Meeting/4.1 - Zoning Ordinance Amendments/Zoning Ordinance Amendments Memo for PB 11-20-2023.pdf
+sources/Planner-Sharepoint/2023/11 November 27 2023 Special Meeting/Agenda 11-27-2023 PB FINAL.pdf
+sources/Planner-Sharepoint/2023/12 December 05 2023 Meeting/2024 Planning Board-TRC Schedule and Deadline Table rev 11-15-2023.pdf
+sources/Planner-Sharepoint/2023/12 December 05 2023 Meeting/3.1 - Consent Agenda/Planning Board 11-27-2023 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2023/12 December 05 2023 Meeting/4.1 - Amendments to Land Development and Subdivision Regulations/Ad for Ch 200 Amendments - 2023 CLEAN.pdf
+sources/Planner-Sharepoint/2023/12 December 05 2023 Meeting/4.1 - Amendments to Land Development and Subdivision Regulations/DRAFT Regulations/11-25 VERSIONS OF CH 200/CLEANCOPY - 2023.11.25_ Barrington Planning Board Regulations.pdf
+sources/Planner-Sharepoint/2023/12 December 05 2023 Meeting/4.1 - Amendments to Land Development and Subdivision Regulations/DRAFT Regulations/11-25 VERSIONS OF CH 200/MARKUPVERSION2023.11.25_ Barrington Planning Board Regulations.pdf
+sources/Planner-Sharepoint/2023/12 December 05 2023 Meeting/4.1 - Amendments to Land Development and Subdivision Regulations/DRAFT Regulations/FOR REVIEW 12-05 REVIEW - MARKUPVERSION 2023.11.30_Barrington Planning Board Regs.pdf
+sources/Planner-Sharepoint/2023/12 December 05 2023 Meeting/5.1 - 33 Middle Hwy Process Discussion and Effects of New Legislation/LBacher Checklist Comments with New Checklist Markup.pdf
+sources/Planner-Sharepoint/2023/12 December 05 2023 Meeting/5.1 - 33 Middle Hwy Process Discussion and Effects of New Legislation/LBacher Checklist Comments.pdf
+sources/Planner-Sharepoint/2023/12 December 05 2023 Meeting/5.1 - 33 Middle Hwy Process Discussion and Effects of New Legislation/MTAP_Checklist_RI-Major-Application_Final_20230916.pdf
+sources/Planner-Sharepoint/2023/12 December 05 2023 Meeting/5.1 - 33 Middle Hwy Process Discussion and Effects of New Legislation/Zion Process Write Up FINAL rev 10-24-2023.pdf
+sources/Planner-Sharepoint/2023/12 December 05 2023 Meeting/5.3 - Comprehensive Plan Chapter Assignments/Community Services and Facilities - Ch 4 of CompPlan 2015.pdf
+sources/Planner-Sharepoint/2023/12 December 05 2023 Meeting/5.3 - Comprehensive Plan Chapter Assignments/Comp Plan State Requirements 2021.pdf
+sources/Planner-Sharepoint/2023/12 December 05 2023 Meeting/5.3 - Comprehensive Plan Chapter Assignments/Land Use - Ch 9 of CompPlan 2015.pdf
+sources/Planner-Sharepoint/2023/12 December 05 2023 Meeting/Agenda 12-05-2023 PB FINAL.pdf
+sources/Planner-Sharepoint/2023/12 December 05 2023 Meeting/PB Memo 12-05-2023.pdf
+sources/Planner-Sharepoint/2024/01 January 09 2024 Meeting/3.1 - Consent Agenda/Planning Board 12-05-2023 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2024/01 January 09 2024 Meeting/4.1 - Checklists/Board Member Comments/LBacher Checklist Comments rec 12-07-2023.pdf
+sources/Planner-Sharepoint/2024/01 January 09 2024 Meeting/4.1 - Checklists/Board Member Comments/RGodfrey - Memo on NOtes for Minutes rec 12-07-2023.pdf
+sources/Planner-Sharepoint/2024/01 January 09 2024 Meeting/4.1 - Checklists/Checklists from Libra Planners/Attachment 1 - Barrington - DRAFT Pre-Application Checklist.pdf
+sources/Planner-Sharepoint/2024/01 January 09 2024 Meeting/4.1 - Checklists/Checklists from Libra Planners/Attachment 2 -Barrington - DRAFT Subdivision Checklist.pdf
+sources/Planner-Sharepoint/2024/01 January 09 2024 Meeting/4.1 - Checklists/Checklists from Libra Planners/Attachment 3 - Barrington - DRAFT Development Checklist.pdf
+sources/Planner-Sharepoint/2024/01 January 09 2024 Meeting/4.1 - Checklists/Current Planning Board Applications/Application for Development Plan Review rev 2.07.pdf
+sources/Planner-Sharepoint/2024/01 January 09 2024 Meeting/4.1 - Checklists/Current Planning Board Applications/Subdivision Land Development Projects Application (DOCX)_202211071441294184.pdf
+sources/Planner-Sharepoint/2024/01 January 09 2024 Meeting/5.1 - 33 Middle Hwy Process Discussion/LMI - law23310.pdf
+sources/Planner-Sharepoint/2024/01 January 09 2024 Meeting/5.1 - 33 Middle Hwy Process Discussion/LMI Housing Act Effective 1-1-24 [excerpts].pdf
+sources/Planner-Sharepoint/2024/01 January 09 2024 Meeting/5.1 - 33 Middle Hwy Process Discussion/RGodfrey - Memo on NOtes for Minutes rec 12-07-2023.pdf
+sources/Planner-Sharepoint/2024/01 January 09 2024 Meeting/5.2 - Annual Report/2023_PB_Annual B and C report form_.pdf
+sources/Planner-Sharepoint/2024/01 January 09 2024 Meeting/Agenda 01-09-2024 PB FINAL.pdf
+sources/Planner-Sharepoint/2024/01 January 09 2024 Meeting/PB Memo 01-09-2024.pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/3 - Consent Agenda/2022RIHOUSING DATA/2022 Barrington Municipal Sheet.pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/3 - Consent Agenda/2022RIHOUSING DATA/2022 LMIH Chart- Municipal Transmittal Letter - Final.pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/3 - Consent Agenda/2022RIHOUSING DATA/2022 Low Mod Chart Short Form-final.pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/3 - Consent Agenda/2022RIHOUSING DATA/2023.08.04 Final 2022 Fee in Lieu Chart.pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/3 - Consent Agenda/Planning Board 01-09-2023 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/4.1 - CIP/CIP_FY2025_ForPlanningBoardReview_020124.pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/4.1 - CIP/FY2025_CIP_SummaryTable_01-30-2024_PBPacket.pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/4.1 - CIP/Harbor - FY25 CIP Project Dept Input Form.pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/4.2 - CompPermit Training/LMI - law23310.pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/4.2 - CompPermit Training/LMI Housing Act Effective 1-1-24 [excerpts].pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/4.2 - CompPermit Training/MTAP_FlowChart_Comp-Permit_Review_Final_20230918.pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/4.2 - CompPermit Training/Pages from New Zoning and Subdivision Rules for Planning Boards 01-03-2024 d2 (002).pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/5.2 - ByLaws/PROPOSED 2024 REVISIONS - LIASION - Planning Board By-laws rules of Procedure adopted February 2022.pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/5.3 - CompPlan (Standing Agenda Item)/Ch37_Planning Board.pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/5.3 - CompPlan (Standing Agenda Item)/CompPlan Links for PB Memo.pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/Agenda 02-06-2024 PB FINAL.pdf
+sources/Planner-Sharepoint/2024/02 February 06 2024 Meeting/PB ExecutiveSummaryMemo 02-06-2024.pdf
+sources/Planner-Sharepoint/2024/03 March 05 2024 Meeting/3 - Consent Agenda/Planning Board 02-06-2024 Minutes DRAFT .pdf
+sources/Planner-Sharepoint/2024/03 March 05 2024 Meeting/4.1 - Concept Review - PreApplication for 33 Middle Highway/Additional Materials - introduced 03-05-2024/Barrington Proposed 2024 budget.pdf
+sources/Planner-Sharepoint/2024/03 March 05 2024 Meeting/4.1 - Concept Review - PreApplication for 33 Middle Highway/Additional Materials - introduced 03-05-2024/Estimated Fiscal Imapct - 3-5-2024.pdf
+sources/Planner-Sharepoint/2024/03 March 05 2024 Meeting/4.1 - Concept Review - PreApplication for 33 Middle Highway/Additional Materials - introduced 03-05-2024/Estimated Population and School Aged Children - 3-5-2024.pdf
+sources/Planner-Sharepoint/2024/03 March 05 2024 Meeting/4.1 - Concept Review - PreApplication for 33 Middle Highway/Attachment A - Belton Court- Design Guidelines - DRAFT - WITH PAGE NUMBERS.pdf
+sources/Planner-Sharepoint/2024/03 March 05 2024 Meeting/4.1 - Concept Review - PreApplication for 33 Middle Highway/Belton Court - Project Overview - DRAFT  WITH PAGE NUMBERS.pdf
+sources/Planner-Sharepoint/2024/03 March 05 2024 Meeting/4.1 - Concept Review - PreApplication for 33 Middle Highway/PROCEDURES - NOTICE OF DEMOLITION.pdf
+sources/Planner-Sharepoint/2024/03 March 05 2024 Meeting/4.1 - Concept Review - PreApplication for 33 Middle Highway/Senior Residential Village District.pdf
+sources/Planner-Sharepoint/2024/03 March 05 2024 Meeting/5.1 - Comprehensive Plan (Standing Item)/2024_Feb5_TCMemo_HousingChapter-Stantec.pdf
+sources/Planner-Sharepoint/2024/03 March 05 2024 Meeting/5.1 - Comprehensive Plan (Standing Item)/Housing Qualifications-Sample Work.pdf
+sources/Planner-Sharepoint/2024/03 March 05 2024 Meeting/5.2 - Planning Board By-Laws/PROPOSED 2024 REVISIONS - LIASION - Planning Board By-laws rules of Procedure adopted February 2022.pdf
+sources/Planner-Sharepoint/2024/03 March 05 2024 Meeting/7 - Comments/Ex Parte Comms Excerpt - Resource.pdf
+sources/Planner-Sharepoint/2024/03 March 05 2024 Meeting/7 - Comments/Planning Board.pdf
+sources/Planner-Sharepoint/2024/03 March 05 2024 Meeting/Agenda 03-05-2024 PB FINAL.pdf
+sources/Planner-Sharepoint/2024/03 March 05 2024 Meeting/PB Memo 03-05-2024.pdf
+sources/Planner-Sharepoint/2024/06 June 04 2024 Meeting/3 - Consent Agenda/Planning Board 03-05-2024 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2024/06 June 04 2024 Meeting/3 - Consent Agenda/Planning Board 05-07-2024 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2024/06 June 04 2024 Meeting/4.1 - TRC Amendments/SubRegs Amendments re TRC.pdf
+sources/Planner-Sharepoint/2024/06 June 04 2024 Meeting/5.1 - Comp Plan Update (Standing Agenda Item)/Barrington Housing Study_Draft-PRESENTATION.pdf
+sources/Planner-Sharepoint/2024/06 June 04 2024 Meeting/5.1 - Comp Plan Update (Standing Agenda Item)/Barrington Housing Study_Draft_May 8.pdf
+sources/Planner-Sharepoint/2024/06 June 04 2024 Meeting/5.1 - Comp Plan Update (Standing Agenda Item)/Housing Study Feedback and Analysis - MBruce, 05-31-2024.pdf
+sources/Planner-Sharepoint/2024/06 June 04 2024 Meeting/Agenda 06-04-2024 PB FINAL.pdf
+sources/Planner-Sharepoint/2024/06 June 04 2024 Meeting/PB Memo 06-04-2024.pdf
+sources/Planner-Sharepoint/2024/07 July 09 2024 Meeting/3 Consent Agenda/Planning Board 03-05-2024 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2024/07 July 09 2024 Meeting/3 Consent Agenda/Planning Board 05-07-2024 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2024/07 July 09 2024 Meeting/3 Consent Agenda/Planning Board 06-04-2024 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2024/07 July 09 2024 Meeting/4 New Business/4.1 Comprehensive Plan Updates/4.1.1 Presentation with Michael Baker - Comprehensive Plan Overview/Planning_Board_Meeting_1.pdf
+sources/Planner-Sharepoint/2024/07 July 09 2024 Meeting/4 New Business/4.1 Comprehensive Plan Updates/4.1.2 Presentation with BPAC and F&O on Complete Streets Implementation Plan/Barrington Complete Streets Plan Update- Planning Board Briefing 2024 07 09.pdf
+sources/Planner-Sharepoint/2024/07 July 09 2024 Meeting/4 New Business/4.1 Comprehensive Plan Updates/4.1.3 Other Discussion on Chapter Related Updates/Site Readiness Grant Excerpt for PB.pdf
+sources/Planner-Sharepoint/2024/07 July 09 2024 Meeting/5 Public Hearing/SubRegs Amendments re TRC d2 redlined.pdf
+sources/Planner-Sharepoint/2024/07 July 09 2024 Meeting/5 Public Hearing/TRC  DRAFT MINUTES 6-13-2024.pdf
+sources/Planner-Sharepoint/2024/07 July 09 2024 Meeting/6 Comments/2024 Land Use Update - Barr.pdf
+sources/Planner-Sharepoint/2024/07 July 09 2024 Meeting/6 Comments/Attachment for Land Use Memo 2024.pdf
+sources/Planner-Sharepoint/2024/07 July 09 2024 Meeting/Agenda 07-09-2024 PB FINAL.pdf
+sources/Planner-Sharepoint/2024/07 July 09 2024 Meeting/PB Memo 07-09-2024.pdf
+sources/Planner-Sharepoint/2024/08 August 06 2024 Meeting/3.1 Consent Agenda/Planning Board 07-09-2024 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2024/08 August 06 2024 Meeting/4.1 Concept Review for 25 Watson Avenue Comprehensive Permit/24_0805 25W Concept Package.pdf
+sources/Planner-Sharepoint/2024/08 August 06 2024 Meeting/5.1 3 College Lane - Major Change to Preliminary Plan Request/3 College Lane - Minor Subdivision App and Prelim Plan.pdf
+sources/Planner-Sharepoint/2024/08 August 06 2024 Meeting/5.1 3 College Lane - Major Change to Preliminary Plan Request/3 College Lane Major Change Request.pdf
+sources/Planner-Sharepoint/2024/08 August 06 2024 Meeting/5.1 3 College Lane - Major Change to Preliminary Plan Request/BT-3 College Lane 1x5.pdf
+sources/Planner-Sharepoint/2024/08 August 06 2024 Meeting/5.1 3 College Lane - Major Change to Preliminary Plan Request/Letter sent to HJudge sent 06-10-2024.pdf
+sources/Planner-Sharepoint/2024/08 August 06 2024 Meeting/5.1 3 College Lane - Major Change to Preliminary Plan Request/newspaper notice - 3 College Ln.pdf
+sources/Planner-Sharepoint/2024/08 August 06 2024 Meeting/Agenda 08-06-2024 PB FINAL.pdf
+sources/Planner-Sharepoint/2024/08 August 06 2024 Meeting/PB Memo 08-06-2024.pdf
+sources/Planner-Sharepoint/2024/09 September 10 2024 Meeting/3.1 Planning Board 08-06-2024 Minutes DRAFT2.pdf
+sources/Planner-Sharepoint/2024/09 September 10 2024 Meeting/3.2 - RIHousing 2023 Low and Moderate Income Housing/2023 Final Chart 08-15-2024 (2).pdf
+sources/Planner-Sharepoint/2024/09 September 10 2024 Meeting/3.2 - RIHousing 2023 Low and Moderate Income Housing/2023 LMIH Chart Municipal Letter - Final.pdf
+sources/Planner-Sharepoint/2024/09 September 10 2024 Meeting/3.2 - RIHousing 2023 Low and Moderate Income Housing/2024.08.15 - 2023 Fee in Lieu Chart.pdf
+sources/Planner-Sharepoint/2024/09 September 10 2024 Meeting/3.2 - RIHousing 2023 Low and Moderate Income Housing/Barrington Municipal Sheet 2023 v.2.pdf
+sources/Planner-Sharepoint/2024/09 September 10 2024 Meeting/4.1 3 College Lane - Major Change to Preliminary Plan Request/3 College Lane - Minor Subdivision App and Prelim Plan.pdf
+sources/Planner-Sharepoint/2024/09 September 10 2024 Meeting/4.1 3 College Lane - Major Change to Preliminary Plan Request/3 College Lane Major Change Request.pdf
+sources/Planner-Sharepoint/2024/09 September 10 2024 Meeting/4.1 3 College Lane - Major Change to Preliminary Plan Request/BT-3 College Lane 1x5.pdf
+sources/Planner-Sharepoint/2024/09 September 10 2024 Meeting/4.1 3 College Lane - Major Change to Preliminary Plan Request/Letter sent to HJudge sent 06-10-2024.pdf
+sources/Planner-Sharepoint/2024/09 September 10 2024 Meeting/4.1 3 College Lane - Major Change to Preliminary Plan Request/newspaper notice - 3 College Ln.pdf
+sources/Planner-Sharepoint/2024/09 September 10 2024 Meeting/5.3 Overview Barrington 2050_CPP_072324.pdf
+sources/Planner-Sharepoint/2024/09 September 10 2024 Meeting/PB Memo 09-10-2024.pdf
+sources/Planner-Sharepoint/2024/10 October 01 2024 Meeting/88 Maple Avenue - Comprehensive Permit PrelimPlan Submittal/App as Certified Complete 07-29-2024/Combined Lee 2 as certified complete.pdf
+sources/Planner-Sharepoint/2024/10 October 01 2024 Meeting/88 Maple Avenue - Comprehensive Permit PrelimPlan Submittal/App as Certified Complete 07-29-2024/Ed Lee Cross-Easement Deed 7.24 PDF.pdf
+sources/Planner-Sharepoint/2024/10 October 01 2024 Meeting/88 Maple Avenue - Comprehensive Permit PrelimPlan Submittal/App as Certified Complete 07-29-2024/I2326 Maple Avenue Barrington ALT2-Preliminary Plat.pdf
+sources/Planner-Sharepoint/2024/10 October 01 2024 Meeting/88 Maple Avenue - Comprehensive Permit PrelimPlan Submittal/DPW recommendation rec 09-17-2024.pdf
+sources/Planner-Sharepoint/2024/10 October 01 2024 Meeting/88 Maple Avenue - Comprehensive Permit PrelimPlan Submittal/FireDept recommendation rec 09-17-2024.pdf
+sources/Planner-Sharepoint/2024/10 October 01 2024 Meeting/88 Maple Avenue - Comprehensive Permit PrelimPlan Submittal/Supplemental Materials post DRC/I2326 Maple Avenue Barrington PLAT.pdf
+sources/Planner-Sharepoint/2024/10 October 01 2024 Meeting/88 Maple Avenue - Comprehensive Permit PrelimPlan Submittal/Supplemental Materials post DRC/IMG_4826.pdf
+sources/Planner-Sharepoint/2024/10 October 01 2024 Meeting/88 Maple Avenue - Comprehensive Permit PrelimPlan Submittal/Supplemental Materials post DRC/Pages from 20240903144506132.pdf
+sources/Planner-Sharepoint/2024/10 October 01 2024 Meeting/88 Maple Avenue - Comprehensive Permit PrelimPlan Submittal/Supplemental Materials post DRC/TRC  DRAFT MINUTES 08-26-2024.pdf
+sources/Planner-Sharepoint/2024/10 October 01 2024 Meeting/CompPlan Update/Barrington Housing Study_Draft-HBoT_PRESENTATION.pdf
+sources/Planner-Sharepoint/2024/10 October 01 2024 Meeting/CompPlan Update/DO NOT USE HBoT M2_Presentation_Barrington_240814.pdf
+sources/Planner-Sharepoint/2024/10 October 01 2024 Meeting/CompPlan Update/Planning_Board_Meeting_2.pdf
+sources/Planner-Sharepoint/2024/10 October 01 2024 Meeting/CompPlan Update/USE THIS ONE HBoT M2_Presentation_Barrington_240821.pdf
+sources/Planner-Sharepoint/2024/10 October 01 2024 Meeting/PB Memo 10-01-2024.pdf
+sources/Planner-Sharepoint/2024/10 October 01 2024 Meeting/Planning Board 09-10-2024 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2024/11 November 05 2024 Meeting/3 Consent Agenda/Planning Board 10-01-2024 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2024/11 November 05 2024 Meeting/4 New Business/Comprehensive Plan/DRAFT_HousingElement_Chapter_Barrington_241010_HD3_CommentsFromHousingBoard_Oct2024.pdf
+sources/Planner-Sharepoint/2024/11 November 05 2024 Meeting/4 New Business/Comprehensive Plan/Survey Results - PB.pdf
+sources/Planner-Sharepoint/2024/11 November 05 2024 Meeting/4 New Business/Zoning Ordinance Amendments/2024 Land Use Update - Barr.pdf
+sources/Planner-Sharepoint/2024/11 November 05 2024 Meeting/4 New Business/Zoning Ordinance Amendments/ADU - Barrington.pdf
+sources/Planner-Sharepoint/2024/11 November 05 2024 Meeting/4 New Business/Zoning Ordinance Amendments/DPR - Barrington (002).pdf
+sources/Planner-Sharepoint/2024/11 November 05 2024 Meeting/4 New Business/Zoning Ordinance Amendments/Inclusionary Zoning 2024 - Barrington (002).pdf
+sources/Planner-Sharepoint/2024/11 November 05 2024 Meeting/4 New Business/Zoning Ordinance Amendments/Substandard Lots - Barrington (002).pdf
+sources/Planner-Sharepoint/2024/11 November 05 2024 Meeting/5 Comments/2025 Planning Board Schedule and Deadline DRAFT.pdf
+sources/Planner-Sharepoint/2024/11 November 05 2024 Meeting/Agenda 11-05-2024 PB FINAL.pdf
+sources/Planner-Sharepoint/2024/11 November 05 2024 Meeting/PB Memo 11-05-2024.pdf
+sources/Planner-Sharepoint/2024/12 December 03 2024 Meeting/Planning Board 11-05-2024 Minutes draft.pdf
+sources/Planner-Sharepoint/2024/12 December 03 2024 Meeting/Zoning Ordinance Amendments/2024 Land Use Update - Barr.pdf
+sources/Planner-Sharepoint/2024/12 December 03 2024 Meeting/Zoning Ordinance Amendments/ADU - Barrington.pdf
+sources/Planner-Sharepoint/2024/12 December 03 2024 Meeting/Zoning Ordinance Amendments/DPR - Barrington (002).pdf
+sources/Planner-Sharepoint/2024/12 December 03 2024 Meeting/Zoning Ordinance Amendments/Inclusionary Zoning 2024 - Barrington (002).pdf
+sources/Planner-Sharepoint/2024/12 December 03 2024 Meeting/Zoning Ordinance Amendments/Substandard Lots - Barrington (002).pdf
+sources/Planner-Sharepoint/2024/12 December 03 2024 Meeting/trc applicant.pdf
+sources/Planner-Sharepoint/2025/01. January 7, 2025/2024_Dec30_TCMemo_RequestZoningAmendment.pdf
+sources/Planner-Sharepoint/2025/01. January 7, 2025/AdminSub_AP23Lot323_RECORDED_APPROVAL_30Dec2024.pdf
+sources/Planner-Sharepoint/2025/01. January 7, 2025/JeffreyBardel_TRC_Application_11Nov2024.pdf
+sources/Planner-Sharepoint/2025/01. January 7, 2025/JoeMerrill_TRC_Application_02Dec2024.pdf
+sources/Planner-Sharepoint/2025/01. January 7, 2025/Planning Board 11-05-2024 Minutes draft.pdf
+sources/Planner-Sharepoint/2025/01. January 7, 2025/PlanningBoardAgenda07Jan2025.pdf
+sources/Planner-Sharepoint/2025/01. January 7, 2025/PlanningBoardAgenda07Jan2025CORRECTED.pdf
+sources/Planner-Sharepoint/2025/01. January 7, 2025/RICC - Unified Development Review - Master Plan Application/23.0187 RICC MLD Master Full Package.pdf
+sources/Planner-Sharepoint/2025/01. January 7, 2025/RICC - Unified Development Review - Master Plan Application/23.0187 RICC Special Use Full Package.pdf
+sources/Planner-Sharepoint/2025/01. January 7, 2025/RICC - Unified Development Review - Master Plan Application/LegalNotice_RICC_UDR_Master_07Jan2025.pdf
+sources/Planner-Sharepoint/2025/01. January 7, 2025/Zoning Ordinance Amendments/2024 Land Use Update - Barr.pdf
+sources/Planner-Sharepoint/2025/01. January 7, 2025/Zoning Ordinance Amendments/ADU - Barrington.pdf
+sources/Planner-Sharepoint/2025/01. January 7, 2025/Zoning Ordinance Amendments/DPR - Barrington (002).pdf
+sources/Planner-Sharepoint/2025/01. January 7, 2025/Zoning Ordinance Amendments/Inclusionary Zoning 2024 - Barrington (002).pdf
+sources/Planner-Sharepoint/2025/01. January 7, 2025/Zoning Ordinance Amendments/Substandard Lots - Barrington (002).pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/1_PlanningBoardAgenda04Feb2025.pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/4a_Zoning Amendments/2024 Land Use Update - Barr.pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/4a_Zoning Amendments/ADU - Barrington.pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/4a_Zoning Amendments/DPR - Barrington (002).pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/4a_Zoning Amendments/Inclusionary Zoning 2024 - Barrington (002).pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/4a_Zoning Amendments/Substandard Lots - Barrington (002).pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/4b_Comprehensive Plan/4b_Barrington Today Draft - 013025.pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/4b_Comprehensive Plan/4b_CompPlan_FebSchedule_MBI_29Jan2025.pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/4b_Comprehensive Plan/4b_Email_MBI_BarringtonToday.pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/4b_Comprehensive Plan/4b_REVISED_DRAFT_HousingElement_Chapter_Barrington_241220 PH.pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/5a_PB_Memo_TRC_ReestablishMembershipAndTerms_29Jan2025.pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/5b_PB_Memo_BaySpringCrossingCondoAssoc_ZoningAmend_FindingsRecommendatins_29Jan2025.pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/5c_Barr Bike Ped Prioritized Projects Matrix 2025 01 21.pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/5c_Informational Letter to Muncipalities -STIP Background FFY26-35.pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/5c_STIP_2022_2031_Revision15_MunicipalityProjectList_06Jan2025.pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/5c_STIP_FrameworkForProjectPriority_29Jan2025.pdf
+sources/Planner-Sharepoint/2025/02. February 4, 2025/AdminDecision_173R_Maple_AP23Lot325_FinalPlan_WrittenDecisionRECORDED_13Jan2025.pdf
+sources/Planner-Sharepoint/2025/03. February 13, 2025 CIP Subcommittee/3. February 13, 2025/DRAFT_FY26_CIP_ForSubcommittee_06Feb2025.pdf
+sources/Planner-Sharepoint/2025/03. February 13, 2025 CIP Subcommittee/3. February 13, 2025/agenda 02-13-25 PB CIP Committee.pdf
+sources/Planner-Sharepoint/2025/04. February 18, 2025 SP Meeting/Agenda 02-18-2025 SP PB.pdf
+sources/Planner-Sharepoint/2025/04. February 18, 2025 SP Meeting/FY2026_CIP_SummaryTable_02-13-2025_CIP Sub-com.pdf
+sources/Planner-Sharepoint/2025/05. March 4, 2025/1. Agenda March 4 2025 PB.pdf
+sources/Planner-Sharepoint/2025/05. March 4, 2025/3.a Planning Board 01-07-2025 Minutes temp draft.pdf
+sources/Planner-Sharepoint/2025/05. March 4, 2025/3.c Planning Board CIP Meeting Minutes 2-13-25 DRAFT.pdf
+sources/Planner-Sharepoint/2025/05. March 4, 2025/3.d 02-18-2025 SP PB minutes draft.pdf
+sources/Planner-Sharepoint/2025/05. March 4, 2025/4.a Zoning Amendments/2024 Land Use Update - Barr.pdf
+sources/Planner-Sharepoint/2025/05. March 4, 2025/4.a Zoning Amendments/ADU - Barrington.pdf
+sources/Planner-Sharepoint/2025/05. March 4, 2025/4.a Zoning Amendments/DPR - Barrington (002).pdf
+sources/Planner-Sharepoint/2025/05. March 4, 2025/4.a Zoning Amendments/Inclusionary Zoning 2024 - Barrington (002).pdf
+sources/Planner-Sharepoint/2025/05. March 4, 2025/4.a Zoning Amendments/Substandard Lots - Barrington (002).pdf
+sources/Planner-Sharepoint/2025/05. March 4, 2025/4.b i._REVISED_DRAFT_HousingElement_Chapter_Barrington_241220 PH.pdf
+sources/Planner-Sharepoint/2025/05. March 4, 2025/4.b ii. Barrington Today Draft - 013025.pdf
+sources/Planner-Sharepoint/2025/05. March 4, 2025/4.b iii. Connected, Accessible Neighborhoods Working Draft Feb14_2025.pdf
+sources/Planner-Sharepoint/2025/06. April 8, 2025/PB 04-08-2025 Agenda FINAL.pdf
+sources/Planner-Sharepoint/2025/06. April 8, 2025/PB Minutes 02-04-25 DRAFT.pdf
+sources/Planner-Sharepoint/2025/06. April 8, 2025/PB Minutes 03-04-2025 DRAFT.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/1. PB 05-06-2025 Agenda FINAL.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/165 New Meadow Rd individual documents/4. b. 165 New Meadow Rd - App PP - Full Packet.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/165 New Meadow Rd individual documents/Cert of Incompleteness 165 New Meadow Rd 11-12-2024.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/165 New Meadow Rd individual documents/cert completeness 165_New_Meadow_FINAL_signed.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/2. PB Memo 05-06-2025.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/3. a. PB 03-04-2025 Minutes DRAFT w edits.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/3. b. PB 04-08-2025 Minutes DRAFT w edits.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/3. c. PB 01-07-2025 Minutes FINAL.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/4. a. RICC Special Use Full Package.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/4. a. RICC complete PP documents.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/4. b. 165 New Meadow RD complete Packet 05-06.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/5. Hist and Cultural HJK edit.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/5. Housing element 2025 - Clean 3-30-25 ph.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/5. Natural Resources HJK edit.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/RICC individual documents/Certificate of Completeness - RICC UDR PP - signed.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/RICC individual documents/Planning Board 01-07-2025 Minutes FINAL.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/RICC individual documents/RICC Full Preliminary Package 3-4-25.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/RICC individual documents/RICC Master Plan Decision for UDR_ RECORDED.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/RICC individual documents/RICC PP REVison package 4-9-25.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/RICC individual documents/RICC sewer capacity email.pdf
+sources/Planner-Sharepoint/2025/07. May 6, 2025/RICC individual documents/TRC Minutes DRAFT  04-02-25.pdf
+sources/Planner-Sharepoint/2025/08. June 3, 2025/1. PB 06-03-2025 Agenda FINAL.pdf
+sources/Planner-Sharepoint/2025/08. June 3, 2025/2. PB Memo 06-03-2025.pdf
+sources/Planner-Sharepoint/2025/08. June 3, 2025/3. PB 05-06-2025 Minutes_DRAFT.pdf
+sources/Planner-Sharepoint/2025/08. June 3, 2025/4. (continued to July 1, 2025)89 Maple Ave - Comp Permit - PP/89 Maple Ave - complete PP Applicatioin 4-10-25.pdf
+sources/Planner-Sharepoint/2025/08. June 3, 2025/4. (continued to July 1, 2025)89 Maple Ave - Comp Permit - PP/LOE - Mancino Property, Barrington, FINAL (Purchase), 1-17-2024 v3.pdf
+sources/Planner-Sharepoint/2025/08. June 3, 2025/4. (continued to July 1, 2025)89 Maple Ave - Comp Permit - PP/TRC Minutes DRAFT_ 05-15-2025.pdf
+sources/Planner-Sharepoint/2025/08. June 3, 2025/4. (continued to July 1, 2025)89 Maple Ave - Comp Permit - PP/cert completeness - PP - 89 Maple Ave SIGNED.pdf
+sources/Planner-Sharepoint/2025/08. June 3, 2025/4. (continued to July 1, 2025)89 Maple Ave - Comp Permit - PP/cert of incompleteness 89 Maple Ave FINAL - SIGNED.pdf
+sources/Planner-Sharepoint/2025/08. June 3, 2025/5. Parcel Sizes_Range.pdf
+sources/Planner-Sharepoint/2025/08. June 3, 2025/6. ii. ECONOMIC DEVELOPMENT 2025_DRAFT_Comments.pdf
+sources/Planner-Sharepoint/2025/08. June 3, 2025/6. iii. Outdoor Recreation (HJK Edit).pdf
+sources/Planner-Sharepoint/2025/08. June 3, 2025/7.b.2. Memo re BHS turf field 5-28-25.pdf
+sources/Planner-Sharepoint/2025/08. June 3, 2025/7.b.2. Memo re PB Review of School Construction Project 5-12-2025.pdf
+sources/Planner-Sharepoint/2025/09. July 1, 2025/1. PB 07-01-2025 Agenda Final Amended.pdf
+sources/Planner-Sharepoint/2025/09. July 1, 2025/3. PB 06-03-2025 Minutes DRAFT edited.pdf
+sources/Planner-Sharepoint/2025/09. July 1, 2025/4.b. LRTP_2050_main_draft.pdf
+sources/Planner-Sharepoint/2025/09. July 1, 2025/5.a. 89 Maple Ave Comp Permit Withdrawl.pdf
+sources/Planner-Sharepoint/2025/09. July 1, 2025/5.b. ii. ECONOMIC DEVELOPMENT 2025_DRAFT_Comments.pdf
+sources/Planner-Sharepoint/2025/09. July 1, 2025/5.b. iii. Outdoor Recreation (HJK Edit).pdf
+sources/Planner-Sharepoint/2025/10. July 31, 2025 SP Meeting - Workshop/2025 Land Use Legislation - Public Laws.pdf
+sources/Planner-Sharepoint/2025/10. July 31, 2025 SP Meeting - Workshop/2025 Land Use Legislation - Quick Reference Chart.pdf
+sources/Planner-Sharepoint/2025/10. July 31, 2025 SP Meeting - Workshop/2025 Land Use Update - Enacted Legislation - Barrington.pdf
+sources/Planner-Sharepoint/2025/10. July 31, 2025 SP Meeting - Workshop/2025_Legislative Summary _FINAL_0.pdf
+sources/Planner-Sharepoint/2025/10. July 31, 2025 SP Meeting - Workshop/Agenda 07-31-2025 SP PB_FINAL.pdf
+sources/Planner-Sharepoint/2025/10. July 31, 2025 SP Meeting - Workshop/Barrington Planning Board –Training.pdf
+sources/Planner-Sharepoint/2025/11. September 9, 2025/1. PB 09-09-2025 Agenda Final.pdf
+sources/Planner-Sharepoint/2025/11. September 9, 2025/3.a.i.  PB Minutes 07-01-2025 D2.pdf
+sources/Planner-Sharepoint/2025/11. September 9, 2025/3.a.ii. SP PB Minutes 07-31-2025_Draft.pdf
+sources/Planner-Sharepoint/2025/11. September 9, 2025/4.a.i. Review of Draft Chapters - Barrington Draft 7_29_25.pdf
+sources/Planner-Sharepoint/2025/11. September 9, 2025/4.a.iv. Asaro - handout letter for 9-8-25 meeting.pdf
+sources/Planner-Sharepoint/2025/11. September 9, 2025/4.a.iv. AsaroLandUseRequest_Mail - Herbert Durfee III - Outlook.pdf
+sources/Planner-Sharepoint/2025/11. September 9, 2025/4.a.iv. Asaro_Existing_Zoning_11Mar2025.pdf
+sources/Planner-Sharepoint/2025/11. September 9, 2025/4.a.iv. Guidebook_13_LandUse.pdf
+sources/Planner-Sharepoint/2025/11. September 9, 2025/4.a.iv. Land Use memo HK.pdf
+sources/Planner-Sharepoint/2025/11. September 9, 2025/5. Burrillville Sues Its Planning Board Over Rejection of Artificial Turf Field at High School - ecoRI News.pdf
+sources/Planner-Sharepoint/2025/11. September 9, 2025/5. Herb Report.pdf
+sources/Planner-Sharepoint/2025/12. October 7, 2025/1. PB 10-7-2025 Agenda_FINAL.pdf
+sources/Planner-Sharepoint/2025/12. October 7, 2025/3.a.i. PB 09-09-2025_Minutes_DRAFT.pdf
+sources/Planner-Sharepoint/2025/12. October 7, 2025/4.a. 2026 Planning Board Schedule-Calendar_Draft.pdf
+sources/Planner-Sharepoint/2025/12. October 7, 2025/4.a. PB 2026 calendar w holidays.pdf
+sources/Planner-Sharepoint/2025/12. October 7, 2025/4.b.i. 66_County_Abutters_Letter_Daniel_Henhman.pdf
+sources/Planner-Sharepoint/2025/12. October 7, 2025/4.b.i. 66_County_UDR_App_Prelim_090825_Packet.pdf
+sources/Planner-Sharepoint/2025/12. October 7, 2025/4.b.ii. Pre App - 25 Watson Ave - Comp Plan.pdf
+sources/Planner-Sharepoint/2025/12. October 7, 2025/5.a.iii. ZoningDistricts_Bottom_30Sept2025.pdf
+sources/Planner-Sharepoint/2025/12. October 7, 2025/5.a.iii. ZoningDistricts_Lower_30Sept2025.pdf
+sources/Planner-Sharepoint/2025/12. October 7, 2025/5.a.iii. ZoningDistricts_Middle_30Sept2025.pdf
+sources/Planner-Sharepoint/2025/12. October 7, 2025/5.a.iii. ZoningDistricts_Upper_30Sept2025.pdf
+sources/Planner-Sharepoint/2025/12. October 7, 2025/6.a. Herb_Report_30Sept2025.pdf
+sources/Planner-Sharepoint/2025/12. October 7, 2025/6.a. RICC 08_19_25 Permit Set Revisions ALL_Final.pdf
+sources/Planner-Sharepoint/2025/12. October 7, 2025/6.a. RICC_UDR_09-08-25_SIGNED_RECORDED_Final_Decision_.pdf
+sources/Planner-Sharepoint/2025/13. October 15, 2025 SP Meeting/1. PB10-15-2025 Agenda DRAFT.pdf
+sources/Planner-Sharepoint/2025/13. October 15, 2025 SP Meeting/3.a.iii. Guidebook_13_LandUse.pdf
+sources/Planner-Sharepoint/2025/13. October 15, 2025 SP Meeting/3.a.iii. ZoningDistricts_Bottom_30Sept2025.pdf
+sources/Planner-Sharepoint/2025/13. October 15, 2025 SP Meeting/3.a.iii. ZoningDistricts_Lower_30Sept2025.pdf
+sources/Planner-Sharepoint/2025/13. October 15, 2025 SP Meeting/3.a.iii. ZoningDistricts_Middle_30Sept2025.pdf
+sources/Planner-Sharepoint/2025/13. October 15, 2025 SP Meeting/3.a.iii. ZoningDistricts_Upper_30Sept2025.pdf
+sources/Planner-Sharepoint/2025/13. October 15, 2025 SP Meeting/4.a.iii. Land Use memo HK.pdf
+sources/Planner-Sharepoint/2025/14. November 4, 2025/1. PB11-4-2025 Agenda FINAL 2.pdf
+sources/Planner-Sharepoint/2025/14. November 4, 2025/3.a.i. PB10-7-2025_Minutes_DRAFT.pdf
+sources/Planner-Sharepoint/2025/14. November 4, 2025/3.a.ii. PB10-15-2025 Minutes DRAFT.pdf
+sources/Planner-Sharepoint/2025/14. November 4, 2025/4.a. 2026 Planning Board Schedule and Deadline Table.pdf
+sources/Planner-Sharepoint/2025/14. November 4, 2025/4.a. BA PB 66 County Road Decision to Deny Dimensional Variance (002).pdf
+sources/Planner-Sharepoint/2025/14. November 4, 2025/5.a.i. Natural Hazards and Energy KB edit 10282025.pdf
+sources/Planner-Sharepoint/2025/14. November 4, 2025/6.a. Herb Report - PBR_Sept2025_22Oct2025.pdf
+sources/Planner-Sharepoint/2025/14. November 4, 2025/6.a. RI Comprehensive Planning and Land Use Act.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/01. PB 12-2-2025 Agenda FINAL.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/02. PB Memo 12-2-2025_Final.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/03.a.i. PB10-15-2025 Minutes DRAFT - amended.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/03.a.ii. PB_11-4-2025_Minutes_DRAFT.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/05. 25 Watson/01. Town Comments memo-24090.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/05. 25 Watson/01. cert_completeness_25 Watson Ave _11-7-2025_SIGNED.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/05. 25 Watson/01. cert_incompleteness_25 Watson Ave _10-6-2025_SIGNED.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/05. 25 Watson/02. Application Checklist memo.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/05. 25 Watson/02. Map and Labels - Abutters.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/05. 25 Watson/03. 251003-FREEMONT PLAN SET REV1 STAMPED-24090.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/05. 25 Watson/03. Freemont Affordable Designation Figure.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/05. 25 Watson/25W Concept Package.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/05. 25 Watson/25Watson_NaturalHeritageArea_07Jul2025.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/05. 25 Watson/BCWA form_25 Watson_Response.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/05. 25 Watson/Cottages on Freement Barrington LOE final approval letter.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/05. 25 Watson/DEVELOPMENT APPLICATION-CHECKLIST PACKAGE.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/05. 25 Watson/Freemont Stormwater report COMBINED.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/05. 25 Watson/LetterOfEligibility_Watson_07Jan2025.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/05. 25 Watson/Lighting PH1 Freemont Cottages - Photometrics -.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/06.a. 2A-Review of Draft Chapters _Barrington_11_17_25.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/06.a.i. Discussion of Expired Plan.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/06.a.iii. Comprehensive Plan Maps Draft/1_Housing Maps_Barrington_10-31-25.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/06.a.iii. Comprehensive Plan Maps Draft/2_EconomicDevelopoment_Barrington_10-31-25 (1).pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/06.a.iii. Comprehensive Plan Maps Draft/3_Circulation Maps_Barrington_10-31-25 (1).pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/06.a.iii. Comprehensive Plan Maps Draft/4_Comm Services-Facilities Maps_Barrington_10-31-25 (1).pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/06.a.iii. Comprehensive Plan Maps Draft/5_Natural Resources Maps_Barrington_10-31-25 (1).pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/06.a.iii. Comprehensive Plan Maps Draft/6_Historic-Cultural Resources Map_Barrington_10-31-25 (1).pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/06.a.iii. Comprehensive Plan Maps Draft/7_Outdoor Recreation Maps_Barrington_10-31-25 (1).pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/06.a.iii. Comprehensive Plan Maps Draft/8_Nat Hazards-Climate Maps_Barrington_10-31-25 (1).pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/06.a.iii. Comprehensive Plan Maps Draft/LU-1 Existing Zoning.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/06.a.iii. Comprehensive Plan Maps Draft/LU-2 Existing Land Use.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/06.a.iii. Comprehensive Plan Maps Draft/LU-3 Future Land Use DRAFT.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/07.a. 3-Notice to Contiguous Municipalities-BAR-EP-CP-25.pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/07.a. East Providence Formal Comprehensive Plan Review - Request for Comments (BAR).pdf
+sources/Planner-Sharepoint/2025/15. December 2, 2025/07.a. PBR_Monthly_Oct2025.pdf
+sources/Planner-Sharepoint/2026/01. January 6, 2026/01. Agenda_01-06-2026.pdf
+sources/Planner-Sharepoint/2026/01. January 6, 2026/03.a.i.  Minutes_12-2-2025_DRAFT.pdf
+sources/Planner-Sharepoint/2026/01. January 6, 2026/04.a. CompPermit_PP_25 Watson_Decision_02DEC2025_clean.pdf
+sources/Planner-Sharepoint/2026/01. January 6, 2026/04.b. CIP/CIP_DETAILED_INFO_CIP_FYE2027_2032_SubcommitteeRecommend_29Dec2025.pdf
+sources/Planner-Sharepoint/2026/01. January 6, 2026/04.c. Round Park proposal.pdf
+sources/Planner-Sharepoint/2026/01. January 6, 2026/05.a.i. Land Use - public letter.pdf
+sources/Planner-Sharepoint/2026/01. January 6, 2026/05.a.i. Land Use 12.30 draft.pdf
+sources/Planner-Sharepoint/2026/01. January 6, 2026/05.a.ii. Maps/LU-3 Future Land Use DRAFT 12-30-25.pdf
+sources/Planner-Sharepoint/2026/01. January 6, 2026/05.a.ii. Maps/LU-3 Future Land Use EMAIL.pdf
+sources/Planner-Sharepoint/2026/01. January 6, 2026/05.a.ii. Maps/LU-4 Nonconforming Lots by Area.pdf
+sources/Planner-Sharepoint/2026/01. January 6, 2026/05.a.ii. Maps/Map C-2 Traffic Counts.pdf
+sources/Planner-Sharepoint/2026/01. January 6, 2026/05.a.ii. Maps/NHCH 3 Sea Level Rise Inundation Zones.pdf
+sources/Planner-Sharepoint/2026/01. January 6, 2026/05.a.ii. Maps/OR3 Trail Improvement Plan.pdf
+sources/Planner-Sharepoint/2026/01. January 6, 2026/05.a.iii. Natural Hazards and Energy PH edits 12-29-25 clean.pdf
+sources/Planner-Sharepoint/2026/01. January 6, 2026/06.a. PBR_Nov2025MonthlyRpt_30Dec2025.pdf
+sources/Planner-Sharepoint/2026/02. February 3, 2026/05. Belton Court - Project Overview Presentation - 2-3-26.pdf
+sources/Planner-Sharepoint/2026/02. February 3, 2026/05. Belton Court Presentation - Insite Engineering Services 2-03-2026.pdf
+sources/Planner-Sharepoint/2026/02. February 3, 2026/Abutters_Belton_Feb.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/01. PB 03-03-2026 Agenda.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/03. PB 02-03-2026_Minutes_DRAFT.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Comp Permit Procedure_FAQ.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. PB decison_03-01-2016_master plan_Belton.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Preliminary Notes on Public Safety Issues.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/01. March public comment master list.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/04. Abutters_Belton_Feb_amended.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/AlbertGarcia_02-06-2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/AmandaMarshall_02-11-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/ArthurSalomen_BRAD_letter.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/ArthurSalomon_02-24-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/AustinBoyle_02-05-2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/CindyElder_01-29-2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/ConservComm_02-12-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/DavidBoyes_02-03-2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/DonnaWilliams_03Feb2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/EdHail_02-19-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/FranciscoLovera_02Feb2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/FrazierBell_02-24-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/HectorRios_02-11-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/HollyGuimond_02-21-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/HughMorgan_01-29-2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/JacobBrier_02-12-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/JamesSanderson_02-24-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/JasonHarris_02-01-2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/JeffreyEmidy_01-30-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/JodyPagliaTanzman_2-24-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/JosephGuay_01-29-2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/JosephGuay_02-17-2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/KarenWeber_02-11-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/KatMcBride_letter_01-30-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/LesSheeley_02-04-2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/LesSheeley_03Feb2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/LisaDaft_02-23-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/MarciaDavis_02-22-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/MarciaDavis_02-25-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/MariaBruce_02-08-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/MariaBruce_02-12-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/MariaBruce_02-12-26email.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/MariaBruce_02-24-26_email.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/MariaBruce_02-24-26_letter.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/MarkHanchar_02-05-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/MarkNewton_03Feb2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/MauraMccrann_attachment 1.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/MauraMccrann_attachment 2.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/Maura_email_02-04-2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/MeredythSanderson_02-24-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/NeileHartman_01-28-2026.PDF
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/NeileHartman_02-24-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/PaulForsyth_02-04-2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/PaulForsyth_02-05-2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/PaulRobinZiino_03Feb2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/PeterMccalmont_02-05-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/RichardGodfrey_02-16-2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/RobertDonahue_2-10-26_email.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/RobertDonahue_2-12-26_email.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/RobertDonahue_2-13-26_email.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/RobertDonahue_2-15_2-18.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/RobertDonahue_2-18-26_email.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/RobertDonahue_2-20-2026.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/RobertDonahue_2-20-26_email.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/RonPitt_02-24-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/SharonSantos_02-12-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/04. Public comment/StephenRongo_02-24-26.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/05. Belton Court - DPZ Presentation for 3-3-2026 Public Meeting.pdf
+sources/Planner-Sharepoint/2026/03. March 03, 2026/05b. Barrington signage diagnostic-WF02-23-26.pdf
