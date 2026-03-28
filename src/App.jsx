@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
 import AboutPage from './pages/AboutPage';
+import MeetingSummaryPage from './pages/MeetingSummaryPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="category/:id" element={<CategoryPage />} />
+          <Route path="meeting/:docId" element={<MeetingSummaryPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

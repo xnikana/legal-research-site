@@ -2,16 +2,28 @@ import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ArchiveSearch from '../components/ArchiveSearch';
 import SearchHitRow from '../components/SearchHitRow';
-import { categories } from '../data/mockDocuments';
+import { categories, mockDocuments } from '../data/mockDocuments';
 import { searchArchive } from '../utils/searchArchive';
-import { Users, FileText, Activity, ClipboardList, Scale, ArrowRight, ShieldCheck } from 'lucide-react';
+import {
+  FileText,
+  Activity,
+  ClipboardList,
+  Scale,
+  ArrowRight,
+  ShieldCheck,
+  Landmark,
+  Calendar,
+  Video,
+} from 'lucide-react';
 
 const iconMap = {
-  'users': Users,
   'file-text': FileText,
-  'activity': Activity,
+  activity: Activity,
   'clipboard-list': ClipboardList,
-  'scale': Scale
+  scale: Scale,
+  landmark: Landmark,
+  calendar: Calendar,
+  video: Video,
 };
 
 const INLINE_LIMIT = 50000;
@@ -38,7 +50,7 @@ export default function Home() {
         </p>
       </div>
 
-      <h2 className="section-header">Record Categories</h2>
+      <h2 className="section-header">Browse records</h2>
 
       <ArchiveSearch
         query={draftQuery}
@@ -86,6 +98,7 @@ export default function Home() {
         <div className="home-category-grid">
           {categories.map((cat) => {
             const IconComponent = iconMap[cat.iconType] || FileText;
+            const docCount = mockDocuments[cat.id]?.length ?? 0;
             return (
               <Link to={`/category/${cat.id}`} key={cat.id} style={{ display: 'block' }}>
                 <div
@@ -116,6 +129,16 @@ export default function Home() {
                   </div>
                   <p style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
                     {cat.description}
+                  </p>
+                  <p
+                    style={{
+                      fontSize: '0.8125rem',
+                      fontWeight: 500,
+                      color: 'var(--accent-blue)',
+                      marginTop: 'auto',
+                    }}
+                  >
+                    {docCount.toLocaleString()} {docCount === 1 ? 'document' : 'documents'}
                   </p>
                 </div>
               </Link>

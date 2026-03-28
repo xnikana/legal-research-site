@@ -1,14 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { categories } from '../data/mockDocuments';
-import { Home, Users, FileText, Activity, ClipboardList, Scale, Menu, X, Info } from 'lucide-react';
+import {
+  Home,
+  FileText,
+  Activity,
+  ClipboardList,
+  Scale,
+  Menu,
+  X,
+  Info,
+  Landmark,
+  Calendar,
+  Video,
+} from 'lucide-react';
 
 const iconMap = {
-  'users': Users,
   'file-text': FileText,
-  'activity': Activity,
+  activity: Activity,
   'clipboard-list': ClipboardList,
-  'scale': Scale
+  scale: Scale,
+  landmark: Landmark,
+  calendar: Calendar,
+  video: Video,
 };
 
 const MOBILE_BREAKPOINT = 768;
@@ -83,7 +97,7 @@ export default function Layout() {
             <Home className="nav-icon" />
             Home
           </NavLink>
-          <div className="sidebar-section-label">Categories</div>
+          <div className="sidebar-section-label">Records</div>
           {categories.map((cat) => {
             const IconComponent = iconMap[cat.iconType] || FileText;
             return (

@@ -26,7 +26,7 @@ function getFlatIndex() {
 const DEFAULT_LIMIT = 60;
 
 function haystackForDoc(doc) {
-  const parts = [doc.title, doc.pdfPath, doc.mdPath];
+  const parts = [doc.title, doc.pdfPath, doc.mdPath, doc.videoUrl];
   if (doc.mdPath && mdSearchTextByPath[doc.mdPath]) {
     parts.push(mdSearchTextByPath[doc.mdPath]);
   }
@@ -47,9 +47,10 @@ export function documentMatchesQuery(doc, rawQuery) {
 /**
  * @param {string} rawQuery
  * @param {number} [limit]
+ * @param {string | null} [categoryId] when set, only documents in this category are searched (home page omits this to search all)
  * @returns {{ results: Array<{ doc: object, categoryId: string, categoryTitle: string }>, total: number }}
  */
-export function searchArchive(rawQuery, limit = DEFAULT_LIMIT) {
+export function searchArchive(rawQuery, limit = DEFAULT_LIMIT, categoryId = null) {
   const q = rawQuery.trim().toLowerCase();
   if (q.length < 2) {
     return { results: [], total: 0 };
@@ -57,6 +58,7 @@ export function searchArchive(rawQuery, limit = DEFAULT_LIMIT) {
   const idx = getFlatIndex();
   const matches = [];
   for (const row of idx) {
+    if (categoryId != null && row.categoryId !== categoryId) continue;
     const { doc } = row;
     if (haystackForDoc(doc).includes(q)) matches.push(row);
   }

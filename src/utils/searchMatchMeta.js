@@ -11,7 +11,7 @@ export function classifySearchHit(doc, rawQuery) {
 
   const titleMatch = (doc.title || '').toLowerCase().includes(q);
 
-  const pathBlob = [doc.pdfPath, doc.mdPath].filter(Boolean).join('\n').toLowerCase();
+  const pathBlob = [doc.pdfPath, doc.mdPath, doc.videoUrl].filter(Boolean).join('\n').toLowerCase();
   const pathMatch = pathBlob.includes(q);
 
   const body =

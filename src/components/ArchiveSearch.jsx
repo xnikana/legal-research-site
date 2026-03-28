@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react';
 import { Search, X } from 'lucide-react';
+import { categories } from '../data/mockDocuments';
 import { searchArchive } from '../utils/searchArchive';
 import SearchHitRow from './SearchHitRow';
 
@@ -10,9 +11,10 @@ const PREVIEW_LIMIT = 5;
  *   query: string,
  *   onQueryChange: (value: string) => void,
  *   onCommitSearch?: (query: string) => void,
+ *   categoryId?: string | null,
  * }} props
  */
-export default function ArchiveSearch({ query, onQueryChange, onCommitSearch }) {
+export default function ArchiveSearch({ query, onQueryChange, onCommitSearch, categoryId = null }) {
   const id = useId();
   const inputId = `${id}-input`;
   const listId = `${id}-list`;
@@ -22,9 +24,14 @@ export default function ArchiveSearch({ query, onQueryChange, onCommitSearch }) 
   const wrapRef = useRef(null);
   const inputRef = useRef(null);
 
+  const scopedLabel = useMemo(() => {
+    if (!categoryId) return null;
+    return categories.find((c) => c.id === categoryId)?.title ?? null;
+  }, [categoryId]);
+
   const { results: previewResults, total } = useMemo(
-    () => searchArchive(query, PREVIEW_LIMIT),
-    [query],
+    () => searchArchive(query, PREVIEW_LIMIT, categoryId),
+    [query, categoryId],
   );
 
   const showPanel = open && query.trim().length >= 2;
@@ -97,9 +104,13 @@ export default function ArchiveSearch({ query, onQueryChange, onCommitSearch }) 
           type="search"
           className="archive-search-input"
           placeholder={
-            onCommitSearch
-              ? 'Search titles, paths, and Markdown text… (Enter filters this page)'
-              : 'Search titles, paths, and Markdown text…'
+            categoryId
+              ? scopedLabel
+                ? `Search only in “${scopedLabel}”… (Enter filters this list)`
+                : 'Search this category… (Enter filters this list)'
+              : onCommitSearch
+                ? 'Search all categories — titles, paths, and text… (Enter filters this page)'
+                : 'Search all categories — titles, paths, and text…'
           }
           autoComplete="off"
           autoCorrect="off"
@@ -147,6 +158,12 @@ export default function ArchiveSearch({ query, onQueryChange, onCommitSearch }) 
           ) : (
             <>
               <div className="archive-search-meta">
+                {categoryId && scopedLabel ? (
+                  <span className="archive-search-scope">
+                    Searching <strong>{scopedLabel}</strong> only
+                    <span aria-hidden> · </span>
+                  </span>
+                ) : null}
                 {total > PREVIEW_LIMIT
                   ? `Preview: ${PREVIEW_LIMIT} of ${total} matches${
                       onCommitSearch ? ' — Enter or “View all” for full list on this page' : ''

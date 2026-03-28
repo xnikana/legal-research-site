@@ -793,6 +793,65 @@ button {
   }
 }
 
+/* Meeting summary (fetched markdown) */
+.meeting-summary-page {
+  max-width: 52rem;
+}
+
+.meeting-summary-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.meeting-summary-back {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+.meeting-summary-back:hover {
+  text-decoration: underline;
+}
+
+.meeting-summary-video-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+.meeting-summary-video-link:hover {
+  text-decoration: underline;
+}
+
+.meeting-summary-header {
+  margin-bottom: 1.25rem;
+}
+
+.meeting-summary-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+.meeting-summary-markdown {
+  margin-top: 0.5rem;
+}
+
+.meeting-summary-status {
+  margin-bottom: 1rem;
+}
+
 /* About / CAPABILITIES.md */
 .capabilities-doc {
   max-width: 52rem;
