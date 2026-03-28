@@ -10,6 +10,10 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+public/SharePoint_PDF_with_associated_MD
+# PDFs are opened from SharePoint; keep paired .md for search index only
+SharePoint_PDF_with_associated_MD/**/*.pdf
+SharePoint_PDF_with_associated_MD/**/*.PDF
 *.local
 
 # Editor directories and files

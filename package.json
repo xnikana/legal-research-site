@@ -4,9 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/copy-md-archive-to-public.mjs",
     "dev": "vite",
+    "prebuild": "node scripts/copy-md-archive-to-public.mjs",
     "build": "vite build",
-    "build:data": "node scripts/build-archive-data.mjs",
+    "build:data": "node scripts/build-archive-data.mjs && node scripts/build-md-search-index.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },

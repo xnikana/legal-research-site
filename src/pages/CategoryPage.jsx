@@ -1,15 +1,28 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import ArchiveSearch from '../components/ArchiveSearch';
 import { categories, mockDocuments } from '../data/mockDocuments';
+import { documentMatchesQuery } from '../utils/searchArchive';
 import { FileText, Music, ShieldAlert, Copy, Check, ExternalLink } from 'lucide-react';
 import { sharePointPdfUrlFromMirror } from '../utils/sharepointUrls';
+import MatchHighlight from '../components/MatchHighlight';
+import SearchHitBadges from '../components/SearchHitBadges';
 
 export default function CategoryPage() {
   const { id } = useParams();
   const [copiedKey, setCopiedKey] = useState(null);
+  const [draftQuery, setDraftQuery] = useState('');
+  const [listFilter, setListFilter] = useState('');
 
   const category = categories.find((c) => c.id === id);
-  const documents = mockDocuments[id] || [];
+  const documents = useMemo(() => mockDocuments[id] || [], [id]);
+
+  const filterActive = listFilter.length >= 2;
+
+  const visibleDocs = useMemo(() => {
+    if (!filterActive) return documents;
+    return documents.filter((d) => documentMatchesQuery(d, listFilter));
+  }, [documents, listFilter, filterActive]);
 
   const copyText = useCallback(async (text, key) => {
     try {
@@ -30,9 +43,41 @@ export default function CategoryPage() {
       <div className="section-header" style={{ marginBottom: '0.5rem' }}>
         {category.fullTitle}
       </div>
+
+      <ArchiveSearch
+        query={draftQuery}
+        onQueryChange={setDraftQuery}
+        onCommitSearch={setListFilter}
+      />
+
       <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', fontSize: '1.1rem' }}>
         {category.description}
       </p>
+
+      {filterActive ? (
+        <div className="archive-page-filter-banner">
+          <span>
+            <strong>{visibleDocs.length}</strong> result{visibleDocs.length === 1 ? '' : 's'} for{' '}
+            <strong>&quot;{listFilter}&quot;</strong>
+            {visibleDocs.length < documents.length ? (
+              <span style={{ color: 'var(--text-secondary)', fontWeight: 400 }}>
+                {' '}
+                (of {documents.length} in this category)
+              </span>
+            ) : null}
+          </span>
+          <button
+            type="button"
+            className="archive-page-filter-clear"
+            onClick={() => {
+              setListFilter('');
+              setDraftQuery('');
+            }}
+          >
+            Clear filter
+          </button>
+        </div>
+      ) : null}
 
       {documents.length === 0 ? (
         <div
@@ -51,9 +96,13 @@ export default function CategoryPage() {
           />
           <p style={{ color: 'var(--text-secondary)' }}>No documents currently available in this archive.</p>
         </div>
+      ) : filterActive && visibleDocs.length === 0 ? (
+        <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
+          No documents in this category match that search. Clear the filter or try another term.
+        </p>
       ) : (
         <div className="document-list">
-          {documents.map((doc) => {
+          {visibleDocs.map((doc) => {
             const spUrl = doc.pdfPath ? sharePointPdfUrlFromMirror(doc.pdfPath) : null;
             const copyPdfKey = `${doc.id}-pdf`;
             const pdfCopyValue = spUrl || doc.pdfPath;
@@ -67,7 +116,10 @@ export default function CategoryPage() {
                 )}
 
                 <div className="doc-info">
-                  <div className="doc-title">{doc.title}</div>
+                  <div className="doc-title">
+                    <MatchHighlight text={doc.title} query={filterActive ? listFilter : ''} />
+                  </div>
+                  {filterActive ? <SearchHitBadges doc={doc} searchQuery={listFilter} /> : null}
                   <div className="doc-meta">
                     <span>{doc.type}</span>
                     {doc.mdPath ? (

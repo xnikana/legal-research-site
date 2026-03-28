@@ -1,0 +1,435 @@
+# Comprehensive Permit Applications - FAQ
+
+*Converted from PDF using pdfplumber*
+
+---
+
+
+## Page 1
+
+
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+          Comprehensive Permit Applications – Frequently Asked Questions            
+                                                                                    
+          Q. What is a comprehensive permit application?                            
+                                                                                    
+          Comprehensive permit applications are governed by Title 45, Chapter 53 of the Rhode
+          Island General Laws, entitled ‘Low and Moderate Income Housing’ (the “LMI Housing Act”).
+          The LMI Housing Act provides that “any applicant proposing to build low- or moderate-
+                                                                                    
+          income housing may submit to the local review board a single application for a
+          comprehensive permit to build that housing in lieu of separate applications to the
+          applicable local boards. This procedure is only available for proposals in which at least
+                                                                                    
+          twenty-five percent (25%) of the housing is low- or moderate-income housing.”
+          The LMI Housing Act is available at the link below, which includes legislation enacted
+                                                                                    
+          through the 2025 legislative session.                                     
+                                                                                    
+          https://webserver.rilegislature.gov/Statutes/TITLE45/45-53/INDEX.htm      
+                                                                                    
+          Q. What is low- or moderate-income [LMI] housing?                         
+                                                                                    
+          The LMI Housing Act provides that LMI housing shall be synonymous with “affordable
+          housing” as defined under a separate section of state law, § 42-128-8.1, known as the
+          “Comprehensive Housing Production and Rehabilitation Act of 2004.” That law’s definition
+                                                                                    
+          of affordable housing is set forth below. The LMI Housing Act adds on to the definition,
+          stating that LMI housing “further means any type of housing whether built or operated by
+          any public agency or any nonprofit organization or by any limited equity housing
+          cooperative or any private developer, that is subsidized by a federal, state, or municipal
+                                                                                    
+          government subsidy under any program to assist the construction or rehabilitation of
+          affordable housing and that will remain affordable through a land lease and/or deed
+          restriction for ninety-nine (99) years or such other period that is either agreed to by the
+                                                                                    
+          applicant and town or prescribed by the federal, state, or municipal government subsidy
+          program but that is not less than thirty (30) years from initial occupancy.”
+                                                                                    
+          Definition of “affordable housing” from § 42-128-8.1:                     
+                                                                                    
+               “Affordable housing” means residential housing that has a sales price or rental
+               amount that is within the means of a household that is moderate income or less. In
+               the case of dwelling units for sale, housing that is affordable means housing in
+                                                                                    
+               which principal, interest, taxes, which may be adjusted by state and local programs
+               for property tax relief, and insurance constitute no more than thirty percent (30%) of
+               the gross household income for a household with less than one hundred and twenty
+                                                                                    
+               percent (120%) of area median income, adjusted for family size. Provided, however,
+               that exclusively for the residents of New Shoreham, their affordable housing
+                                                                                    
+                                          1                                         
+                                                                                    
+                                                                                    
+                                                                                    
+
+
+
+## Page 2
+
+
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+               eligibility standards shall include households whose adjusted gross income is less
+               than one hundred forty percent (140%) of their residents’ median income, adjusted
+               for family size. In the case of dwelling units for rent, housing that is affordable
+                                                                                    
+               means housing for which the rent, heat, and utilities other than telephone
+               constitute no more than thirty percent (30%) of the gross annual household income
+               for a household with eighty percent (80%) or less of area median income, adjusted
+                                                                                    
+               for family size.1                                                    
+               (i) Affordable housing shall include all types of year-round housing, including, but
+                                                                                    
+               not limited to: manufactured housing; housing originally constructed for workers
+               and their families; accessory dwelling units; housing accepting rental vouchers
+               and/or tenant-based certificates under Section 8 of the United States Housing Act of
+                                                                                    
+               1937, as amended; and assisted living housing, where the sales or rental amount of
+               such housing, adjusted for any federal, state, or municipal government subsidy, is
+               less than or equal to thirty percent (30%) of the gross household income of the low
+                                                                                    
+               and/or moderate income occupants of the housing.                     
+                                                                                    
+               (ii) Mobile and manufactured homes shall be included as affordable housing if such
+               home constitutes a primary residence of the occupant or occupants; and such
+               home is located within a community owned by the residents or the land containing
+               the home is owned by the occupant or occupants; and such home was constructed
+                                                                                    
+               after June 15, 1976; and such home complies with the Manufactured Home
+               Construction and Safety Standards of the United States Department of Housing and
+               Urban Development.”                                                  
+                                                                                    
+          Q. What is the difference between a comprehensive permit and a            
+                                                                                    
+          comprehensive plan?                                                       
+                                                                                    
+          A comprehensive permit, as defined above, is an application for development in which at
+          least 25 percent of the dwelling units are deed restricted as affordable housing.
+                                                                                    
+          A comprehensive plan is defined and governed by the Rhode Island Comprehensive
+                                                                                    
+          Planning and Land Use Act, codified at Title 45, Chapter 22.2 of the General Laws. A
+          comprehensive plan is a regulatory document that functions alongside state law, the
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+          1 Area median income for low- and moderate-income households annually is calculated by RI Housing based
+          on US HUD’s 2008 income limits policy. The FY2025 income limits, by household size, can be found here:
+          https://www.rihousing.com/wp-content/uploads/FY-25-HUD-Income-Limits.pdf. Note that the “area” used to
+          calculate median income for Barrington is the “Providence-Fall River, RI-MA HMFA 2025”. HMFA means HUD
+          Metro Fair Market Rents Area.                                             
+                                          2                                         
+                                                                                    
+                                                                                    
+                                                                                    
+
+
+
+## Page 3
+
+
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+          Zoning Ordinance, and local regulations, and that guides land use decisions in a
+          municipality.                                                             
+                                                                                    
+          Q. What Town officials or boards make decisions with respect to           
+                                                                                    
+          comprehensive permit applications?                                        
+                                                                                    
+          The LMI Housing Act provides that the Planning Board shall serve as the local review board
+          for comprehensive permit applications. The Zoning Board has no role in comprehensive
+          permit applications. Depending on the specifics of the proposed development, the Town
+                                                                                    
+          Council may have a limited role in the application (for example, accepting a public road or
+          other infrastructure that is part of the development) but does not play a role in reviewing or
+          approving the development proposal itself.                                
+                                                                                    
+          Q. What is the procedure for comprehensive permit applications?           
+                                                                                    
+          As set forth in the LMI Housing Act, the developer has the option to begin the process at
+                                                                                    
+          either the master plan stage of review or the preliminary plan stage of review. Those terms
+          are defined in a separate section of state law, § 45-23-32, as follows:   
+                                                                                    
+               “(22) Master plan. An overall plan for a proposed project site outlining general, rather than
+               detailed, development intentions. It describes the basic parameters of a major
+               development proposal, rather than giving full engineering details. Required in major land
+               development or major subdivision review only. It is the first formal review step of the major
+                                                                                    
+               land development or major subdivision process and the step in the process in which the
+               public hearing is held. See § 45-23-39.                              
+                                                                                    
+               . . .                                                                
+               (32) Preliminary plan. A required stage of land development and subdivision review that
+                                                                                    
+               generally requires detailed engineered drawings. See § 45-23-39.”    
+          Turning back to the LMI Housing Act, the two tracks for review are as follows:
+                                                                                    
+           Master Plan Track               Preliminary Plan Track                   
+                                                                                    
+             •  Pre-application not required, but • Pre-application may be required 
+                developer can request it     •  Preliminary plan stage requires a   
+             •  Public hearing at master plan only if public hearing                
+                adjustments are requested; if not, • Final plan stage is administrative
+                master plan is a public meeting but                                 
+                legal notice in newspaper and                                       
+                abutters not required                                               
+                                                                                    
+             •  Preliminary plan stage requires a                                   
+                public hearing                                                      
+             •  Final plan stage is administrative                                  
+                                                                                    
+                                          3                                         
+                                                                                    
+                                                                                    
+                                                                                    
+
+
+
+### Table on Page 3
+
+
+| Master Plan Track | Preliminary Plan Track |
+| --- | --- |
+| • Pre-application not required, but
+developer can request it
+• Public hearing at master plan only if
+adjustments are requested; if not,
+master plan is a public meeting but
+legal notice in newspaper and
+abutters not required
+• Preliminary plan stage requires a
+public hearing
+• Final plan stage is administrative | • Pre-application may be required
+• Preliminary plan stage requires a
+public hearing
+• Final plan stage is administrative |
+
+
+
+## Page 4
+
+
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+          Q. What are the required findings for comprehensive permit applications?  
+                                                                                    
+          A. The LMI Housing Act states that the Planning Board shall make findings on the following
+          standards:                                                                
+                                                                                    
+               “(I) Whether the proposed development is consistent with local needs as identified in the
+               community’s affordable housing plan and/or has satisfactorily addressed the issues where
+               there may be inconsistencies. If the local board finds that the proposed development is
+                                                                                    
+               inconsistent with the community’s affordable housing plan, it must also find that the
+               municipality has made significant progress in implementing its housing plan.
+                                                                                    
+               (II) Whether the proposed development is in compliance with the standards and provisions
+               of the municipality’s zoning ordinance and subdivision regulations, and/or where
+               adjustments are requested by the applicant, whether local concerns that have been
+               affected by the relief granted do not outweigh the state and local need for low- and
+               moderate-income housing.                                             
+                                                                                    
+               (III) Whether the low- and moderate-income housing units proposed are integrated
+               throughout the development; are compatible in scale, meaning that: (1) The size of the low-
+                                                                                    
+               and moderate-income units shall not be less than seventy-five percent (75%) of the size of
+               the market rate units, unless otherwise allowed by the local board; (2) The affordable units
+               are of similar architectural style to the market rate units within the project so that the
+               exterior of the units look like an integrated neighborhood with similar rooflines, window
+               patterns, materials and colors; and (3) The affordable units will be built and occupied in a
+               proportional manner with the construction and occupancy of the market rate units. Except
+                                                                                    
+               that for housing units that are intended to be occupied by persons fifty-five (55) years of age
+               or older, or sixty-two (62) years of age or older, as permitted by the federal Fair Housing Act
+               pursuant to 42 U.S.C. § 3607(b) and 24 C.F.R. §§ 100.300-308 and the Rhode Island fair
+               housing practices act pursuant to § 34-37-4.1, such units need not be integrated in any
+               building or phase within the development that contains housing units that are not age-
+                                                                                    
+               restricted, and neither age-restricted housing units nor any building or phase containing
+               age-restricted housing units must be compatible in scale and architectural style to other
+               housing unit types to the extent the age-restricted housing units are designed to meet the
+               physical or social needs of older persons or necessary to provide housing opportunities for
+               older persons.                                                       
+                                                                                    
+               (IV) Whether there will be significant negative impacts on the health and safety of current or
+               future residents of the community, in areas including, but not limited to, safe circulation of
+                                                                                    
+               pedestrian and vehicular traffic, provision of emergency services, sewerage disposal,
+               availability of potable water, adequate surface water run-off, and the preservation of
+               natural, historical, or cultural features.                           
+                                                                                    
+                                                                                    
+                                          4                                         
+                                                                                    
+                                                                                    
+                                                                                    
+
+
+
+## Page 5
+
+
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+               (V) Whether the proposed land developments or subdivisions lots will have adequate and
+               permanent physical access to a public street in accordance with the requirements of § 45-
+               23-60(a)(5), or the local review board has approved other access, such as a private road.
+                                                                                    
+               (VI) Whether the proposed development will result in the creation of individual lots with any
+               physical constraints to development that building on those lots according to pertinent
+               regulations and building standards would be impracticable, unless created only as
+                                                                                    
+               permanent open space or permanently reserved for a public purpose on the approved,
+               recorded plans.”                                                     
+                                                                                    
+          Q. Is a comprehensive permit application required to comply with the      
+          Zoning Ordinance?                                                         
+                                                                                    
+          Comprehensive permit applications are subject to the Zoning Ordinance, but the
+                                                                                    
+          application may include requests for adjustments, defined as “a request or requests by the
+          applicant to seek relief from the literal use and dimensional requirements of the municipal
+          zoning ordinance and/or the design standards or requirements of the municipal land
+                                                                                    
+          development and subdivision regulations.”                                 
+          Ordinarily, a request for zoning relief in the form of a use variance, dimensional variance, or
+                                                                                    
+          special use permit, would be subject to the standards for relief set forth in state law and
+          the Zoning Ordinance. For comprehensive permits, adjustments are not considered
+          separately but are considered as part of the development application. The standard for
+                                                                                    
+          adjustments is incorporated into one of the required findings, as follows: “whether local
+          concerns that have been affected by the relief granted do not outweigh the state and local
+          need for low- and moderate-income housing.”                               
+                                                                                    
+          Q. What is the permitted density for a comprehensive permit application?  
+                                                                                    
+          State law provides that for comprehensive permit applications “a municipality shall provide
+                                                                                    
+          an applicant with more dwelling units than allowed by right under its zoning ordinance in
+          the form of a density bonus to allow an increase in the allowed dwelling units per acre
+          (DU/A).” Wetlands, area devoted to roadway infrastructure, and easements/rights of way
+          are all excluded from the density calculation.                            
+                                                                                    
+          The law sets forth minimum density bonuses that apply over and above what the base
+                                                                                    
+          zoning would allow, as follows:                                           
+                                                                                    
+                             Connected/Eligible for Public Not connected to public  
+                             Sewer & Water           sewer/water                    
+           25% LMI           5 units additional per acre 3 units additional per acre
+           50% LMI           9 units additional per acre 5 units additional per acre
+           100% LMI          12 units additional per acre 8 units additional per acre
+                                                                                    
+                                          5                                         
+                                                                                    
+                                                                                    
+                                                                                    
+
+
+
+### Table on Page 5
+
+
+|  | Connected/Eligible for Public
+Sewer & Water | Not connected to public
+sewer/water |
+| --- | --- | --- |
+| 25% LMI | 5 units additional per acre | 3 units additional per acre |
+| 50% LMI | 9 units additional per acre | 5 units additional per acre |
+| 100% LMI | 12 units additional per acre | 8 units additional per acre |
+
+
+
+## Page 6
+
+
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+          Q. Does the law place limits on how the Town can regulate                 
+          comprehensive permit developments?                                        
+                                                                                    
+          The law constrains the Town’s ability to regulate comprehensive permit developments. For
+                                                                                    
+          example, the Town cannot require more than one off-street parking space for one and two-
+          bedroom units within such developments. Further, the Town cannot limit the number of
+          bedrooms to anything less than three bedrooms per dwelling unit for single-family dwelling
+                                                                                    
+          units.                                                                    
+                                                                                    
+          Q. Is the Town required to accept applications for comprehensive          
+          permits?                                                                  
+                                                                                    
+          Effective January 1, 2026, the comprehensive permit process “is not available in cities and
+                                                                                    
+          towns that have low- or moderate-income housing in excess of ten percent (10%) of its
+          year-round housing units which also have an inclusionary zoning ordinance which
+          complies with § 45-24-46.1.” The Town has an inclusionary zoning ordinance in place. Once
+                                                                                    
+          the Town has achieved the 10% goal, and is certified by the State as having 10% of its
+          housing stock deed-restricted as affordable housing, the comprehensive permit process
+          will not be available for development applications.                       
+                                                                                    
+          Q. What happens if the Planning Board decision is appealed?               
+                                                                                    
+          Decisions on comprehensive permit applications are subject to appellate review by the
+          Rhode Island Superior Court.                                              
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          6                                         
+                                                                                    
+                                                                                    
+                                                                                    
+
