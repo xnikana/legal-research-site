@@ -13,6 +13,7 @@ import {
   Landmark,
   Calendar,
   Video,
+  MessageSquare,
 } from 'lucide-react';
 
 const iconMap = {
@@ -112,6 +113,15 @@ export default function Layout() {
               </NavLink>
             );
           })}
+          <div className="sidebar-section-label">Tools</div>
+          <NavLink
+            to="/chat"
+            className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+            onClick={closeMenu}
+          >
+            <MessageSquare className="nav-icon" />
+            Ask the Archive
+          </NavLink>
           <div className="sidebar-section-label">About</div>
           <NavLink
             to="/about"
