@@ -6,7 +6,7 @@ import { ExternalLink } from 'lucide-react';
 import { mockDocuments } from '../data/mockDocuments';
 import { publicSummaryUrl } from '../utils/meetingMediaUrls';
 
-const MEETING_CAT = 'meeting-videos-transcripts';
+const MEETING_CAT = 'video';
 
 const mdLink = ({ children, ...props }) => (
   <a {...props} target="_blank" rel="noopener noreferrer">

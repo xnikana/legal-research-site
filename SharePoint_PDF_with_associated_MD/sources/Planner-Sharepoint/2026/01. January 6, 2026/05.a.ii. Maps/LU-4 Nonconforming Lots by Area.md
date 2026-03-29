@@ -1,0 +1,1 @@
+![](LU-4 Nonconforming Lots by Area_attachments/_page_0_Figure_2.jpeg)

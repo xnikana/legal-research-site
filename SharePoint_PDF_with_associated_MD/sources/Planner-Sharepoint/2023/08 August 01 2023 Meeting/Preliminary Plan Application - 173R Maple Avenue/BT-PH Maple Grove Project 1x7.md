@@ -1,0 +1,23 @@
+## **LEGAL NOTICE BARRINGTON PLANNING BOARD,**
+
+**BARRINGTON, RI PUBLIC NOTICE IS HEREBY GIVEN THAT A PUBLIC HEARING WILL BE HELD ON TUESDAY, AUGUST 1, 2023**
+
+Notice is hereby given that the Barrington Planning Board will hold a public hearing on Tuesday, August 1, 2023, at 7:00 p.m. on the following:
+
+Preliminary Plan for Major Subdivision/ Comprehensive Permit Application. Rogers Land Development "Maple Grove" Project, 173R Maple
+
+Avenue (Lot 325 on Assessor's Plat 23; Residence 10 and Neighborhood Business zoning districts). Applicant proposing to develop within the NB zoned
+
+portion near Maple Avenue a new two-story singlefamily home with attached one car garage to be a market rate unit with a building footprint of 1,304 square feet. Within the R10-zoned rear portion the
+
+following is proposed: convert existing single-family dwelling into a two-family structure with an affordable housing unit on the first floor and a market-rate unit on the second floor; add a 2nd-floor addition to an existing garage to provide a 832-square-foot affordable housing unit; build a two-family structure with two 2-story market-rate townhouse units with garages. Application seeking relief from provisions of the Zoning Ordinance through the Comprehensive Permit process, including a use variance for multiple principal and accessory dwelling units on one NB/
+
+R10-zoned lot while retaining an existing home office; and a dimensional relief variance for exceeding maximum front yard setback in NB zone. The hearing will be on the agenda of the Planning Board's regular business meeting to be held in the
+
+Council Chamber at Town Hall, 283 County Road. All interested parties may attend and be heard by the Board. Plans may be viewed at Town Hall in the Building and Planning Office in the Lower Level of Town Hall. The Town Hall is accessible to the dis-
+
+abled. Individuals requiring any accommodations for disabilities must notify the Barrington Town Clerk's
+
+office at 247-1900 Ext. 301 (Barrington Public Library TDD, 247-3750) in advance of the meeting
+
+date. *Teresa Crean, Town Planner/Administrative Officer Updated June 21, 2023*

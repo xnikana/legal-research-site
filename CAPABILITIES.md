@@ -17,16 +17,16 @@ Running the stack on an **NVIDIA DGX** (or any Linux host with NVIDIA GPUs and a
   - **DOM / BFS** — No LLM: queue folder and list URLs and collect document links (including broader media extensions where configured).
   - **Agent** — **browser-use** + **Ollama** vision (default **`llava:7b`**) for exploratory navigation; GPU-backed Ollama on a DGX keeps step latency tolerable compared to CPU-only inference.
 - **Operational polish** — Optional **WebM screen recordings** for debugging Playwright flows; **Planning Board** vs **direct library** entry URLs; shared constants for the RI Barrington packet library context.
-- **Rhode Island context** — [RI_MUNICIPAL_PLANNING_SOURCES.md](sharepoint-sync/RI_MUNICIPAL_PLANNING_SOURCES.md) documents how RI municipalities publish planning materials (SharePoint vs CivicPlus, Municode, etc.), plus optional **HTML scanners** under `sharepoint-sync/scripts/` for reproducible probes.
+- **Rhode Island context** — [RI_MUNICIPAL_PLANNING_SOURCES.md](https://github.com/fossnik/hackathon3-mar28/blob/main/sharepoint-sync/RI_MUNICIPAL_PLANNING_SOURCES.md) documents how RI municipalities publish planning materials (SharePoint vs CivicPlus, Municode, etc.), plus optional **HTML scanners** under `sharepoint-sync/scripts/` for reproducible probes.
 
-Detailed commands and prerequisites are in [sharepoint-sync/RUNBOOK.md](sharepoint-sync/RUNBOOK.md).
+Detailed commands and prerequisites are in [sharepoint-sync/RUNBOOK.md](https://github.com/fossnik/hackathon3-mar28/blob/main/sharepoint-sync/RUNBOOK.md).
 
 ### PDF → Markdown (`pdf-transcription/`)
 
 - **PyMuPDF4LLM** — Fast path for PDFs with a real text layer; **CPU-oriented**, ideal for quick runs and digital reports.
 - **Marker (`marker-pdf`)** — Recommended when you want **DGX-class throughput**: PyTorch layout/OCR pipelines that **use CUDA** when available, batch-friendly, optional **`--use_llm`** with a **local Ollama** model on the same machine for harder tables and math.
 
-See [pdf-transcription/README.md](pdf-transcription/README.md) for install patterns, `TORCH_DEVICE=cuda`, and **multi-GPU** fan-out (`CUDA_VISIBLE_DEVICES` per worker).
+See [pdf-transcription/README.md](https://github.com/fossnik/hackathon3-mar28/blob/main/pdf-transcription/README.md) for install patterns, `TORCH_DEVICE=cuda`, and **multi-GPU** fan-out (`CUDA_VISIBLE_DEVICES` per worker).
 
 ### Audio transcription (`audio-transcription/`)
 
@@ -59,9 +59,9 @@ Nothing here *requires* a DGX brand name: any **Linux workstation with NVIDIA GP
 
 | Document | Contents |
 |----------|-----------|
-| [sharepoint-sync/RUNBOOK.md](sharepoint-sync/RUNBOOK.md) | Venv setup, Playwright, Ollama, crawl/download/compare workflows |
-| [sharepoint-sync/RI_MUNICIPAL_PLANNING_SOURCES.md](sharepoint-sync/RI_MUNICIPAL_PLANNING_SOURCES.md) | RI publishing patterns and scanner scripts |
-| [pdf-transcription/README.md](pdf-transcription/README.md) | PDF → Markdown on GPU (Marker) and CPU (PyMuPDF4LLM) |
-| [audio-transcription/README.md](audio-transcription/README.md) | Whisper venv, CLI, and resource notes |
+| [sharepoint-sync/RUNBOOK.md](https://github.com/fossnik/hackathon3-mar28/blob/main/sharepoint-sync/RUNBOOK.md) | Venv setup, Playwright, Ollama, crawl/download/compare workflows |
+| [sharepoint-sync/RI_MUNICIPAL_PLANNING_SOURCES.md](https://github.com/fossnik/hackathon3-mar28/blob/main/sharepoint-sync/RI_MUNICIPAL_PLANNING_SOURCES.md) | RI publishing patterns and scanner scripts |
+| [pdf-transcription/README.md](https://github.com/fossnik/hackathon3-mar28/blob/main/pdf-transcription/README.md) | PDF → Markdown on GPU (Marker) and CPU (PyMuPDF4LLM) |
+| [audio-transcription/README.md](https://github.com/fossnik/hackathon3-mar28/blob/main/audio-transcription/README.md) | Whisper venv, CLI, and resource notes |
 
 Together, these pieces support an **on-premise or air-gapped-friendly** path: **mirror** public packet libraries, **transcribe** hearings, **convert** agendas and packets to Markdown, and optionally **agent-navigate** SharePoint—all accelerated where the hardware allows.

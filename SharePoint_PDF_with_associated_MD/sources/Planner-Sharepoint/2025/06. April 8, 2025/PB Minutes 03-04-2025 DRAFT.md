@@ -1,0 +1,133 @@
+# **BARRINGTON PLANNING BOARD**
+
+#### **Regular Business Meeting Minutes**
+
+7:00 PM, Tuesday, March 4, 2025 Council Chamber – Barrington Town Hall 283 County Road, Barrington, RI
+
+# **1. Call to Order.**
+
+Chair Roni Phipps called the meeting to order at 7:02pm.
+
+Chair Phipps reported that member Bill Kurtz had resigned from the Board and wished him the best.
+
+## **2. Roll Call & Determination of Quorum**
+
+*Present:* Lawrence Bacher, Douglas Caito, Heather Kilmartin, Connor O'Neal, Roni Phipps (Chair), Brian Rua (Vice Chair)
+
+*Also Present:* Herb Durfee III, Town Planner; Genevieve Elliot, Assistant Planner; Amy Gonis, Assistant Town Solicitor; Liana Cassar, Town Council Liaison
+
+## **3. Approve Minutes:**
+
+**a. January 7, 2025 - Regular Meeting**
+
+Member Bacher explained the minutes needed a few amendments.
+
+MOTION: Member O'Neal seconded by Member Bacher, moved to accept the minutes with amendments. Motion carried unanimously.
+
+**b. February 4, 2025 - Regular Meeting** 
+
+#### continued to April Meeting
+
+**c. February 13, 2025 - CIP Subcommittee**
+
+MOTION: Member O'Neal seconded by Member Bacher, moved to accept the minutes as presented. Motion carried unanimously.
+
+**d. February 18, 2025 - Special Meeting**
+
+MOTION: Member O'Neal seconded by Member Bacher, moved to accept the minutes as presented. Motion carried unanimously.
+
+#### **4. Old Business:**
+
+## **a. Discuss and Act: Amendments to Chapter 185: Zoning Ordinance (recommendation to Town Council)**
+
+Solicitor Goins explained the updates to the new Housing Package that were recently introduced.
+
+Solicitor Goins and the Board then went into discussion on amendments to Chapter 185: Zoning Ordinance.
+
+## Accessory Dwelling Units
+
+Solicitor Goins provided a detailed explanation of the amendments related to accessory dwelling units (ADUs), including the criteria for variances and the different categories of ADUs allowed by right.
+
+The Board reviewed the 3 conditions where ADU's are allowed by right, per RI general law.
+
+Member Bacher expressed concerns about the lack of specific criteria for reviewing ADU variances and the potential for arbitrary approval. Solicitor Goins explained that specific criteria are only required for uses permitted by special use permit, not for dimensional variances.
+
+The Board and Solicitor Goins discussed design and standards for ADU's and what the Town can and cannot regulate. The Board expressed concern about ADU's in flood prone areas and Solicitor Goins noted that it cannot be regulated but can be considered by the Board at their review.
+
+## Development Plan Review
+
+Solicitor Goins reviewed the amendments related to Development Plan Review.
+
+The Board clarified what can now be considered under Development Plan Review, the difference between Development Plan Review and Land Development Projects, and the review process. The Board would like to review again before moving forward with a recommendation to Town Council.
+
+## Other Amendments
+
+The Board and Solicitor Goins discussed that the household amendments at the state level are not included in Barrington's, as that legislation was primarily for Narragansett and a corresponding lawsuit.
+
+Member Bacher asked about the removal of the wellhead protection article of the zoning ordinance, referring to 2015 Comprehensive Plan. Solicitor Goins confirmed that this article had been superseded by state law.
+
+*The Board decided to wait until the April meeting to make recommendations to the Town Council.* 
+
+# **b. Discuss and Act: Comprehensive Plan 2024-2025 Updates (Standing Agenda Item):**
+
+Durfee explained why the packet has an older revision and that an updated version went out in an email prior to the meeting of revised Housing and Neighborhoods. Durfee expressed that with the Boards approval he would like to get the general content off to the state for comment.
+
+The Board felt that sending items after the packets go out doesn't allow enough time to read them and emphasized the importance of having at least a week to review materials before meetings.
+
+Member Kilmartin provided detailed feedback on the quality of writing, organization, and factual errors in the Housing and Neighborhoods chapter. Also highlighting the need for a more cohesive and readable document, free of unnecessary information and inconsistencies.
+
+The Board agreed that the Comprehensive Plan needed to be reworked to more accurately depict what Barrington currently is to properly address what the Town needs for the future.
+
+Planner Durfee suggested the Board form small working groups to rework the Comprehensive Plan. The Board concurred.
+
+The Board discussed further concerns in the housing chapter including data information in several sections that do not correlate with other data in the document.
+
+*Town Counsil liaison Cassar addressed the Board to further discuss these concerns.*
+
+The Board addressed affordable housing goals regarding zoning and land use policy. This included opportunity for residential units within the commercial district and mixed-use development. Solicitor Goins noted that a memo with more information on pending legislation in relation to mixed-use zoning being considered by the general assembly will be available at the next meeting.
+
+The Board further discussed flagged pages that will need to be reworked.
+
+Chair Phipps discussed appointing small working groups to meet and go over these flagged areas. Member Kilmartin was chosen to address all grammatical errors throughout the documents.
+
+There was discussion on how charts should be in priority order and tightening up how many charts are included in the document. There was an agreement that the order and format of the 2015 Comprehensive Plan was a good model to use for reframing the new Comprehensive Plan. The Board also agreed to transition the thematically formatted plan draft into the traditional elemental format.
+
+The Board selected members for the small working groups:
+
+- 1.Natural Resources Heather Kilmartin; Doug Caito
+- 2.Outdoor Recreation and Open Space Heather; Larry Bacher
+- 3.Historical and Cultural Resources Roni Phipps; Connor O'Neal
+- 4.Housing Larry Bacher; Roni Phipps
+- 5.Economic Development Brian Rua; Doug Caito
+- 6.Services and Facilities Roni Phipps; Heather Kilmartin
+- 7.Transportation Brian Rua; Connor O'Neal
+- 8.Natural Hazards and Climate Change Use Report
+- 9.Implementation Michael Baker
+
+The Board asked Planner Durfee to get drafts of every chapter from consultants in whatever state they are currently in for reworking. Chair Phipps reminded members that each sub-group was responsible for reviewing the existing draft of the plan and working to recommend goals/objectives, policies, action steps, et al for inclusion into the reformatted draft plan.
+
+# **5. New Business:**
+
+**a. Discuss and Act: Update on Carmelite Monastery – 25 Watson Ave, including demolition status of former monastery, sale of lots, and status of pocket neighborhood**
+
+Chair Phipps asked Planner Durfee to give a formal update to the Board on the status of 25 Watson; about demolition, sale of lots, and the status of the pocket neighborhoods.
+
+Town Planner Durfee explained there wasn't really anything in the packet because there has not been to much going on with the project. Planner Durfee noted that the purchase and sale agreement was updated and executed, and the Council authorized the sale of one of the single-family lots to generate some revenue to use to take the existing building down. Planner Durfee explained that bids had been solicited, and a contractor was chosen to conduct the plan and the implementation of the demolition of the former monastery building. The Council had a presentation at their meeting about the process that the contractor will go through with the demolition to ensure no asbestos get into the air. The Council was optimistic, but there are still a few residents with concerns about asbestos in the air. Planner Durfee said that the Department of Health is involved, and the contractors are using the best management practices.
+
+Planner Durfee explained that there is work being done to prepare for the Preliminary Phase and coming back in front of the Board, but that the design remains the same with no dramatic changes to moving single family lots around.
+
+The Board raised concern about the neighborhood park component of the pocket neighborhood and the need for a clear statement about its development be included to pass Preliminary Plan phase. Planner Durfee explained that during the Technical Review Committees review of the project they can address the issue.
+
+#### **6. Other Business:**
+
+#### **a. Reports – Board Members, Council Liaison, Director of Planning**
+
+Chair Phipps asked the Town Council liaison Cassar to update the Board with any relevant information.
+
+Counciler Cassar discussed 60 Bay Spring's request for rezoning and relayed that it was denied because the Council agreed with the Planning Board's findings that it was not a zoning issue and changing the zoning would go against the Town's Comprehensive Plan.
+
+Planner Durfee provided a comprehensive update on various projects and initiatives, including grant tracking, transportation projects, and resiliency efforts.
+
+MOTION: Member Bacher made a motion to seconded by Chair Phipps adjourn at 9:53 PM and the meeting was adjourned.
+
+![](PB Minutes 03-04-2025 DRAFT_attachments/_page_4_Picture_1.jpeg)

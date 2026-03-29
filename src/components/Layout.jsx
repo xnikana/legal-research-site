@@ -14,6 +14,8 @@ import {
   Landmark,
   Calendar,
   Video,
+  Music,
+  Table,
   MessageSquare,
 } from 'lucide-react';
 
@@ -25,6 +27,8 @@ const iconMap = {
   landmark: Landmark,
   calendar: Calendar,
   video: Video,
+  music: Music,
+  table: Table,
 };
 
 const MOBILE_BREAKPOINT = 768;
@@ -102,14 +106,16 @@ export default function Layout() {
           <div className="sidebar-section-label">Records</div>
           {categories.map((cat) => {
             const IconComponent = iconMap[cat.iconType] || FileText;
+            const accent = cat.colorAccent;
             return (
               <NavLink
                 key={cat.id}
                 to={`/category/${cat.id}`}
                 className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+                style={accent ? { '--cat-accent': accent } : undefined}
                 onClick={closeMenu}
               >
-                <IconComponent className="nav-icon" />
+                <IconComponent className="nav-icon" style={accent ? { color: accent } : undefined} />
                 {cat.title}
               </NavLink>
             );
@@ -130,6 +136,14 @@ export default function Layout() {
             onClick={closeMenu}
           >
             <Info className="nav-icon" />
+            About
+          </NavLink>
+          <NavLink
+            to="/capabilities"
+            className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+            onClick={closeMenu}
+          >
+            <Activity className="nav-icon" />
             Capabilities
           </NavLink>
           <NavLink

@@ -1,0 +1,13 @@
+![](B Kurtz Plan distrbuted at 04-04-2023 PB Meeting_attachments/_page_0_Figure_0.jpeg)
+
+## CARMELITE MONESTARY
+
+OPPORTUNITIES AND CONSTRAINTS DIAGRAM
+
+MARCH 21, 2023
+
+SCALE: 1"=80'-0"
+
+UNION STUDIO
+
+PAGE 3

@@ -1,17 +1,16 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import ArchiveSearch from '../components/ArchiveSearch';
 import { categories, mockDocuments } from '../data/mockDocuments';
 import { documentMatchesQuery } from '../utils/searchArchive';
-import { FileText, Music, Video, ShieldAlert, Copy, Check, ExternalLink } from 'lucide-react';
+import { FileText, Music, Video, Table, ShieldAlert, Clock, FolderOpen, ExternalLink } from 'lucide-react';
 import { sharePointPdfUrlFromMirror } from '../utils/sharepointUrls';
-import { meetingSummaryRoute, publicSummaryUrl } from '../utils/meetingMediaUrls';
+import { meetingSummaryRoute, publicSummaryUrl, publicMdUrl } from '../utils/meetingMediaUrls';
 import MatchHighlight from '../components/MatchHighlight';
 import SearchHitBadges from '../components/SearchHitBadges';
 
 export default function CategoryPage() {
   const { id } = useParams();
-  const [copiedKey, setCopiedKey] = useState(null);
   const [draftQuery, setDraftQuery] = useState('');
   const [listFilter, setListFilter] = useState('');
 
@@ -25,15 +24,7 @@ export default function CategoryPage() {
     return documents.filter((d) => documentMatchesQuery(d, listFilter));
   }, [documents, listFilter, filterActive]);
 
-  const copyText = useCallback(async (text, key) => {
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopiedKey(key);
-      window.setTimeout(() => setCopiedKey((k) => (k === key ? null : k)), 2000);
-    } catch {
-      setCopiedKey(null);
-    }
-  }, []);
+  const accent = category?.colorAccent || 'var(--accent-blue)';
 
   if (!category) {
     return <div style={{ padding: '2rem' }}>Category not found.</div>;
@@ -41,7 +32,15 @@ export default function CategoryPage() {
 
   return (
     <div className="category-page">
-      <div className="section-header" style={{ marginBottom: '0.5rem' }}>
+      <div
+        className="section-header"
+        style={{
+          marginBottom: '0.5rem',
+          borderLeft: `4px solid ${accent}`,
+          paddingLeft: '0.75rem',
+          color: accent,
+        }}
+      >
         {category.fullTitle}
       </div>
 
@@ -91,12 +90,17 @@ export default function CategoryPage() {
             border: '1px solid var(--border-color)',
           }}
         >
-          <ShieldAlert
+          <Clock
             size={48}
-            color="#94a3b8"
-            style={{ marginBottom: '1rem', marginLeft: 'auto', marginRight: 'auto' }}
+            color={accent}
+            style={{ marginBottom: '1rem', marginLeft: 'auto', marginRight: 'auto', opacity: 0.6 }}
           />
-          <p style={{ color: 'var(--text-secondary)' }}>No documents currently available in this archive.</p>
+          <p style={{ color: 'var(--text-primary)', fontWeight: 600, marginBottom: '0.4rem' }}>
+            No documents ingested yet
+          </p>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>
+            This file type is recognized by the archive. Documents will appear here once the ingestion pipeline processes files of this format.
+          </p>
         </div>
       ) : filterActive && visibleDocs.length === 0 ? (
         <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
@@ -105,27 +109,22 @@ export default function CategoryPage() {
       ) : (
         <div className="document-list">
           {visibleDocs.map((doc) => {
-            const spUrl = doc.pdfPath ? sharePointPdfUrlFromMirror(doc.pdfPath) : null;
+            const spUrl = doc.sharepointUrl || (doc.pdfPath ? sharePointPdfUrlFromMirror(doc.pdfPath) : null);
             const summaryUrl = publicSummaryUrl(doc.mdPath);
             const videoUrl = doc.videoUrl?.trim() || null;
-            const isVideoRow = doc.type === 'Video';
-            const summaryPageUrl =
-              typeof window !== 'undefined'
-                ? `${window.location.origin}${meetingSummaryRoute(doc.id)}`
-                : meetingSummaryRoute(doc.id);
-            const copyPrimaryKey = `${doc.id}-primary`;
-            const copyPrimaryValue = isVideoRow
-              ? videoUrl || summaryPageUrl
-              : videoUrl || summaryUrl || spUrl || doc.pdfPath;
+            const isVideoRow = doc.type === 'Video' || doc.type === 'MOV' || doc.type === 'MP4';
+            const parentFolderUrl = doc.parentFolderUrl || null;
 
             return (
               <div key={doc.id} className="document-item document-item-archive">
                 {isVideoRow ? (
-                  <Video className="doc-icon" size={24} />
-                ) : doc.type === 'WAV' || doc.type === 'MP3' ? (
-                  <Music className="doc-icon" size={24} />
+                  <Video className="doc-icon" size={24} style={{ color: accent }} />
+                ) : doc.type === 'WAV' || doc.type === 'MP3' || doc.type === 'M4A' ? (
+                  <Music className="doc-icon" size={24} style={{ color: accent }} />
+                ) : doc.type === 'XLSX' || doc.type === 'XLS' || doc.type === 'CSV' ? (
+                  <Table className="doc-icon" size={24} style={{ color: accent }} />
                 ) : (
-                  <FileText className="doc-icon" size={24} />
+                  <FileText className="doc-icon" size={24} style={{ color: accent }} />
                 )}
 
                 <div className="doc-info">
@@ -134,71 +133,66 @@ export default function CategoryPage() {
                   </div>
                   {filterActive ? <SearchHitBadges doc={doc} searchQuery={listFilter} /> : null}
                   <div className="doc-meta">
-                    <span>{isVideoRow ? 'Meeting' : doc.type}</span>
+                    <span>{doc.type}</span>
+                    {doc.folder ? (
+                      <>
+                        <span style={{ color: '#64748b' }}>•</span>
+                        <span style={{ color: 'var(--text-secondary)' }}>{doc.folder}</span>
+                      </>
+                    ) : null}
+                    {doc.date && doc.date !== '—' ? (
+                      <>
+                        <span style={{ color: '#64748b' }}>•</span>
+                        <span>{doc.date}</span>
+                      </>
+                    ) : null}
                     {doc.mdPath ? (
                       <>
                         <span style={{ color: '#64748b' }}>•</span>
-                        <span>{isVideoRow ? 'Written summary (searchable)' : 'Markdown paired'}</span>
+                        <span>{isVideoRow ? 'Written summary (searchable)' : 'Text indexed'}</span>
                       </>
-                    ) : (
-                      <>
-                        <span style={{ color: '#64748b' }}>•</span>
-                        <span>PDF only (manifest)</span>
-                      </>
-                    )}
+                    ) : null}
                   </div>
                 </div>
 
                 <div className="document-item-actions">
-                  {videoUrl ? (
+                  {isVideoRow && summaryUrl ? (
+                    <Link
+                      to={meetingSummaryRoute(doc.id)}
+                      className="doc-action-btn doc-action-primary"
+                    >
+                      View Markdown (local)
+                    </Link>
+                  ) : doc.mdPath && !isVideoRow ? (
+                    <a
+                      href={publicMdUrl(doc.mdPath)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="doc-action-btn doc-action-primary"
+                    >
+                      View Markdown (local)
+                    </a>
+                  ) : null}
+                  {parentFolderUrl ? (
+                    <a
+                      href={parentFolderUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="doc-action-btn"
+                    >
+                      <FolderOpen size={16} aria-hidden />
+                      Goto SharePoint Folder
+                    </a>
+                  ) : videoUrl ? (
                     <a
                       href={videoUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="doc-action-btn doc-action-primary"
-                    >
-                      <ExternalLink size={16} aria-hidden />
-                      Open meeting recording
-                    </a>
-                  ) : null}
-                  {isVideoRow && summaryUrl ? (
-                    <Link
-                      to={meetingSummaryRoute(doc.id)}
-                      className={`doc-action-btn${videoUrl ? '' : ' doc-action-primary'}`}
-                    >
-                      Read written summary
-                    </Link>
-                  ) : null}
-                  {spUrl ? (
-                    <a
-                      href={spUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="doc-action-btn doc-action-primary"
-                    >
-                      <ExternalLink size={16} aria-hidden />
-                      Open in SharePoint
-                    </a>
-                  ) : null}
-                  {copyPrimaryValue ? (
-                    <button
-                      type="button"
                       className="doc-action-btn"
-                      onClick={() => copyText(copyPrimaryValue, copyPrimaryKey)}
                     >
-                      {copiedKey === copyPrimaryKey ? <Check size={16} /> : <Copy size={16} />}
-                      {copiedKey === copyPrimaryKey
-                        ? 'Copied'
-                        : videoUrl
-                          ? 'Copy recording link'
-                          : isVideoRow
-                            ? 'Copy link to summary page'
-                            : summaryUrl
-                              ? 'Copy summary file link'
-                              : spUrl
-                                ? 'Copy SharePoint link'
-                                : 'Copy PDF path'}
-                    </button>
+                      <ExternalLink size={16} aria-hidden />
+                      Goto SharePoint Folder
+                    </a>
                   ) : null}
                 </div>
               </div>
