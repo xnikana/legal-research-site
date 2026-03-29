@@ -1,12 +1,33 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Bot } from 'lucide-react';
+import { searchArchive } from '../utils/searchArchive';
+import { mdSearchTextByPath } from '../data/mdSearchTextByPath';
 
 const API_URL = (import.meta.env.VITE_CHAT_API_URL || 'http://localhost:3000') + '/api/chat';
 
 const SYSTEM_PROMPT =
   'You are a helpful assistant for the Town of Barrington public records archive. ' +
   'Help users understand planning documents, permit applications, and municipal records ' +
-  'related to the Belton Court permit application process.';
+  'related to the Belton Court permit application process. ' +
+  'When relevant archive documents are provided, use them to answer questions accurately and cite the document title.';
+
+const MAX_CONTEXT_CHARS = 6000;
+
+function buildContext(query) {
+  const { results } = searchArchive(query, 4);
+  if (!results.length) return null;
+  const parts = [];
+  let total = 0;
+  for (const { doc, categoryTitle } of results) {
+    const text = doc.mdPath ? mdSearchTextByPath[doc.mdPath] : null;
+    if (!text) continue;
+    const excerpt = text.slice(0, MAX_CONTEXT_CHARS - total);
+    parts.push(`### ${doc.title} (${categoryTitle})\n${excerpt}`);
+    total += excerpt.length;
+    if (total >= MAX_CONTEXT_CHARS) break;
+  }
+  return parts.length ? parts.join('\n\n') : null;
+}
 
 export default function ChatPage() {
   const [messages, setMessages] = useState([]);
@@ -32,11 +53,13 @@ export default function ChatPage() {
     setLoading(true);
 
     try {
+      const context = buildContext(text);
       const res = await fetch(API_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           messages: [{ role: 'system', content: SYSTEM_PROMPT }, ...next],
+          context,
         }),
       });
       const data = await res.json();

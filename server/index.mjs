@@ -106,10 +106,14 @@ app.post('/api/chat', async (req, res) => {
 
   try {
     const client = new Anthropic({ apiKey: key });
+    const context = typeof req.body?.context === 'string' ? req.body.context.slice(0, 20000) : null;
+    const systemParts = [];
+    if (parsed.systemPrompt) systemParts.push(parsed.systemPrompt);
+    if (context) systemParts.push(`Relevant archive documents:\n\n${context}`);
     const response = await client.messages.create({
       model: process.env.ANTHROPIC_CHAT_MODEL || 'claude-haiku-4-5-20251001',
       max_tokens: Number(process.env.ANTHROPIC_MAX_TOKENS) || 1024,
-      ...(parsed.systemPrompt ? { system: parsed.systemPrompt } : {}),
+      ...(systemParts.length ? { system: systemParts.join('\n\n') } : {}),
       messages: parsed.messages,
     });
     const text = response.content[0]?.text ?? '';
