@@ -7,10 +7,11 @@ const root = path.join(__dirname, '..');
 const manifestPath = path.join(root, 'PAIRING_MANIFEST.txt');
 const videosManifestPath = path.join(
   root,
-  'BeltonCourt_TownMeeting_Transcripts_MD_2026-03-28',
+  'SharePoint_PDF_with_associated_MD',
+  'documentation',
+  'planning-board',
   'videos-manifest.json',
 );
-const beltonPrefix = 'BeltonCourt_TownMeeting_Transcripts_MD_2026-03-28/';
 const outPath = path.join(root, 'src', 'data', 'mockDocuments.js');
 
 const text = fs.readFileSync(manifestPath, 'utf8');
@@ -83,8 +84,8 @@ for (const entry of videoEntries) {
   const summaryMd = (entry.summaryMd || '').trim().replace(/\\/g, '/');
   const videoUrl = typeof entry.videoUrl === 'string' ? entry.videoUrl.trim() : '';
   if (!title || !summaryMd) continue;
-  const mdPath = beltonPrefix + summaryMd.replace(/^\//, '');
-  const absMd = path.join(root, beltonPrefix.slice(0, -1), summaryMd);
+  const mdPath = summaryMd.replace(/^\//, '');
+  const absMd = path.join(root, 'SharePoint_PDF_with_associated_MD', summaryMd);
   if (!fs.existsSync(absMd)) {
     console.warn('build-archive-data: skip video entry (missing file):', summaryMd);
     continue;

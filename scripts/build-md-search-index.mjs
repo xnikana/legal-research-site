@@ -5,8 +5,6 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 const MD_ROOT = path.join(root, 'SharePoint_PDF_with_associated_MD');
-const BELTON_ROOT = path.join(root, 'BeltonCourt_TownMeeting_Transcripts_MD_2026-03-28');
-const BELTON_KEY_PREFIX = 'BeltonCourt_TownMeeting_Transcripts_MD_2026-03-28/';
 const outPath = path.join(root, 'src', 'data', 'mdSearchTextByPath.js');
 
 const MAX_CHARS = 400_000;
@@ -50,24 +48,6 @@ if (fs.existsSync(MD_ROOT)) {
   }
 } else {
   console.warn('build-md-search-index: SharePoint_PDF_with_associated_MD not found; skipping that tree.');
-}
-
-if (fs.existsSync(BELTON_ROOT)) {
-  const files = walkMdFiles(BELTON_ROOT);
-  for (const abs of files) {
-    const rel = path.relative(BELTON_ROOT, abs).split(path.sep).join('/');
-    const key = BELTON_KEY_PREFIX + rel;
-    try {
-      const raw = fs.readFileSync(abs, 'utf8');
-      map[key] = normalizeForSearch(raw);
-    } catch (e) {
-      console.warn('build-md-search-index: skip', key, e.message);
-    }
-  }
-} else {
-  console.warn(
-    'build-md-search-index: BeltonCourt_TownMeeting_Transcripts_MD_2026-03-28 not found; skipping meeting transcripts.',
-  );
 }
 
 const header =

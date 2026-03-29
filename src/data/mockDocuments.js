@@ -21,13 +21,6 @@ export const categories = [
     "fullTitle": "Planning Board meetings — video and transcripts",
     "description": "Planning Board hearings with links to town meeting recordings and readable summaries of what was discussed. Search covers both listing text and summary content.",
     "iconType": "video"
-  },
-  {
-    "id": "ri-legal-guide",
-    "title": "RI Legal Research Guide",
-    "fullTitle": "Rhode Island Public Records and Land Use Law: A Research Guide",
-    "description": "Reference guide covering § 45-53 Comprehensive Permit Act, zoning, NFPA fire code, RIDEM environmental rules, APRA, Open Meetings Act, and Superior Court Land Use Calendar.",
-    "iconType": "scale"
   }
 ];
 
@@ -437,7 +430,7 @@ export const mockDocuments = {
       "id": 45,
       "title": "February 3, 2026 — Belton Court comprehensive permit (public hearing)",
       "videoUrl": "https://www.barrington.ri.gov/182/Planning-Board",
-      "mdPath": "BeltonCourt_TownMeeting_Transcripts_MD_2026-03-28/documentation/research/planning-board/meeting-transcripts/2026/2026-02-03-summary.md",
+      "mdPath": "documentation/planning-board/meeting-transcripts/2026/2026-02-03-summary.md",
       "type": "Video",
       "date": "—",
       "size": "—"
@@ -446,7 +439,7 @@ export const mockDocuments = {
       "id": 46,
       "title": "March 3, 2026 — Planning Board (Belton Court continued)",
       "videoUrl": "https://www.barrington.ri.gov/182/Planning-Board",
-      "mdPath": "BeltonCourt_TownMeeting_Transcripts_MD_2026-03-28/documentation/research/planning-board/meeting-transcripts/2026/2026-03-03-summary.md",
+      "mdPath": "documentation/planning-board/meeting-transcripts/2026/2026-03-03-summary.md",
       "type": "Video",
       "date": "—",
       "size": "—"
@@ -455,7 +448,7 @@ export const mockDocuments = {
       "id": 47,
       "title": "March 7, 2023 — Planning Board",
       "videoUrl": "https://www.barrington.ri.gov/182/Planning-Board",
-      "mdPath": "BeltonCourt_TownMeeting_Transcripts_MD_2026-03-28/documentation/research/planning-board/meeting-transcripts/2023/2023-03-07-summary.md",
+      "mdPath": "documentation/planning-board/meeting-transcripts/2023/2023-03-07-summary.md",
       "type": "Video",
       "date": "—",
       "size": "—"
@@ -464,7 +457,7 @@ export const mockDocuments = {
       "id": 48,
       "title": "April 4, 2023 — Planning Board",
       "videoUrl": "https://www.barrington.ri.gov/182/Planning-Board",
-      "mdPath": "BeltonCourt_TownMeeting_Transcripts_MD_2026-03-28/documentation/research/planning-board/meeting-transcripts/2023/2023-04-04-summary.md",
+      "mdPath": "documentation/planning-board/meeting-transcripts/2023/2023-04-04-summary.md",
       "type": "Video",
       "date": "—",
       "size": "—"
@@ -473,7 +466,7 @@ export const mockDocuments = {
       "id": 49,
       "title": "July 11, 2023 — Planning Board",
       "videoUrl": "https://www.barrington.ri.gov/182/Planning-Board",
-      "mdPath": "BeltonCourt_TownMeeting_Transcripts_MD_2026-03-28/documentation/research/planning-board/meeting-transcripts/2023/2023-07-11-summary.md",
+      "mdPath": "documentation/planning-board/meeting-transcripts/2023/2023-07-11-summary.md",
       "type": "Video",
       "date": "—",
       "size": "—"
@@ -482,7 +475,7 @@ export const mockDocuments = {
       "id": 50,
       "title": "October 3, 2023 — Planning Board",
       "videoUrl": "https://www.barrington.ri.gov/182/Planning-Board",
-      "mdPath": "BeltonCourt_TownMeeting_Transcripts_MD_2026-03-28/documentation/research/planning-board/meeting-transcripts/2023/2023-10-03-summary.md",
+      "mdPath": "documentation/planning-board/meeting-transcripts/2023/2023-10-03-summary.md",
       "type": "Video",
       "date": "—",
       "size": "—"
@@ -491,7 +484,7 @@ export const mockDocuments = {
       "id": 51,
       "title": "July 9, 2024 — Planning Board",
       "videoUrl": "https://www.barrington.ri.gov/182/Planning-Board",
-      "mdPath": "BeltonCourt_TownMeeting_Transcripts_MD_2026-03-28/documentation/research/planning-board/meeting-transcripts/2024/2024-07-09-summary.md",
+      "mdPath": "documentation/planning-board/meeting-transcripts/2024/2024-07-09-summary.md",
       "type": "Video",
       "date": "—",
       "size": "—"
@@ -500,22 +493,10 @@ export const mockDocuments = {
       "id": 52,
       "title": "November 5, 2024 — Planning Board",
       "videoUrl": "https://www.barrington.ri.gov/182/Planning-Board",
-      "mdPath": "BeltonCourt_TownMeeting_Transcripts_MD_2026-03-28/documentation/research/planning-board/meeting-transcripts/2024/2024-11-05-summary.md",
+      "mdPath": "documentation/planning-board/meeting-transcripts/2024/2024-11-05-summary.md",
       "type": "Video",
       "date": "—",
       "size": "—"
     }
-  ],
-  "ri-legal-guide": [
-    { "id": "rig-01", "title": "1. Introduction and Research Framework", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/01-intro-research-framework.md", "type": "guide", "date": "2026-03", "size": "—" },
-    { "id": "rig-02", "title": "2. Comprehensive Permit Act (§ 45-53)", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/02-comprehensive-permit-act-45-53.md", "type": "guide", "date": "2026-03", "size": "—" },
-    { "id": "rig-03", "title": "3. Zoning Enabling Act (§ 45-24)", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/03-zoning-enabling-act-45-24.md", "type": "guide", "date": "2026-03", "size": "—" },
-    { "id": "rig-04", "title": "4. Fire Safety Code and NFPA Standards", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/04-fire-safety-code-nfpa.md", "type": "guide", "date": "2026-03", "size": "—" },
-    { "id": "rig-05", "title": "5. RIDEM Environmental Regulations", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/05-ridem-environmental-regulations.md", "type": "guide", "date": "2026-03", "size": "—" },
-    { "id": "rig-06", "title": "6. Water Supply, Fire Flow, and Water Authority Research", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/06-water-supply-fire-flow.md", "type": "guide", "date": "2026-03", "size": "—" },
-    { "id": "rig-07", "title": "7. Access to Public Records Act — APRA (§ 38-2)", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/07-apra-public-records-38-2.md", "type": "guide", "date": "2026-03", "size": "—" },
-    { "id": "rig-08", "title": "8. Open Meetings Act (§ 42-46)", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/08-open-meetings-act-42-46.md", "type": "guide", "date": "2026-03", "size": "—" },
-    { "id": "rig-09", "title": "9. Appeals and Judicial Review — Superior Court Land Use Calendar", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/09-appeals-judicial-review.md", "type": "guide", "date": "2026-03", "size": "—" },
-    { "id": "rig-10", "title": "10. Research Workflow, Portals, Tools, and Databases", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/10-research-workflow-portals.md", "type": "guide", "date": "2026-03", "size": "—" }
   ]
 };
