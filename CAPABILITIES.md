@@ -35,9 +35,24 @@ See [pdf-transcription/README.md](https://github.com/fossnik/hackathon3-mar28/bl
 
 On a DGX, **CUDA-enabled PyTorch** dramatically shortens wall time for **`large`** / **`large-v3`** models versus CPU-only runs. Model weights cache under `~/.cache/whisper/`.
 
-### Web shell (repository root)
+### Research platform (`legal-research-site/`)
 
-- **Vite + React** template for a minimal UI; not required for the Python ingestion pipelines.
+The frontend is not a template — it is a fully deployed public research platform at **[legal-research.tech](https://legal-research.tech/)**, built on React 19 + Vite and hosted on Vercel. It exposes everything the ingestion pipeline produces as a searchable, navigable intelligence environment.
+
+**Full-text archive search**
+Search across all 502 inventoried documents and 2.18 million indexed words in a single query. Results appear instantly in a dropdown preview as you type, with highlighted match fragments, file type badges, and document metadata. File type filter pills (PDF / Video / Word / Spreadsheet / Audio) let you scope results before committing. Pressing Enter expands to a full paginated result set rendered as rich document cards with direct action buttons.
+
+**Ask the Archive — RAG chat**
+A Claude-powered conversational interface that answers natural-language questions about the municipal record. Every answer is grounded in retrieved document chunks and includes inline source citations — no hallucinated facts, no unsupported claims. Users can ask questions like "What did the planning board decide about the Belton Court setback?" and receive a structured, evidence-backed response with links to the source documents.
+
+**RI Legal Guide**
+A 10-section Rhode Island public records and land use law reference, rendered inline and fully navigable via a table of contents. Covers the Comprehensive Permit Act (§ 45-53), Zoning Enabling Act (§ 45-24), RIDEM environmental regulations, APRA public records access (§ 38-2), the Open Meetings Act (§ 42-46), appeals and judicial review, and research workflow portals. Built for legal practitioners working the RI municipal planning context.
+
+**Meeting transcript viewer**
+Eight Planning Board hearings transcribed by Whisper and surfaced as readable, searchable written summaries. Each meeting page includes the full markdown transcript, a link to the official video recording, and is indexed for full-text search alongside all other documents.
+
+**Archive browser by file type**
+Five category views — PDF, Video, Word, Spreadsheet, Audio — each with scoped search, folder metadata, date, and per-document action buttons: View Markdown (local rendered text) and SharePoint Folder (direct link to the source location). Documents without markdown pairs still appear with SharePoint links so nothing in the inventory is hidden.
 
 ---
 
@@ -64,4 +79,4 @@ Nothing here *requires* a DGX brand name: any **Linux workstation with NVIDIA GP
 | [pdf-transcription/README.md](https://github.com/fossnik/hackathon3-mar28/blob/main/pdf-transcription/README.md) | PDF → Markdown on GPU (Marker) and CPU (PyMuPDF4LLM) |
 | [audio-transcription/README.md](https://github.com/fossnik/hackathon3-mar28/blob/main/audio-transcription/README.md) | Whisper venv, CLI, and resource notes |
 
-Together, these pieces support an **on-premise or air-gapped-friendly** path: **mirror** public packet libraries, **transcribe** hearings, **convert** agendas and packets to Markdown, and optionally **agent-navigate** SharePoint—all accelerated where the hardware allows.
+Together, these pieces form a complete pipeline: **mirror** public packet libraries, **transcribe** hearings, **convert** agendas and packets to Markdown, **index** everything for full-text and semantic search, and **serve** it through a public research platform — all accelerated where the hardware allows, and fully accessible at [legal-research.tech](https://legal-research.tech/).
