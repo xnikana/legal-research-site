@@ -1,14 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { categories } from '../data/mockDocuments';
-import { Home, Users, FileText, Activity, ClipboardList, Scale, Menu, X, Info } from 'lucide-react';
+import {
+  Home,
+  FileText,
+  Activity,
+  ClipboardList,
+  Scale,
+  Menu,
+  X,
+  Info,
+  BarChart2,
+  Landmark,
+  Calendar,
+  Video,
+  MessageSquare,
+} from 'lucide-react';
 
 const iconMap = {
-  'users': Users,
   'file-text': FileText,
-  'activity': Activity,
+  activity: Activity,
   'clipboard-list': ClipboardList,
-  'scale': Scale
+  scale: Scale,
+  landmark: Landmark,
+  calendar: Calendar,
+  video: Video,
 };
 
 const MOBILE_BREAKPOINT = 768;
@@ -83,7 +99,7 @@ export default function Layout() {
             <Home className="nav-icon" />
             Home
           </NavLink>
-          <div className="sidebar-section-label">Categories</div>
+          <div className="sidebar-section-label">Records</div>
           {categories.map((cat) => {
             const IconComponent = iconMap[cat.iconType] || FileText;
             return (
@@ -98,6 +114,15 @@ export default function Layout() {
               </NavLink>
             );
           })}
+          <div className="sidebar-section-label">Tools</div>
+          <NavLink
+            to="/chat"
+            className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+            onClick={closeMenu}
+          >
+            <MessageSquare className="nav-icon" />
+            Ask the Archive
+          </NavLink>
           <div className="sidebar-section-label">About</div>
           <NavLink
             to="/about"
@@ -106,6 +131,14 @@ export default function Layout() {
           >
             <Info className="nav-icon" />
             Capabilities
+          </NavLink>
+          <NavLink
+            to="/archive-stats"
+            className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+            onClick={closeMenu}
+          >
+            <BarChart2 className="nav-icon" />
+            Archive Stats
           </NavLink>
         </nav>
       </aside>

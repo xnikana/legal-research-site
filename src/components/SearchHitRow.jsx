@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { sharePointPdfUrlFromMirror } from '../utils/sharepointUrls';
+import { meetingSummaryRoute, publicSummaryUrl } from '../utils/meetingMediaUrls';
 import MatchHighlight from './MatchHighlight';
 import SearchHitBadges from './SearchHitBadges';
 
@@ -13,6 +14,10 @@ import SearchHitBadges from './SearchHitBadges';
 export default function SearchHitRow({ row, searchQuery = '', onNavigate, active }) {
   const { doc, categoryId, categoryTitle } = row;
   const spUrl = doc.pdfPath ? sharePointPdfUrlFromMirror(doc.pdfPath) : null;
+  const summaryUrl = publicSummaryUrl(doc.mdPath);
+  const videoUrl = doc.videoUrl?.trim() || null;
+  const isVideo = doc.type === 'Video' && summaryUrl;
+  const titleHref = !isVideo && (videoUrl || spUrl || summaryUrl);
 
   const titleContent = <MatchHighlight text={doc.title} query={searchQuery} />;
 
@@ -24,9 +29,17 @@ export default function SearchHitRow({ row, searchQuery = '', onNavigate, active
     >
       <div className="archive-search-row-main">
         <span className="archive-search-title">
-          {spUrl ? (
+          {isVideo ? (
+            <Link
+              to={meetingSummaryRoute(doc.id)}
+              className="archive-search-title-link"
+              onClick={onNavigate}
+            >
+              {titleContent}
+            </Link>
+          ) : titleHref ? (
             <a
-              href={spUrl}
+              href={titleHref}
               target="_blank"
               rel="noopener noreferrer"
               className="archive-search-title-link"
@@ -44,6 +57,17 @@ export default function SearchHitRow({ row, searchQuery = '', onNavigate, active
         <span className="archive-search-cat">{categoryTitle}</span>
       </div>
       <div className="archive-search-row-actions">
+        {isVideo && videoUrl ? (
+          <a
+            href={videoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="archive-search-link"
+            onClick={onNavigate}
+          >
+            Recording
+          </a>
+        ) : null}
         <Link
           to={`/category/${categoryId}`}
           className="archive-search-link archive-search-link-muted"

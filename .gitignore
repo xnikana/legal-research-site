@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 public/SharePoint_PDF_with_associated_MD
+public/BeltonCourt_TownMeeting_Transcripts_MD_2026-03-28
 # PDFs are opened from SharePoint; keep paired .md for search index only
 SharePoint_PDF_with_associated_MD/**/*.pdf
 SharePoint_PDF_with_associated_MD/**/*.PDF
