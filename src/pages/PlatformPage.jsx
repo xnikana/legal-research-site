@@ -58,35 +58,48 @@ export default function PlatformPage() {
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '4rem' }}>
           {FEATURES.map(({ img, alt, title, subtitle, body }, i) => (
-            <div
-              key={title}
-              style={{
-                display: 'grid',
-                gridTemplateColumns: i % 2 === 0 ? '1fr 1fr' : '1fr 1fr',
-                gap: '2.5rem',
-                alignItems: 'center',
-              }}
-              className="platform-feature-row"
-            >
-              <div style={{ order: i % 2 === 0 ? 0 : 1 }} className="platform-feature-img-wrap">
-                <img
-                  src={img}
-                  alt={alt}
-                  style={{ width: '100%', borderRadius: '16px', display: 'block', boxShadow: '0 8px 32px rgba(0,0,0,0.18)' }}
-                />
-              </div>
-              <div style={{ order: i % 2 === 0 ? 1 : 0 }}>
-                <div style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--accent-blue)', marginBottom: '0.4rem' }}>
-                  {subtitle}
+            <React.Fragment key={title}>
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: '1fr 1fr',
+                  gap: '2.5rem',
+                  alignItems: 'center',
+                }}
+                className="platform-feature-row"
+              >
+                <div style={{ order: i % 2 === 0 ? 0 : 1 }} className="platform-feature-img-wrap">
+                  <img
+                    src={img}
+                    alt={alt}
+                    style={{ width: '100%', borderRadius: '16px', display: 'block', boxShadow: '0 8px 32px rgba(0,0,0,0.18)' }}
+                  />
                 </div>
-                <h2 style={{ fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-primary)', margin: '0 0 0.85rem', lineHeight: 1.25 }}>
-                  {title}
-                </h2>
-                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.75, margin: 0 }}>
-                  {body}
-                </p>
+                <div style={{ order: i % 2 === 0 ? 1 : 0 }}>
+                  <div style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--accent-blue)', marginBottom: '0.4rem' }}>
+                    {subtitle}
+                  </div>
+                  <h2 style={{ fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-primary)', margin: '0 0 0.85rem', lineHeight: 1.25 }}>
+                    {title}
+                  </h2>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.75, margin: 0 }}>
+                    {body}
+                  </p>
+                </div>
               </div>
-            </div>
+              {i === 1 && (
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+                  <img
+                    src="/chat-screenshot.png"
+                    alt="Ask the Archive — live Claude response grounded in the municipal archive"
+                    style={{ width: '100%', maxWidth: '860px', borderRadius: '12px', display: 'block', boxShadow: '0 8px 32px rgba(0,0,0,0.22)', border: '1px solid #1e3a5f' }}
+                  />
+                  <p style={{ fontSize: '0.75rem', color: '#64748b', margin: 0, letterSpacing: '0.04em', textTransform: 'uppercase', fontWeight: 600 }}>
+                    Live response — Claude grounded in the municipal archive
+                  </p>
+                </div>
+              )}
+            </React.Fragment>
           ))}
         </div>
 
