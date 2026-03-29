@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FolderOpen, FileText, ExternalLink } from 'lucide-react';
 import { sharePointPdfUrlFromMirror } from '../utils/sharepointUrls';
-import { meetingSummaryRoute, publicSummaryUrl } from '../utils/meetingMediaUrls';
+import { meetingSummaryRoute, publicMdUrl } from '../utils/meetingMediaUrls';
 import MatchHighlight from './MatchHighlight';
 import SearchHitBadges from './SearchHitBadges';
 
@@ -13,11 +14,12 @@ import SearchHitBadges from './SearchHitBadges';
  */
 export default function SearchHitRow({ row, searchQuery = '', onNavigate, active }) {
   const { doc, categoryId, categoryTitle } = row;
-  const spUrl = doc.pdfPath ? sharePointPdfUrlFromMirror(doc.pdfPath) : null;
-  const summaryUrl = publicSummaryUrl(doc.mdPath);
+  const spUrl = doc.sharepointUrl || (doc.pdfPath ? sharePointPdfUrlFromMirror(doc.pdfPath) : null);
+  const mdUrl = publicMdUrl(doc.mdPath);
   const videoUrl = doc.videoUrl?.trim() || null;
-  const isVideo = doc.type === 'Video' && summaryUrl;
-  const titleHref = !isVideo && (videoUrl || spUrl || summaryUrl);
+  const isVideo = doc.type === 'Video' || doc.type === 'MOV' || doc.type === 'MP4';
+  const parentFolderUrl = doc.parentFolderUrl || null;
+  const folderOrVideoUrl = parentFolderUrl || (isVideo ? videoUrl : null);
 
   const titleContent = <MatchHighlight text={doc.title} query={searchQuery} />;
 
@@ -29,27 +31,7 @@ export default function SearchHitRow({ row, searchQuery = '', onNavigate, active
     >
       <div className="archive-search-row-main">
         <span className="archive-search-title">
-          {isVideo ? (
-            <Link
-              to={meetingSummaryRoute(doc.id)}
-              className="archive-search-title-link"
-              onClick={onNavigate}
-            >
-              {titleContent}
-            </Link>
-          ) : titleHref ? (
-            <a
-              href={titleHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="archive-search-title-link"
-              onClick={onNavigate}
-            >
-              {titleContent}
-            </a>
-          ) : (
-            titleContent
-          )}
+          {titleContent}
         </span>
         {searchQuery.trim().length >= 2 ? (
           <SearchHitBadges doc={doc} searchQuery={searchQuery} />
@@ -57,15 +39,49 @@ export default function SearchHitRow({ row, searchQuery = '', onNavigate, active
         <span className="archive-search-cat">{categoryTitle}</span>
       </div>
       <div className="archive-search-row-actions">
-        {isVideo && videoUrl ? (
+        {isVideo && mdUrl ? (
+          <Link
+            to={meetingSummaryRoute(doc.id)}
+            className="archive-search-link"
+            onClick={onNavigate}
+          >
+            <FileText size={13} aria-hidden />
+            Summary
+          </Link>
+        ) : mdUrl ? (
           <a
-            href={videoUrl}
+            href={mdUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="archive-search-link"
             onClick={onNavigate}
           >
-            Recording
+            <FileText size={13} aria-hidden />
+            Markdown
+          </a>
+        ) : null}
+        {spUrl && !isVideo ? (
+          <a
+            href={spUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="archive-search-link"
+            onClick={onNavigate}
+          >
+            <ExternalLink size={13} aria-hidden />
+            Document
+          </a>
+        ) : null}
+        {folderOrVideoUrl ? (
+          <a
+            href={folderOrVideoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="archive-search-link archive-search-link-muted"
+            onClick={onNavigate}
+          >
+            <FolderOpen size={13} aria-hidden />
+            {isVideo ? 'Recording' : 'Folder'}
           </a>
         ) : null}
         <Link

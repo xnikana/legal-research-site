@@ -221,6 +221,121 @@ export default function AboutPage() {
         <CalloutBox color={AMBER}>"We are not a search engine. We are a continuously maintained intelligence layer over the civic record."</CalloutBox>
       </Section>
 
+      {/* Competitive Landscape */}
+      <Section label="Market Awareness" title="Competitive landscape">
+        <p style={{ lineHeight: 1.75, marginBottom: '1rem' }}>
+          The municipal records intelligence market is fragmented across legal research incumbents, civic tech platforms, and general-purpose document tools. None have automated, continuously-updated ingestion at the municipal level paired with AI-native retrieval.
+        </p>
+        <Table
+          headers={['Competitor', 'Category', 'Gap']}
+          rows={[
+            ['Westlaw / LexisNexis',   'Legal research (case law)',         'No municipal records; expensive subscriptions; no auto-ingestion'],
+            ['Municode / Codify',       'Municipal code publishing',         'Ordinances only; no permits, hearings, or planning docs; no AI search'],
+            ['CourtListener (Free Law)','Public court records',              'Courts only; no planning boards, zoning, or local government data'],
+            ['Granicus / OpenGov',      'Civic agenda & minutes SaaS',       'Requires municipal IT buy-in; vendor-controlled; no AI Q&A layer'],
+            ['DocumentCloud',           'Journalist document hosting',       'Manual upload only; no crawl/ingest; no AI; no cross-doc search'],
+            ['General LLM tools',       'ChatGPT, Perplexity, etc.',         'No proprietary data; hallucination risk; no source citations; no local gov coverage'],
+          ]}
+        />
+        <CalloutBox color={BLUE_L}>
+          We occupy a white space: <strong>automated ingestion of municipal government data</strong> that none of the incumbents address. Legal research tools stop at courts. Civic SaaS requires municipalities to opt in. We ingest what is already public — without asking permission.
+        </CalloutBox>
+      </Section>
+
+      {/* Differentiation */}
+      <Section label="Differentiation" title="Why we win">
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.25rem' }}>
+          {[
+            { label: 'Automated, not manual', color: BLUE_L, detail: 'Zero human uploads. The vision-guided browser agent + ingestion pipeline runs continuously. Every new file in a monitored SharePoint is indexed within hours. Competitors require staff to publish documents.' },
+            { label: 'Full-format coverage', color: CYAN, detail: 'PDFs (scanned + digital), DOCX, XLSX, WAV, MP4, MOV — all converted to searchable text. No other civic platform transcribes meeting video recordings into searchable, citable text.' },
+            { label: 'Evidence-cited answers', color: GREEN, detail: 'Every AI answer links directly to the source document and passage. Users can verify any claim. Competitor tools either hallucinate or provide raw documents with no synthesis layer.' },
+            { label: 'No municipal buy-in needed', color: AMBER, detail: 'We crawl public-facing portals without requiring IT access or procurement. The platform can go live in any jurisdiction in days — no sales cycle with municipal IT departments required.' },
+          ].map(({ label, color, detail }) => (
+            <div key={label} style={{ background: WHITE, border: `1px solid ${SILVER}`, borderTop: `3px solid ${color}`, borderRadius: 10, padding: '1rem' }}>
+              <div style={{ fontWeight: 700, fontSize: '0.9rem', color, marginBottom: '0.4rem' }}>{label}</div>
+              <p style={{ fontSize: '0.8rem', color: SLATE, lineHeight: 1.6, margin: 0 }}>{detail}</p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Feasibility */}
+      <Section label="Feasibility" title="Proven in 72 hours — scoped to scale">
+        <p style={{ lineHeight: 1.75, marginBottom: '1rem' }}>
+          The platform was validated against a real, production municipal archive in a 72-hour sprint — not a prototype or mock data demo. The phased architecture ensures each stage delivers standalone value before the next is built.
+        </p>
+        <div style={{ marginBottom: '1.25rem' }}>
+          <div style={{ fontSize: '0.78rem', fontWeight: 600, color: SLATE_L, marginBottom: '0.75rem' }}>What was built in the 24-hour MVP sprint</div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
+            {[
+              'Browser agent crawls SharePoint, builds 502-doc inventory',
+              'PDF ingestion via PyMuPDF4LLM — 444 PDFs indexed in hours',
+              'DOCX conversion — all 32 Word docs extracted to Markdown',
+              'Whisper transcription of 8 town meeting video recordings',
+              'Full-text search across 2.18M words, live in browser',
+              'React + Vite frontend deployed to Vercel, zero-login public access',
+            ].map((item) => (
+              <div key={item} style={{ display: 'flex', gap: 8, padding: '0.35rem 0', borderBottom: `1px solid ${SILVER}`, fontSize: '0.82rem' }}>
+                <span style={{ color: GREEN, fontWeight: 700, flexShrink: 0 }}>✓</span>
+                <span style={{ color: SLATE }}>{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <Table
+          headers={['Risk factor', 'Mitigation']}
+          rows={[
+            ['Scope creep',         'Each pipeline stage is independently deployable and testable. Phase 1 was scoped to ingestion + search only; RAG was additive.'],
+            ['Data availability',   'All target documents are already public. Crawl logic is jurisdiction-agnostic; new towns require only a new seed URL.'],
+            ['GPU dependency',      'DGX workstation is available for ingestion sprints; cloud GPU (Lambda Labs, CoreWeave) is the fallback at ~$2/hr for H100.'],
+            ['Legal / compliance',  'All ingested data is publicly available government records. No PII ingestion. FOIA-equivalent access is the explicit design goal.'],
+          ]}
+        />
+      </Section>
+
+      {/* Risk Assessment */}
+      <Section label="Risk Assessment" title="Risks identified and mitigated">
+        <Table
+          headers={['Risk', 'Likelihood', 'Impact', 'Mitigation']}
+          rows={[
+            ['Portal structure changes', 'Medium', 'Medium', 'Vision-guided agent (browser-use + LLM) adapts to DOM changes; BFS crawl is re-runnable on demand'],
+            ['Rate limiting / IP blocks', 'Low', 'Low', 'Polite crawl delays; respectful of robots.txt; municipal portals rarely enforce aggressive rate limits on public data'],
+            ['LLM hallucination', 'Low', 'High', 'RAG architecture grounds all answers in retrieved source text; every claim is citation-linked; no free-generation mode'],
+            ['GPU cost overrun', 'Medium', 'Medium', 'Whisper + Marker runs once at ingest; inference (RAG) runs on CPU-compatible models; burst GPU is pay-per-use'],
+            ['Competitor entry', 'Low', 'Medium', 'Data moat: ingested municipalities are proprietary normalized datasets that take months to replicate; pipeline IP is non-trivial'],
+            ['Legal challenge to crawling', 'Low', 'High', 'Only public portals crawled; content is public record by statute; precedent set by CourtListener, PACER scraping cases'],
+            ['Key-person dependency', 'Medium', 'High', 'Pipeline code is documented; Vite/React frontend is standard stack; data artifacts committed to git — no single point of failure'],
+          ]}
+        />
+        <CalloutBox color={AMBER}>The highest-impact risks are legal challenge and LLM hallucination — both are structurally mitigated by the public-record legal basis and the citation-anchored RAG design respectively.</CalloutBox>
+      </Section>
+
+      {/* Team */}
+      <Section label="Team Execution Plan" title="Who does what — and when">
+        <Table
+          headers={['Team member', 'Role', 'Owns']}
+          rows={[
+            ['Zachary',  'Full-stack lead',          'React frontend, Vite build pipeline, Vercel deployment, archive data pipeline (build-archive-data.mjs)'],
+            ['John',     'Backend / infra lead',     'Railway RAG service, FastAPI endpoints, vector index (pgvector / Chroma), LLM prompt engineering'],
+            ['xNikana',  'AI / ingestion lead',      'Browser-use crawl agent, Whisper transcription, Marker OCR pipeline, DGX GPU orchestration'],
+          ]}
+        />
+        <div style={{ marginTop: '1.25rem' }}>
+          <div style={{ fontSize: '0.78rem', fontWeight: 600, color: SLATE_L, marginBottom: '0.75rem' }}>Sprint execution plan — Phase 2 (Q3 2026)</div>
+          <Table
+            headers={['Sprint', 'Duration', 'Owner', 'Deliverable']}
+            rows={[
+              ['S1 — Vector index',          '2 weeks', 'John',    'pgvector embeddings for all 453 MD files; semantic similarity search live'],
+              ['S2 — Multi-muni crawl',       '3 weeks', 'xNikana', '10 Rhode Island municipalities crawled, ingested, indexed'],
+              ['S3 — REST API',               '2 weeks', 'John',    'Public API: /search, /ask, /documents endpoints with API key auth'],
+              ['S4 — Cross-muni search',      '2 weeks', 'Zachary', 'Frontend: cross-municipality search, comparison view, jurisdiction filter'],
+              ['S5 — Law firm pilot',         '4 weeks', 'Zachary', '3 design-partner firms onboarded; feedback loop established; billing integrated'],
+            ]}
+          />
+        </div>
+        <CalloutBox color={GREEN}>"Three specialists, three subsystems, no overlap. The pipeline, backend, and frontend were built in parallel — that is how 502 documents got indexed in 72 hours."</CalloutBox>
+      </Section>
+
       {/* Roadmap + Ask */}
       <Section label="Roadmap" title="From pilot to platform">
         <Table

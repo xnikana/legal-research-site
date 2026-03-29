@@ -6,15 +6,27 @@ import { ShieldCheck } from 'lucide-react';
 
 const INLINE_LIMIT = 50000;
 
+const FILE_TYPE_FILTERS = [
+  { id: null,           label: 'All types',   color: '#64748b' },
+  { id: 'pdf',          label: 'PDF',          color: '#3b82f6' },
+  { id: 'video',        label: 'Video',        color: '#ef4444' },
+  { id: 'word',         label: 'Word',         color: '#8b5cf6' },
+  { id: 'spreadsheet',  label: 'Spreadsheet',  color: '#22c55e' },
+  { id: 'audio',        label: 'Audio',        color: '#f59e0b' },
+];
+
 export default function Home() {
   const [draftQuery, setDraftQuery] = useState('');
   const [committedQuery, setCommittedQuery] = useState('');
+  const [typeFilter, setTypeFilter] = useState(null);
   const filterActive = committedQuery.length >= 2;
 
   const { results: inlineResults, total: inlineTotal } = useMemo(
     () =>
-      filterActive ? searchArchive(committedQuery, INLINE_LIMIT) : { results: [], total: 0 },
-    [committedQuery, filterActive],
+      filterActive
+        ? searchArchive(committedQuery, INLINE_LIMIT, typeFilter)
+        : { results: [], total: 0 },
+    [committedQuery, filterActive, typeFilter],
   );
 
   return (
@@ -54,6 +66,33 @@ export default function Home() {
         onQueryChange={setDraftQuery}
         onCommitSearch={setCommittedQuery}
       />
+
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1.25rem' }}>
+        {FILE_TYPE_FILTERS.map(({ id, label, color }) => {
+          const active = typeFilter === id;
+          return (
+            <button
+              key={String(id)}
+              type="button"
+              onClick={() => setTypeFilter(id)}
+              style={{
+                padding: '0.3rem 0.85rem',
+                borderRadius: '999px',
+                border: `1.5px solid ${active ? color : 'var(--border-color)'}`,
+                background: active ? color : 'var(--card-bg)',
+                color: active ? '#fff' : 'var(--text-secondary)',
+                fontWeight: active ? 600 : 400,
+                fontSize: '0.8rem',
+                cursor: 'pointer',
+                fontFamily: 'inherit',
+                transition: 'all 0.15s',
+              }}
+            >
+              {label}
+            </button>
+          );
+        })}
+      </div>
 
       {filterActive ? (
         <>
