@@ -21,6 +21,13 @@ export const categories = [
     "fullTitle": "Planning Board meetings — video and transcripts",
     "description": "Planning Board hearings with links to town meeting recordings and readable summaries of what was discussed. Search covers both listing text and summary content.",
     "iconType": "video"
+  },
+  {
+    "id": "ri-legal-guide",
+    "title": "RI Legal Research Guide",
+    "fullTitle": "Rhode Island Public Records and Land Use Law: A Research Guide",
+    "description": "Reference guide covering § 45-53 Comprehensive Permit Act, zoning, NFPA fire code, RIDEM environmental rules, APRA, Open Meetings Act, and Superior Court Land Use Calendar.",
+    "iconType": "scale"
   }
 ];
 
@@ -498,5 +505,17 @@ export const mockDocuments = {
       "date": "—",
       "size": "—"
     }
+  ],
+  "ri-legal-guide": [
+    { "id": "rig-01", "title": "1. Introduction and Research Framework", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/01-intro-research-framework.md", "type": "guide", "date": "2026-03", "size": "—" },
+    { "id": "rig-02", "title": "2. Comprehensive Permit Act (§ 45-53)", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/02-comprehensive-permit-act-45-53.md", "type": "guide", "date": "2026-03", "size": "—" },
+    { "id": "rig-03", "title": "3. Zoning Enabling Act (§ 45-24)", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/03-zoning-enabling-act-45-24.md", "type": "guide", "date": "2026-03", "size": "—" },
+    { "id": "rig-04", "title": "4. Fire Safety Code and NFPA Standards", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/04-fire-safety-code-nfpa.md", "type": "guide", "date": "2026-03", "size": "—" },
+    { "id": "rig-05", "title": "5. RIDEM Environmental Regulations", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/05-ridem-environmental-regulations.md", "type": "guide", "date": "2026-03", "size": "—" },
+    { "id": "rig-06", "title": "6. Water Supply, Fire Flow, and Water Authority Research", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/06-water-supply-fire-flow.md", "type": "guide", "date": "2026-03", "size": "—" },
+    { "id": "rig-07", "title": "7. Access to Public Records Act — APRA (§ 38-2)", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/07-apra-public-records-38-2.md", "type": "guide", "date": "2026-03", "size": "—" },
+    { "id": "rig-08", "title": "8. Open Meetings Act (§ 42-46)", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/08-open-meetings-act-42-46.md", "type": "guide", "date": "2026-03", "size": "—" },
+    { "id": "rig-09", "title": "9. Appeals and Judicial Review — Superior Court Land Use Calendar", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/09-appeals-judicial-review.md", "type": "guide", "date": "2026-03", "size": "—" },
+    { "id": "rig-10", "title": "10. Research Workflow, Portals, Tools, and Databases", "pdfPath": null, "mdPath": "documentation/ri-legal-guide/10-research-workflow-portals.md", "type": "guide", "date": "2026-03", "size": "—" }
   ]
 };
