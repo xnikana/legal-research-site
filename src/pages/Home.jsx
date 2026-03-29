@@ -27,6 +27,28 @@ export default function Home() {
         </p>
       </div>
 
+      <div style={{
+        background: '#fffbeb',
+        border: '1px solid #fcd34d',
+        borderRadius: '8px',
+        padding: '0.75rem 1rem',
+        marginBottom: '1rem',
+        fontSize: '0.875rem',
+        color: '#92400e',
+        lineHeight: 1.5,
+      }}>
+        <strong>Before opening any documents:</strong> you must first visit the{' '}
+        <a
+          href="https://twnbarrintonri.sharepoint.com/:f:/s/BoardandCommissionPacketLibrary/Es4wuqEH_bJNp0Mdm-ZC4XsB0Mu7WJozo__I3Bi_Un0oYw?e=EHQOBH"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: '#b45309', fontWeight: 600 }}
+        >
+          SharePoint library link
+        </a>{' '}
+        to establish a public session. Without this step, SharePoint will prompt you to log in even though the files are publicly accessible.
+      </div>
+
       <ArchiveSearch
         query={draftQuery}
         onQueryChange={setDraftQuery}
