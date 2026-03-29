@@ -10,6 +10,7 @@ import {
   Menu,
   X,
   Info,
+  BarChart2,
   Landmark,
   Calendar,
   Video,
@@ -130,6 +131,14 @@ export default function Layout() {
           >
             <Info className="nav-icon" />
             Capabilities
+          </NavLink>
+          <NavLink
+            to="/archive-stats"
+            className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+            onClick={closeMenu}
+          >
+            <BarChart2 className="nav-icon" />
+            Archive Stats
           </NavLink>
         </nav>
       </aside>
