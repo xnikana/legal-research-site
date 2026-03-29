@@ -17,6 +17,7 @@ import {
   Music,
   Table,
   MessageSquare,
+  BookOpen,
 } from 'lucide-react';
 
 const iconMap = {
@@ -128,6 +129,14 @@ export default function Layout() {
           >
             <MessageSquare className="nav-icon" />
             Ask the Archive
+          </NavLink>
+          <NavLink
+            to="/legal-guide"
+            className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+            onClick={closeMenu}
+          >
+            <BookOpen className="nav-icon" />
+            RI Legal Guide
           </NavLink>
           <div className="sidebar-section-label">About</div>
           <NavLink
