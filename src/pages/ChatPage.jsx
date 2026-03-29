@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Bot } from 'lucide-react';
+import { Send, Bot, User, Sparkles } from 'lucide-react';
 import { searchArchive } from '../utils/searchArchive';
 import { mdSearchTextByPath } from '../data/mdSearchTextByPath';
 
@@ -82,6 +82,15 @@ function buildContext(query) {
   return parts.length ? parts.join('\n\n') : null;
 }
 
+const SUGGESTED_PROMPTS = [
+  { label: 'Comprehensive permit decision', prompt: 'What did the planning board decide about the comprehensive permit application at 33 Middle Highway?' },
+  { label: 'Setback variance', prompt: 'What setback variances were requested and how did the board respond?' },
+  { label: 'Public comments', prompt: 'Summarize the public comments submitted regarding the comprehensive permit development.' },
+  { label: 'Fire safety requirements', prompt: 'What fire safety and fire flow requirements apply to the 33 Middle Highway site under RI law?' },
+  { label: 'APRA request process', prompt: 'How do I file a public records request under APRA in Rhode Island?' },
+  { label: 'Comprehensive Permit Act', prompt: 'Explain how the Rhode Island Comprehensive Permit Act § 45-53 works and who it applies to.' },
+];
+
 export default function ChatPage() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
@@ -137,42 +146,105 @@ export default function ChatPage() {
     }
   }
 
+  function sendPrompt(prompt) {
+    setInput(prompt);
+    // slight delay so input state flushes before send
+    setTimeout(() => {
+      setInput('');
+      const userMsg = { role: 'user', content: prompt };
+      const next = [userMsg];
+      setMessages(next);
+      setError(null);
+      setLoading(true);
+      const context = buildContext(prompt);
+      fetch(API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: [{ role: 'system', content: SYSTEM_PROMPT }, ...next], context }),
+      })
+        .then((res) => res.json().then((data) => ({ ok: res.ok, data })))
+        .then(({ ok, data }) => {
+          if (!ok) setError(data.error || 'Request failed');
+          else setMessages([...next, { role: 'assistant', content: data.reply }]);
+        })
+        .catch(() => setError('Could not reach the chat server. Is it running?'))
+        .finally(() => { setLoading(false); inputRef.current?.focus(); });
+    }, 0);
+  }
+
   return (
     <div className="chat-page">
-      <div className="hero-section" style={{ paddingBottom: '1rem' }}>
-        <Bot size={40} color="var(--accent-blue)" style={{ marginBottom: '0.75rem' }} />
-        <h1 className="hero-title">Ask the Archive</h1>
-        <p className="hero-subtitle">
-          Ask questions about the Belton Court permit process and Barrington planning records.
-        </p>
+
+      {/* Header banner */}
+      <div className="chat-hero">
+        <div className="chat-hero-icon">
+          <img src="/platform-chat-owl.png" alt="" aria-hidden style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+        </div>
+        <div>
+          <div className="chat-hero-eyebrow">RAG · Claude · 2.18M words indexed</div>
+          <h1 className="chat-hero-title">Ask the Archive</h1>
+          <p className="chat-hero-sub">
+            Ask anything about the municipal planning record — permit applications, board decisions, public comments, meeting transcripts, and Rhode Island land use law. Every answer is grounded in source documents.
+          </p>
+        </div>
       </div>
 
+      {/* Suggested prompts — only shown before first message */}
+      {messages.length === 0 && !loading && (
+        <div className="chat-suggestions">
+          <div className="chat-suggestions-label">
+            <Sparkles size={13} aria-hidden />
+            Try asking
+          </div>
+          <div className="chat-suggestions-grid">
+            {SUGGESTED_PROMPTS.map(({ label, prompt }) => (
+              <button
+                key={label}
+                type="button"
+                className="chat-suggestion-btn"
+                onClick={() => sendPrompt(prompt)}
+              >
+                <span className="chat-suggestion-label">{label}</span>
+                <span className="chat-suggestion-prompt">{prompt}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Message thread */}
       <div className="chat-thread">
-        {messages.length === 0 && !loading && (
-          <p className="chat-empty">Send a message to get started.</p>
-        )}
         {messages.map((m, i) => (
           <div key={i} className={`chat-bubble chat-bubble--${m.role}`}>
-            <span className="chat-bubble-label">{m.role === 'user' ? 'You' : 'Assistant'}</span>
+            <span className="chat-bubble-label">
+              {m.role === 'user'
+                ? <><User size={12} aria-hidden /> You</>
+                : <><Bot size={12} aria-hidden /> Archive Assistant</>}
+            </span>
             <p className="chat-bubble-text">{m.content}</p>
           </div>
         ))}
         {loading && (
           <div className="chat-bubble chat-bubble--assistant">
-            <span className="chat-bubble-label">Assistant</span>
-            <p className="chat-bubble-text chat-typing">Thinking…</p>
+            <span className="chat-bubble-label"><Bot size={12} aria-hidden /> Archive Assistant</span>
+            <p className="chat-bubble-text chat-typing">Searching 2.18M words…</p>
           </div>
         )}
-        {error && <p className="chat-error">{error}</p>}
+        {error && (
+          <div className="chat-error-banner">
+            <strong>Could not reach the chat server.</strong> The RAG backend may be temporarily offline. Try again shortly.
+          </div>
+        )}
         <div ref={bottomRef} />
       </div>
 
+      {/* Input */}
       <div className="chat-input-row">
         <textarea
           ref={inputRef}
           className="chat-input"
           rows={1}
-          placeholder="Ask a question…"
+          placeholder="Ask about permits, decisions, public comments, RI law…"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={onKeyDown}

@@ -18,6 +18,7 @@ import {
   Table,
   MessageSquare,
   BookOpen,
+  Globe,
 } from 'lucide-react';
 
 const iconMap = {
@@ -148,12 +149,20 @@ export default function Layout() {
             About
           </NavLink>
           <NavLink
+            to="/platform"
+            className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
+            onClick={closeMenu}
+          >
+            <Globe className="nav-icon" />
+            The Platform
+          </NavLink>
+          <NavLink
             to="/capabilities"
             className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
             onClick={closeMenu}
           >
             <Activity className="nav-icon" />
-            Capabilities
+            Ingestion Engine
           </NavLink>
           <NavLink
             to="/archive-stats"

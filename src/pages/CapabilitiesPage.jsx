@@ -27,6 +27,27 @@ export default function AboutPage() {
           </p>
         </div>
         <div style={{ textAlign: 'center' }}>
+          <video
+            src="/sharepoint-crawl-demo.webm"
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{ width: '100%', borderRadius: '16px', display: 'block' }}
+          />
+          <p style={{ marginTop: '0.75rem', fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-primary)' }}>
+            Live SharePoint Crawl — DGX GPU-Accelerated Vision Agent
+          </p>
+          <p style={{ marginTop: '0.4rem', fontSize: '0.8rem', color: 'var(--text-secondary)', lineHeight: 1.55 }}>
+            Real-time capture of the vision-guided BFS crawler operating against a live SharePoint packet library.
+            The agent runs <strong>Ollama llava:7b</strong> on a DGX workstation for on-device GPU inference —
+            no cloud API round-trips. Each frame shows the headless <strong>Playwright</strong> browser
+            traversing folder structures, resolving dynamically rendered DOM nodes, and emitting a structured
+            JSON inventory of file URLs and metadata. Steps that would stall on CPU-only inference
+            complete in under a second per page on the DGX CUDA stack.
+          </p>
+        </div>
+        <div style={{ textAlign: 'center' }}>
           <img
             src="/ingestion-engine.webp"
             alt="Ingestion engine — DGX-powered pipeline converting PDF, DOCX, WAV, MOV, MP4, and XLSX into searchable text using PyMuPDF4LLM, Marker, and OpenAI Whisper"

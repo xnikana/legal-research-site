@@ -9,6 +9,7 @@ import ArchiveStatsPage from './pages/ArchiveStatsPage';
 import MeetingSummaryPage from './pages/MeetingSummaryPage';
 import ChatPage from './pages/ChatPage';
 import LegalGuidePage from './pages/LegalGuidePage';
+import PlatformPage from './pages/PlatformPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="category/:id" element={<CategoryPage />} />
           <Route path="meeting/:docId" element={<MeetingSummaryPage />} />
           <Route path="legal-guide" element={<LegalGuidePage />} />
+          <Route path="platform" element={<PlatformPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

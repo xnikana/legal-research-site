@@ -1,8 +1,11 @@
 import React, { useMemo, useState } from 'react';
 import ArchiveSearch from '../components/ArchiveSearch';
-import SearchHitRow from '../components/SearchHitRow';
+import DocumentCard from '../components/DocumentCard';
+import { categories } from '../data/mockDocuments';
 import { searchArchive } from '../utils/searchArchive';
 import { ShieldCheck } from 'lucide-react';
+
+const accentByCategory = Object.fromEntries(categories.map((c) => [c.id, c.colorAccent]));
 
 const INLINE_LIMIT = 50000;
 
@@ -113,14 +116,16 @@ export default function Home() {
             </button>
           </div>
           {inlineTotal > 0 ? (
-            <div className="archive-inline-results">
-              <ul className="archive-inline-results-list">
-                {inlineResults.map((row) => (
-                  <li key={`${row.categoryId}-${row.doc.id}`}>
-                    <SearchHitRow row={row} searchQuery={committedQuery} />
-                  </li>
-                ))}
-              </ul>
+            <div className="document-list">
+              {inlineResults.map((row) => (
+                <DocumentCard
+                  key={`${row.categoryId}-${row.doc.id}`}
+                  doc={row.doc}
+                  accent={accentByCategory[row.categoryId] || 'var(--accent-blue)'}
+                  searchQuery={committedQuery}
+                  categoryTitle={row.categoryTitle}
+                />
+              ))}
             </div>
           ) : (
             <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>

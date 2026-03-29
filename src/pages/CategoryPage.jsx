@@ -1,13 +1,10 @@
 import React, { useMemo, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import ArchiveSearch from '../components/ArchiveSearch';
+import DocumentCard from '../components/DocumentCard';
 import { categories, mockDocuments } from '../data/mockDocuments';
 import { documentMatchesQuery } from '../utils/searchArchive';
-import { FileText, Music, Video, Table, ShieldAlert, Clock, FolderOpen, ExternalLink } from 'lucide-react';
-import { sharePointPdfUrlFromMirror } from '../utils/sharepointUrls';
-import { meetingSummaryRoute, publicSummaryUrl, publicMdUrl } from '../utils/meetingMediaUrls';
-import MatchHighlight from '../components/MatchHighlight';
-import SearchHitBadges from '../components/SearchHitBadges';
+import { Clock } from 'lucide-react';
 
 export default function CategoryPage() {
   const { id } = useParams();
@@ -108,96 +105,14 @@ export default function CategoryPage() {
         </p>
       ) : (
         <div className="document-list">
-          {visibleDocs.map((doc) => {
-            const spUrl = doc.sharepointUrl || (doc.pdfPath ? sharePointPdfUrlFromMirror(doc.pdfPath) : null);
-            const summaryUrl = publicSummaryUrl(doc.mdPath);
-            const videoUrl = doc.videoUrl?.trim() || null;
-            const isVideoRow = doc.type === 'Video' || doc.type === 'MOV' || doc.type === 'MP4';
-            const parentFolderUrl = doc.parentFolderUrl || null;
-
-            return (
-              <div key={doc.id} className="document-item document-item-archive">
-                {isVideoRow ? (
-                  <Video className="doc-icon" size={24} style={{ color: accent }} />
-                ) : doc.type === 'WAV' || doc.type === 'MP3' || doc.type === 'M4A' ? (
-                  <Music className="doc-icon" size={24} style={{ color: accent }} />
-                ) : doc.type === 'XLSX' || doc.type === 'XLS' || doc.type === 'CSV' ? (
-                  <Table className="doc-icon" size={24} style={{ color: accent }} />
-                ) : (
-                  <FileText className="doc-icon" size={24} style={{ color: accent }} />
-                )}
-
-                <div className="doc-info">
-                  <div className="doc-title">
-                    <MatchHighlight text={doc.title} query={filterActive ? listFilter : ''} />
-                  </div>
-                  {filterActive ? <SearchHitBadges doc={doc} searchQuery={listFilter} /> : null}
-                  <div className="doc-meta">
-                    <span>{doc.type}</span>
-                    {doc.folder ? (
-                      <>
-                        <span style={{ color: '#64748b' }}>•</span>
-                        <span style={{ color: 'var(--text-secondary)' }}>{doc.folder}</span>
-                      </>
-                    ) : null}
-                    {doc.date && doc.date !== '—' ? (
-                      <>
-                        <span style={{ color: '#64748b' }}>•</span>
-                        <span>{doc.date}</span>
-                      </>
-                    ) : null}
-                    {doc.mdPath ? (
-                      <>
-                        <span style={{ color: '#64748b' }}>•</span>
-                        <span>{isVideoRow ? 'Written summary (searchable)' : 'Text indexed'}</span>
-                      </>
-                    ) : null}
-                  </div>
-                </div>
-
-                <div className="document-item-actions">
-                  {isVideoRow && summaryUrl ? (
-                    <Link
-                      to={meetingSummaryRoute(doc.id)}
-                      className="doc-action-btn doc-action-primary"
-                    >
-                      View Markdown (local)
-                    </Link>
-                  ) : doc.mdPath && !isVideoRow ? (
-                    <a
-                      href={publicMdUrl(doc.mdPath)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="doc-action-btn doc-action-primary"
-                    >
-                      View Markdown (local)
-                    </a>
-                  ) : null}
-                  {parentFolderUrl ? (
-                    <a
-                      href={parentFolderUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="doc-action-btn"
-                    >
-                      <FolderOpen size={16} aria-hidden />
-                      Goto SharePoint Folder
-                    </a>
-                  ) : videoUrl ? (
-                    <a
-                      href={videoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="doc-action-btn"
-                    >
-                      <ExternalLink size={16} aria-hidden />
-                      Goto SharePoint Folder
-                    </a>
-                  ) : null}
-                </div>
-              </div>
-            );
-          })}
+          {visibleDocs.map((doc) => (
+            <DocumentCard
+              key={doc.id}
+              doc={doc}
+              accent={accent}
+              searchQuery={filterActive ? listFilter : ''}
+            />
+          ))}
         </div>
       )}
     </div>
