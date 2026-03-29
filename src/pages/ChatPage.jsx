@@ -17,7 +17,9 @@ const SYSTEM_PROMPT =
   'If the documents do not contain enough information, say so specifically — do not claim you lack access to documents.';
 
 const MAX_CONTEXT_CHARS = 8000;
+const LEGAL_GUIDE_BUDGET = 4000;
 const EXCERPT_WINDOW = 1500;
+const LEGAL_GUIDE_PREFIX = 'documentation/ri-legal-guide/';
 
 function extractExcerpt(text, keywords) {
   // Find the earliest keyword hit and return a window around it
@@ -37,30 +39,46 @@ function buildContext(query) {
   )];
   if (!keywords.length) return null;
 
-  const seen = new Set();
-  const results = [];
-  for (const kw of keywords) {
-    const { results: hits } = searchArchive(kw, 5);
-    for (const hit of hits) {
-      if (!seen.has(hit.doc.id)) {
-        seen.add(hit.doc.id);
-        results.push(hit);
-      }
-    }
-    if (results.length >= 5) break;
-  }
-
-  if (!results.length) return null;
   const parts = [];
   let total = 0;
-  for (const { doc, categoryTitle } of results) {
-    const text = doc.mdPath ? mdSearchTextByPath[doc.mdPath] : null;
-    if (!text) continue;
-    const excerpt = extractExcerpt(text.toLowerCase(), keywords).slice(0, MAX_CONTEXT_CHARS - total);
-    parts.push(`### ${doc.title} (${categoryTitle})\n${excerpt}`);
+
+  // 1. Search RI legal guide sections first
+  for (const [key, text] of Object.entries(mdSearchTextByPath)) {
+    if (!key.startsWith(LEGAL_GUIDE_PREFIX) || !text) continue;
+    if (!keywords.some(kw => text.includes(kw))) continue;
+    const section = key.replace(LEGAL_GUIDE_PREFIX, '').replace('.md', '');
+    const excerpt = extractExcerpt(text, keywords).slice(0, LEGAL_GUIDE_BUDGET - total);
+    parts.push(`### RI Legal Guide — ${section}\n${excerpt}`);
     total += excerpt.length;
-    if (total >= MAX_CONTEXT_CHARS) break;
+    if (total >= LEGAL_GUIDE_BUDGET) break;
   }
+
+  // 2. Fill remaining budget with archive docs
+  const archiveBudget = MAX_CONTEXT_CHARS - total;
+  if (archiveBudget > 500) {
+    const seen = new Set();
+    const results = [];
+    for (const kw of keywords) {
+      const { results: hits } = searchArchive(kw, 5);
+      for (const hit of hits) {
+        if (!seen.has(hit.doc.id)) {
+          seen.add(hit.doc.id);
+          results.push(hit);
+        }
+      }
+      if (results.length >= 5) break;
+    }
+    let archiveTotal = 0;
+    for (const { doc, categoryTitle } of results) {
+      const text = doc.mdPath ? mdSearchTextByPath[doc.mdPath] : null;
+      if (!text) continue;
+      const excerpt = extractExcerpt(text.toLowerCase(), keywords).slice(0, archiveBudget - archiveTotal);
+      parts.push(`### ${doc.title} (${categoryTitle})\n${excerpt}`);
+      archiveTotal += excerpt.length;
+      if (archiveTotal >= archiveBudget) break;
+    }
+  }
+
   return parts.length ? parts.join('\n\n') : null;
 }
 
