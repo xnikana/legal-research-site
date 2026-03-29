@@ -6,15 +6,28 @@ import { mdSearchTextByPath } from '../data/mdSearchTextByPath';
 const API_URL = (import.meta.env.VITE_CHAT_API_URL || 'http://localhost:3000') + '/api/chat';
 
 const SYSTEM_PROMPT =
-  'You are a helpful assistant for the Town of Barrington public records archive. ' +
-  'Help users understand planning documents, permit applications, and municipal records ' +
-  'related to the Belton Court permit application process. ' +
-  'When relevant archive documents are provided, use them to answer questions accurately and cite the document title.';
+  'You are a research assistant for the Town of Barrington public records archive. ' +
+  'You have access to archive documents that will be provided in the system context. ' +
+  'Always base your answers on the provided documents. ' +
+  'If the documents contain the answer, state it clearly and cite which document it came from. ' +
+  'If the documents do not contain enough information, say so specifically — do not claim you lack access to documents.';
 
-const MAX_CONTEXT_CHARS = 6000;
+const MAX_CONTEXT_CHARS = 8000;
+const EXCERPT_WINDOW = 1500;
+
+function extractExcerpt(text, keywords) {
+  // Find the earliest keyword hit and return a window around it
+  let bestIdx = -1;
+  for (const kw of keywords) {
+    const idx = text.indexOf(kw);
+    if (idx !== -1 && (bestIdx === -1 || idx < bestIdx)) bestIdx = idx;
+  }
+  if (bestIdx === -1) return text.slice(0, EXCERPT_WINDOW);
+  const start = Math.max(0, bestIdx - 200);
+  return text.slice(start, start + EXCERPT_WINDOW);
+}
 
 function buildContext(query) {
-  // Search for each meaningful keyword separately, deduplicate results
   const keywords = [...new Set(
     query.toLowerCase().split(/\s+/).filter(w => w.length >= 4)
   )];
@@ -23,14 +36,14 @@ function buildContext(query) {
   const seen = new Set();
   const results = [];
   for (const kw of keywords) {
-    const { results: hits } = searchArchive(kw, 4);
+    const { results: hits } = searchArchive(kw, 5);
     for (const hit of hits) {
       if (!seen.has(hit.doc.id)) {
         seen.add(hit.doc.id);
         results.push(hit);
       }
     }
-    if (results.length >= 4) break;
+    if (results.length >= 5) break;
   }
 
   if (!results.length) return null;
@@ -39,7 +52,7 @@ function buildContext(query) {
   for (const { doc, categoryTitle } of results) {
     const text = doc.mdPath ? mdSearchTextByPath[doc.mdPath] : null;
     if (!text) continue;
-    const excerpt = text.slice(0, MAX_CONTEXT_CHARS - total);
+    const excerpt = extractExcerpt(text.toLowerCase(), keywords).slice(0, MAX_CONTEXT_CHARS - total);
     parts.push(`### ${doc.title} (${categoryTitle})\n${excerpt}`);
     total += excerpt.length;
     if (total >= MAX_CONTEXT_CHARS) break;
@@ -72,6 +85,7 @@ export default function ChatPage() {
 
     try {
       const context = buildContext(text);
+      console.log('[chat] context length:', context ? context.length : 0);
       const res = await fetch(API_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

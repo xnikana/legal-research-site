@@ -107,6 +107,7 @@ app.post('/api/chat', async (req, res) => {
   try {
     const client = new Anthropic({ apiKey: key });
     const context = typeof req.body?.context === 'string' ? req.body.context.slice(0, 20000) : null;
+    console.log('[api/chat] context length:', context ? context.length : 0);
     const systemParts = [];
     if (parsed.systemPrompt) systemParts.push(parsed.systemPrompt);
     if (context) systemParts.push(`Relevant archive documents:\n\n${context}`);
