@@ -14,7 +14,25 @@ const SYSTEM_PROMPT =
 const MAX_CONTEXT_CHARS = 6000;
 
 function buildContext(query) {
-  const { results } = searchArchive(query, 4);
+  // Search for each meaningful keyword separately, deduplicate results
+  const keywords = [...new Set(
+    query.toLowerCase().split(/\s+/).filter(w => w.length >= 4)
+  )];
+  if (!keywords.length) return null;
+
+  const seen = new Set();
+  const results = [];
+  for (const kw of keywords) {
+    const { results: hits } = searchArchive(kw, 4);
+    for (const hit of hits) {
+      if (!seen.has(hit.doc.id)) {
+        seen.add(hit.doc.id);
+        results.push(hit);
+      }
+    }
+    if (results.length >= 4) break;
+  }
+
   if (!results.length) return null;
   const parts = [];
   let total = 0;
