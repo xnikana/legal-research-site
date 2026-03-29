@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "npm install --prefix server && node server/index.mjs",
     "predev": "node scripts/copy-md-archive-to-public.mjs",
     "dev": "vite",
     "prebuild": "node scripts/copy-md-archive-to-public.mjs",
